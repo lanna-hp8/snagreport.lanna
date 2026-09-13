@@ -4,6 +4,17 @@ A read-only site for your builder(s) to browse the current snag list — grouped
 photos and floor-plan locations. Separate from the snagging app itself; this is just for presenting
 results.
 
+## How it works
+
+**Floor Plan Explorer (default view):** pick a floor, then a room, and the plan for that room shows
+every snag pinned on it. Tap a pin, or drag a selection box across several, to build a working list
+on the side — click any item in that list to see its full description and photos below. Every
+room also has a full snag list (collapsed by default) and a "Print this room" button for a clean,
+builder-friendly printout.
+
+**Browse / Group List (second view):** the original grouped list — by Room, Trade, Severity, or
+Floor — with a status filter and search, for scanning everything at once rather than room by room.
+
 ## ⚠️ Before you upload photos to R2 — 5 files need renaming
 
 Your export had 5 pairs of snags that ended up sharing the same tag (two different, real snags

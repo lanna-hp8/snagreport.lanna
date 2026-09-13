@@ -250,6 +250,246 @@ function onPinZoomChange(){
 }
 
 /* ============================================================
+   FLOOR PLAN EXPLORER — the new default view. Pick a floor, pick a
+   room, see every snag in that room plotted on the plan, drag-select
+   or tap pins to build a working list, click into one for full detail.
+   ============================================================ */
+let explorerFloor = null;
+let explorerRoom = null;
+let selectedTags = new Set();
+let activeTag = null;
+let explorerZoom = 1.5;
+let explorerPinPositions = []; // [{tag, left, top, el}] in wrap-relative px, refreshed each render
+let fullListExpanded = false;
+
+function setMainView(view){
+  document.querySelectorAll('.view-tab').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  document.getElementById('view-explore').classList.toggle('active', view === 'explore');
+  document.getElementById('view-list').classList.toggle('active', view === 'list');
+  if (view === 'list') renderGroups();
+}
+
+function renderFloorButtons(){
+  const el = document.getElementById('floorButtons');
+  el.innerHTML = FLOORS.filter(f => f.code !== 'WH').map(f => {
+    const count = SNAGS.filter(s => s.floorCode === f.code).length;
+    return `<button class="pill-btn ${explorerFloor === f.code ? 'active' : ''} ${count === 0 ? 'empty' : ''}" onclick="selectExplorerFloor('${f.code}')">${f.name} <span class="pill-count">${count}</span></button>`;
+  }).join('');
+}
+function selectExplorerFloor(floorCode){
+  explorerFloor = floorCode;
+  explorerRoom = null;
+  selectedTags = new Set();
+  activeTag = null;
+  renderFloorButtons();
+  renderRoomButtons();
+  document.getElementById('roomStep').style.display = 'block';
+  document.getElementById('roomExplorerArea').style.display = 'none';
+}
+function renderRoomButtons(){
+  const el = document.getElementById('roomButtons');
+  const floor = FLOORS.find(f => f.code === explorerFloor);
+  el.innerHTML = floor.rooms.map(([code, name]) => {
+    const count = SNAGS.filter(s => s.floorCode === explorerFloor && s.roomCode === code).length;
+    return `<button class="pill-btn ${explorerRoom === code ? 'active' : ''} ${count === 0 ? 'empty' : ''}" onclick="selectExplorerRoom('${code}')">${name} <span class="pill-count">${count}</span></button>`;
+  }).join('');
+}
+async function selectExplorerRoom(roomCode){
+  explorerRoom = roomCode;
+  selectedTags = new Set();
+  activeTag = null;
+  fullListExpanded = false;
+  renderRoomButtons();
+  document.getElementById('roomExplorerArea').style.display = 'block';
+  const zoom = getZoomFactor(explorerFloor, roomCode);
+  explorerZoom = zoom;
+  document.getElementById('explorerZoomSlider').value = zoom;
+  document.getElementById('explorerZoomValue').textContent = zoom.toFixed(1) + 'x';
+  document.getElementById('fullRoomListBody').style.display = 'none';
+  document.getElementById('fullListCaret').textContent = '▶';
+  await renderExplorerPlan();
+  renderSelectedList();
+  renderActiveDetail();
+  renderFullRoomList();
+}
+
+async function renderExplorerPlan(){
+  const wrap = document.getElementById('explorerPlanWrap');
+  const coords = PIN_COORDS[explorerFloor] || [];
+  const entry = coords.find(c => c[0] === explorerRoom);
+  const centerX = entry ? entry[1] : 50, centerY = entry ? entry[2] : 50;
+  const rect = await waitForLayout(wrap);
+  const containerW = rect.width || 320;
+  const containerH = rect.height || Math.round(containerW * PIN_IMG_H / PIN_IMG_W);
+  const { scaledW, scaledH, posX, posY } = applyZoomBackground(wrap, explorerFloor, centerX, centerY, containerW, containerH, explorerZoom);
+
+  wrap.querySelectorAll('.explorer-pin').forEach(p => p.remove());
+  if (!document.getElementById('selectionBoxEl')){
+    const box = document.createElement('div');
+    box.className = 'selection-box';
+    box.id = 'selectionBoxEl';
+    wrap.appendChild(box);
+  }
+
+  const roomSnags = SNAGS.filter(s => s.floorCode === explorerFloor && s.roomCode === explorerRoom && s.pins && s.pins.length);
+  explorerPinPositions = [];
+  roomSnags.forEach(s => {
+    s.pins.forEach(pin => {
+      const left = (pin.x / 100) * scaledW + posX;
+      const top = (pin.y / 100) * scaledH + posY;
+      const marker = document.createElement('div');
+      marker.className = 'explorer-pin sev-' + s.severity;
+      marker.style.left = left + 'px';
+      marker.style.top = top + 'px';
+      marker.title = s.tag + ': ' + s.description;
+      marker.addEventListener('click', (e) => { e.stopPropagation(); onPinClick(s.tag); });
+      wrap.appendChild(marker);
+      explorerPinPositions.push({ tag: s.tag, left, top, el: marker });
+    });
+  });
+  applyPinStates();
+}
+function applyPinStates(){
+  explorerPinPositions.forEach(p => {
+    p.el.classList.remove('pin-selected', 'pin-active', 'pin-muted');
+    if (activeTag){
+      p.el.classList.add(p.tag === activeTag ? 'pin-active' : 'pin-muted');
+    } else if (selectedTags.has(p.tag)){
+      p.el.classList.add('pin-selected');
+    }
+  });
+}
+function onPinClick(tag){
+  selectedTags.add(tag);
+  activeTag = tag;
+  applyPinStates();
+  renderSelectedList();
+  renderActiveDetail();
+}
+function onExplorerZoomChange(){
+  explorerZoom = parseFloat(document.getElementById('explorerZoomSlider').value);
+  document.getElementById('explorerZoomValue').textContent = explorerZoom.toFixed(1) + 'x';
+  renderExplorerPlan();
+}
+
+/* Drag-select — bound once to the plan container, not re-bound on every
+   render (the container element itself is fixed in the page; only its
+   pins are rebuilt per room). */
+function setupDragSelect(){
+  const wrap = document.getElementById('explorerPlanWrap');
+  let startX, startY, dragging = false, moved = false;
+  wrap.addEventListener('pointerdown', (e) => {
+    if (e.target.classList.contains('explorer-pin')) return; // the pin's own click handler deals with this
+    const rect = wrap.getBoundingClientRect();
+    startX = e.clientX - rect.left; startY = e.clientY - rect.top;
+    dragging = true; moved = false;
+    try { wrap.setPointerCapture(e.pointerId); } catch (err) { /* not supported everywhere — drag-select still works fine without it */ }
+  });
+  wrap.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const rect = wrap.getBoundingClientRect();
+    const curX = e.clientX - rect.left, curY = e.clientY - rect.top;
+    if (Math.abs(curX - startX) > 4 || Math.abs(curY - startY) > 4) moved = true;
+    if (!moved) return;
+    const box = document.getElementById('selectionBoxEl');
+    if (!box) return;
+    const x1 = Math.min(startX, curX), y1 = Math.min(startY, curY);
+    const x2 = Math.max(startX, curX), y2 = Math.max(startY, curY);
+    box.style.display = 'block';
+    box.style.left = x1 + 'px'; box.style.top = y1 + 'px';
+    box.style.width = (x2 - x1) + 'px'; box.style.height = (y2 - y1) + 'px';
+  });
+  wrap.addEventListener('pointerup', () => {
+    if (!dragging) return;
+    dragging = false;
+    const box = document.getElementById('selectionBoxEl');
+    if (moved && box){
+      const bx1 = parseFloat(box.style.left), by1 = parseFloat(box.style.top);
+      const bx2 = bx1 + parseFloat(box.style.width), by2 = by1 + parseFloat(box.style.height);
+      explorerPinPositions.forEach(p => {
+        if (p.left >= bx1 && p.left <= bx2 && p.top >= by1 && p.top <= by2) selectedTags.add(p.tag);
+      });
+      activeTag = null; // a drag-select builds the list; it doesn't jump into one snag's detail on its own
+      applyPinStates();
+      renderSelectedList();
+      renderActiveDetail();
+    } else if (!moved){
+      // a plain tap on empty plan (not a pin, not a drag) clears the active detail
+      activeTag = null;
+      applyPinStates();
+      renderActiveDetail();
+    }
+    if (box){ box.style.display = 'none'; box.style.width = '0'; box.style.height = '0'; }
+  });
+}
+
+function renderSelectedList(){
+  const el = document.getElementById('selectedSnagsList');
+  document.getElementById('selCount').textContent = selectedTags.size;
+  if (selectedTags.size === 0){
+    el.innerHTML = '<div class="empty-hint">Tap or drag-select pins on the plan to list them here.</div>';
+    return;
+  }
+  const items = [...selectedTags].map(tag => SNAGS.find(s => s.tag === tag)).filter(Boolean);
+  el.innerHTML = items.map(s => `
+    <div class="selected-snag-item ${activeTag === s.tag ? 'active' : ''}" onclick="onSelectedItemClick('${s.tag}')">
+      <span class="tag-code">${s.tag}</span>
+      <span class="badge sev-${s.severity}">${s.severity}</span> <span class="badge ${statusClass(s.status)}">${s.status}</span>
+      <div style="margin-top:4px;">${escapeHtml(s.description).slice(0, 70)}</div>
+    </div>
+  `).join('');
+}
+function onSelectedItemClick(tag){
+  activeTag = tag;
+  applyPinStates();
+  renderSelectedList();
+  renderActiveDetail();
+}
+function clearSelection(){
+  selectedTags = new Set();
+  activeTag = null;
+  applyPinStates();
+  renderSelectedList();
+  renderActiveDetail();
+}
+function renderActiveDetail(){
+  const el = document.getElementById('activeSnagDetail');
+  if (!activeTag){ el.innerHTML = ''; return; }
+  const s = SNAGS.find(x => x.tag === activeTag);
+  el.innerHTML = s ? `<div class="active-detail-box">${snagCardHtml(s)}</div>` : '';
+}
+
+function toggleFullRoomList(){
+  fullListExpanded = !fullListExpanded;
+  document.getElementById('fullRoomListBody').style.display = fullListExpanded ? 'block' : 'none';
+  document.getElementById('fullListCaret').textContent = fullListExpanded ? '▼' : '▶';
+}
+function renderFullRoomList(){
+  const items = SNAGS.filter(s => s.floorCode === explorerFloor && s.roomCode === explorerRoom);
+  document.getElementById('fullListCount').textContent = items.length;
+  document.getElementById('fullRoomListBody').innerHTML = items.map(snagCardHtml).join('');
+}
+
+function printRoom(){
+  const items = SNAGS.filter(s => s.floorCode === explorerFloor && s.roomCode === explorerRoom);
+  const label = roomName(explorerFloor, explorerRoom) + ' — ' + floorName(explorerFloor);
+  document.getElementById('printArea').innerHTML = `
+    <h1 style="font-family:'Space Grotesk',sans-serif;">Site Snag Report — ${escapeHtml(label)}</h1>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;margin-bottom:16px;">Generated ${new Date().toLocaleString('en-GB')} · ${items.length} item(s)</div>
+    ${items.map(s => `
+      <div class="print-item">
+        <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;">${s.tag} — ${s.severity} — ${s.status}</div>
+        <div style="font-weight:600;margin-top:2px;">${escapeHtml(s.trade)}${s.location ? ' · ' + escapeHtml(s.location) : ''}</div>
+        <div style="margin-top:4px;">${escapeHtml(s.description)}</div>
+        ${s.comments ? `<div style="margin-top:2px;font-style:italic;color:#555;">${escapeHtml(s.comments)}</div>` : ''}
+        ${(s.thumbFiles && s.thumbFiles.length) ? `<div style="margin-top:6px;">${s.thumbFiles.map(f => `<img src="${PHOTO_BASE_URL + f}">`).join('')}</div>` : ''}
+      </div>
+    `).join('')}
+  `;
+  window.print();
+}
+
+/* ============================================================
    INIT
    ============================================================ */
 (function init(){
@@ -260,4 +500,6 @@ function onPinZoomChange(){
   document.head.appendChild(style);
   expandAll(); // a builder opening this for the first time should see everything, not a wall of collapsed headers
   renderGroups();
+  renderFloorButtons();
+  setupDragSelect();
 })();

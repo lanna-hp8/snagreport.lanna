@@ -97,6 +97,56 @@
 
   .footer-note{text-align:center; font-size:11.5px; color:var(--text-soft); margin-top:24px;}
 
+  /* ============ FLOOR PLAN EXPLORER ============ */
+  .view-switcher{display:flex; gap:8px; margin:18px 0 16px;}
+  .view-tab{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13.5px; padding:10px 18px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--text-soft); cursor:pointer;}
+  .view-tab.active{background:var(--ink); color:#fff; border-color:var(--ink);}
+  .view-panel{display:none;} .view-panel.active{display:block;}
+
+  .explorer-step-label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-soft); margin:14px 0 8px;}
+  .pill-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:6px;}
+  .pill-btn{font-family:'Inter',sans-serif; font-weight:600; font-size:13px; padding:9px 16px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--text); cursor:pointer; display:flex; align-items:center; gap:7px;}
+  .pill-btn:hover{border-color:var(--ink);}
+  .pill-btn.active{background:var(--ink); color:#fff; border-color:var(--ink);}
+  .pill-count{font-family:'IBM Plex Mono',monospace; font-size:10.5px; background:var(--grey-bg); color:var(--text-soft); padding:1px 7px; border-radius:20px;}
+  .pill-btn.active .pill-count{background:rgba(255,255,255,0.2); color:#fff;}
+  .pill-btn.empty{opacity:0.55;}
+
+  .explorer-layout{display:flex; gap:16px; align-items:flex-start; margin-top:14px;}
+  .explorer-plan-col{flex:1.4; min-width:0;}
+  .explorer-list-col{flex:1; min-width:0; background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); padding:14px; box-shadow:var(--shadow); max-height:640px; overflow-y:auto;}
+  @media (max-width:800px){ .explorer-layout{flex-direction:column;} .explorer-list-col{max-height:340px;} }
+
+  .pin-plan-wrap{position:relative; width:100%; aspect-ratio:1500/1059; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line-soft); background:var(--grey-bg); background-repeat:no-repeat; box-shadow:var(--shadow); cursor:crosshair; touch-action:none; user-select:none;}
+  .plan-controls{display:flex; align-items:center; gap:8px; margin-top:10px;}
+  .explorer-hint{font-size:11.5px; color:var(--text-soft); margin:8px 0 0;}
+
+  .explorer-pin{position:absolute; width:20px; height:20px; margin-left:-10px; margin-top:-10px; border-radius:50%; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.4); cursor:pointer; z-index:2;}
+  .explorer-pin.sev-Critical{background:var(--red);} .explorer-pin.sev-Major{background:var(--amber);}
+  .explorer-pin.sev-Minor{background:var(--blue);} .explorer-pin.sev-Cosmetic{background:var(--grey);}
+  .explorer-pin.pin-selected{box-shadow:0 0 0 4px rgba(47,93,166,0.35), 0 1px 4px rgba(0,0,0,0.4);}
+  .explorer-pin.pin-active{background:#F2B705 !important; width:26px; height:26px; margin-left:-13px; margin-top:-13px; box-shadow:0 0 0 5px rgba(242,183,5,0.4), 0 2px 6px rgba(0,0,0,0.5); z-index:3;}
+  .explorer-pin.pin-muted{background:var(--grey) !important; opacity:0.45; box-shadow:none;}
+  .selection-box{position:absolute; border:1.5px dashed var(--blue); background:rgba(47,93,166,0.12); pointer-events:none; z-index:4; display:none;}
+
+  .selected-snag-item{padding:9px 10px; border-radius:8px; border:1px solid var(--line-soft); margin-bottom:7px; cursor:pointer; font-size:12.5px;}
+  .selected-snag-item:hover{border-color:var(--blue);}
+  .selected-snag-item.active{border-color:var(--amber); background:var(--amber-bg);}
+  .selected-snag-item .tag-code{display:block; margin-bottom:3px;}
+  .empty-hint{font-size:12px; color:var(--text-soft); text-align:center; padding:20px 10px;}
+
+  .active-detail-box{background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); padding:16px; margin-top:14px; box-shadow:var(--shadow);}
+  .room-full-list-section{margin-top:16px;}
+
+  /* Print — only the room snag list, formatted cleanly */
+  #printArea{display:none;}
+  @media print{
+    body > .wrap, body > .overlay{display:none !important;}
+    #printArea{display:block !important; padding:20px;}
+    .print-item{page-break-inside:avoid; border-bottom:1px solid #ccc; padding:12px 0;}
+    .print-item img{width:110px; height:110px; object-fit:cover; margin-right:6px; border-radius:4px;}
+  }
+
   @media (max-width:640px){ h1{font-size:21px;} .stats{gap:6px;} .stat{min-width:62px; padding:6px 10px;} }
 </style>
 </head>
@@ -114,27 +164,77 @@
     </div>
   </header>
 
-  <div class="toolbar">
-    <div class="group-tabs">
-      <label>Group by:</label>
-      <button class="btn small" data-group="room" onclick="setGroupBy('room')">Room</button>
-      <button class="btn small" data-group="trade" onclick="setGroupBy('trade')">Trade</button>
-      <button class="btn small" data-group="severity" onclick="setGroupBy('severity')">Severity</button>
-      <button class="btn small" data-group="floor" onclick="setGroupBy('floor')">Floor</button>
-    </div>
-  </div>
-  <div class="toolbar">
-    <select id="fStatus" onchange="renderGroups()">
-      <option value="">All statuses</option>
-      <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
-      <option>Fixed - To Verify</option><option>Verified/Closed</option>
-    </select>
-    <div class="search-box"><input type="search" id="fSearch" placeholder="Search description, room, tag..." oninput="renderGroups()"></div>
-    <button class="btn small" onclick="expandAll()">Expand all</button>
-    <button class="btn small" onclick="collapseAll()">Collapse all</button>
+  <div class="view-switcher">
+    <button class="view-tab active" data-view="explore" onclick="setMainView('explore')">📍 Floor Plan Explorer</button>
+    <button class="view-tab" data-view="list" onclick="setMainView('list')">☰ Browse / Group List</button>
   </div>
 
-  <div id="groupsContainer"></div>
+  <!-- ============ FLOOR PLAN EXPLORER VIEW ============ -->
+  <div class="view-panel active" id="view-explore">
+    <div class="explorer-step-label">1. Choose a floor</div>
+    <div class="pill-row" id="floorButtons"></div>
+
+    <div id="roomStep" style="display:none;">
+      <div class="explorer-step-label">2. Choose a room</div>
+      <div class="pill-row" id="roomButtons"></div>
+    </div>
+
+    <div id="roomExplorerArea" style="display:none;">
+      <div class="explorer-layout">
+        <div class="explorer-plan-col">
+          <div class="pin-plan-wrap" id="explorerPlanWrap"></div>
+          <div class="plan-controls">
+            <label style="font-size:12px;color:var(--text-soft);white-space:nowrap;">Zoom</label>
+            <input type="range" id="explorerZoomSlider" min="1" max="4" step="0.1" value="1.5" oninput="onExplorerZoomChange()">
+            <span id="explorerZoomValue" style="font-size:12px;color:var(--text-soft);width:34px;">1.5x</span>
+          </div>
+          <p class="explorer-hint">Tap a pin to view that snag. Drag across the plan to select several at once.</p>
+        </div>
+        <div class="explorer-list-col">
+          <div class="selected-list-header">
+            <h3>Selected (<span id="selCount">0</span>)</h3>
+            <button class="btn small" onclick="clearSelection()">Clear</button>
+          </div>
+          <div id="selectedSnagsList"><div class="empty-hint">Tap or drag-select pins on the plan to list them here.</div></div>
+        </div>
+      </div>
+
+      <div id="activeSnagDetail"></div>
+
+      <div class="room-full-list-section">
+        <div class="toolbar">
+          <button class="btn small" onclick="toggleFullRoomList()"><span id="fullListCaret">▶</span> All snags in this room (<span id="fullListCount">0</span>)</button>
+          <button class="btn small" onclick="printRoom()">🖨 Print this room's snags</button>
+        </div>
+        <div id="fullRoomListBody" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BROWSE / GROUP LIST VIEW ============ -->
+  <div class="view-panel" id="view-list">
+    <div class="toolbar">
+      <div class="group-tabs">
+        <label>Group by:</label>
+        <button class="btn small" data-group="room" onclick="setGroupBy('room')">Room</button>
+        <button class="btn small" data-group="trade" onclick="setGroupBy('trade')">Trade</button>
+        <button class="btn small" data-group="severity" onclick="setGroupBy('severity')">Severity</button>
+        <button class="btn small" data-group="floor" onclick="setGroupBy('floor')">Floor</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <select id="fStatus" onchange="renderGroups()">
+        <option value="">All statuses</option>
+        <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
+        <option>Fixed - To Verify</option><option>Verified/Closed</option>
+      </select>
+      <div class="search-box"><input type="search" id="fSearch" placeholder="Search description, room, tag..." oninput="renderGroups()"></div>
+      <button class="btn small" onclick="expandAll()">Expand all</button>
+      <button class="btn small" onclick="collapseAll()">Collapse all</button>
+    </div>
+
+    <div id="groupsContainer"></div>
+  </div>
 
   <div class="footer-note">Snag data exported from the site snagging app · photos hosted separately · pin locations are approximate</div>
 </div>
@@ -154,6 +254,8 @@
     <div style="text-align:right;margin-top:8px;"><button class="btn small" onclick="document.getElementById('pinLightbox').classList.remove('show')">Close</button></div>
   </div>
 </div>
+
+<div id="printArea"></div>
 
 <script src="data.js"></script>
 <script src="snags.js"></script>
