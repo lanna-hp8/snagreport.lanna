@@ -283,7 +283,6 @@ function selectExplorerFloor(floorCode){
   activeTag = null;
   renderFloorButtons();
   renderRoomButtons();
-  document.getElementById('roomStep').style.display = 'block';
   document.getElementById('roomExplorerArea').style.display = 'none';
 }
 function renderRoomButtons(){
@@ -493,13 +492,24 @@ function printRoom(){
    INIT
    ============================================================ */
 (function init(){
-  renderStats();
-  document.querySelector('[data-group="room"]').classList.add('btn-active');
-  const style = document.createElement('style');
-  style.textContent = '.btn-active{background:var(--ink);color:#fff;border-color:var(--ink);}';
-  document.head.appendChild(style);
-  expandAll(); // a builder opening this for the first time should see everything, not a wall of collapsed headers
-  renderGroups();
-  renderFloorButtons();
-  setupDragSelect();
+  // Each step runs independently, in priority order — the default view
+  // (Floor Plan Explorer) is set up FIRST and wrapped so a problem
+  // anywhere else can't silently prevent it from appearing, which is
+  // exactly what would happen if one long init() ran top-to-bottom and
+  // stopped partway. Errors are logged, not swallowed silently, so a
+  // real problem is visible in the browser console rather than invisible.
+  function safe(label, fn){
+    try { fn(); } catch (e) { console.error('Init step failed: ' + label, e); }
+  }
+  safe('render stats', renderStats);
+  safe('render floor buttons', renderFloorButtons);
+  safe('set up drag-select', setupDragSelect);
+  safe('mark active group button', () => document.querySelector('[data-group="room"]').classList.add('btn-active'));
+  safe('inject active-button style', () => {
+    const style = document.createElement('style');
+    style.textContent = '.btn-active{background:var(--ink);color:#fff;border-color:var(--ink);}';
+    document.head.appendChild(style);
+  });
+  safe('expand all groups', expandAll); // a builder opening the list view should see everything, not collapsed headers
+  safe('render group list', renderGroups);
 })();
