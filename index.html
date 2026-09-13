@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Snag Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16233E; --ink-2:#233559; --paper:#EEF1F4; --card:#FFFFFF;
+    --line:#CFD7E0; --line-soft:#E3E8ED; --text:#1D2733; --text-soft:#5B6B7C;
+    --amber:#DA8B2E; --amber-bg:#FBF0DE; --red:#B23A32; --red-bg:#F7E4E1;
+    --green:#3F7A56; --green-bg:#E4EFE8; --blue:#2F5DA6; --blue-bg:#E3EAF6;
+    --grey:#8894A0; --grey-bg:#EBEEF1; --radius:10px;
+    --shadow: 0 1px 2px rgba(22,35,62,0.06), 0 4px 14px rgba(22,35,62,0.05);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: linear-gradient(var(--paper), var(--paper)),
+      repeating-linear-gradient(0deg, rgba(47,93,166,0.05) 0px, rgba(47,93,166,0.05) 1px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(90deg, rgba(47,93,166,0.05) 0px, rgba(47,93,166,0.05) 1px, transparent 1px, transparent 40px);
+    font-family:'Inter',sans-serif; color:var(--text); min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:20px 18px 80px;}
+  header.top{
+    background:var(--ink); background-image: linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 100%);
+    color:#fff; border-radius:var(--radius); padding:22px 24px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+  }
+  header.top::before{
+    content:""; position:absolute; inset:0;
+    background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 28px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 28px);
+    pointer-events:none;
+  }
+  .proj-label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B9C6DE; margin-bottom:4px; position:relative;}
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px; letter-spacing:-0.01em; position:relative;}
+  .stats{display:flex; gap:10px; flex-wrap:wrap; position:relative;}
+  .stat{background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.16); border-radius:8px; padding:8px 14px; min-width:76px; text-align:center;}
+  .stat .n{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; line-height:1;}
+  .stat .l{font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:#B9C6DE; margin-top:4px;}
+  .stat.open .n{color:#F4C77E;} .stat.crit .n{color:#F0918A;} .stat.verified .n{color:#8FD1AC;}
+
+  .toolbar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0 16px;}
+  .btn{font-family:'Inter',sans-serif; font-weight:600; font-size:13px; cursor:pointer; border-radius:8px; padding:9px 16px; border:1px solid var(--line); background:var(--card); color:var(--text); transition:all .12s ease;}
+  .btn:hover{border-color:var(--ink); color:var(--ink);}
+  .btn.small{padding:6px 11px; font-size:12px; border-radius:6px;}
+  select, input[type=search]{font-family:'Inter',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--text);}
+  .search-box{flex:1; min-width:180px;} .search-box input{width:100%;}
+
+  .group-tabs{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:6px;}
+  .group-tabs label{font-size:12.5px; color:var(--text-soft); align-self:center; margin-right:4px;}
+
+  .group-section{background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); margin-bottom:10px; box-shadow:var(--shadow); overflow:hidden;}
+  .group-header{display:flex; justify-content:space-between; align-items:center; padding:13px 16px; cursor:pointer; gap:10px;}
+  .group-header:hover{background:var(--grey-bg);}
+  .group-title{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; display:flex; align-items:center; gap:8px;}
+  .group-counts{display:flex; gap:6px; align-items:center;}
+  .chip{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; padding:2px 9px; border-radius:20px;}
+  .chip.open{background:var(--amber-bg); color:var(--amber);} .chip.clear{background:var(--green-bg); color:var(--green);}
+  .caret{font-size:12px; color:var(--text-soft); transition:transform .15s ease;}
+  .group-section.expanded .caret{transform:rotate(90deg);}
+  .group-body{display:none; padding:0 14px 14px;}
+  .group-section.expanded .group-body{display:block;}
+
+  .snag-card{border:1px solid var(--line-soft); border-left:4px solid var(--grey); border-radius:8px; padding:13px 15px; margin-top:10px;}
+  .snag-card.sev-Major{border-left-color:var(--amber);} .snag-card.sev-Critical{border-left-color:var(--red);}
+  .snag-card.sev-Minor{border-left-color:var(--blue);} .snag-card.sev-Cosmetic{border-left-color:var(--grey);}
+  .card-top{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:flex-start;}
+  .tag-code{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px; color:var(--ink); background:var(--grey-bg); padding:2px 8px; border-radius:5px;}
+  .badge{font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; padding:3px 9px; border-radius:20px; white-space:nowrap;}
+  .badge.sev-Critical{background:var(--red-bg); color:var(--red);} .badge.sev-Major{background:var(--amber-bg); color:var(--amber);}
+  .badge.sev-Minor{background:var(--blue-bg); color:var(--blue);} .badge.sev-Cosmetic{background:var(--grey-bg); color:var(--grey);}
+  .badge.st-open{background:var(--red-bg); color:var(--red);} .badge.st-inprogress{background:var(--amber-bg); color:var(--amber);}
+  .badge.st-awaiting{background:var(--blue-bg); color:var(--blue);} .badge.st-tofix{background:var(--blue-bg); color:var(--blue);}
+  .badge.st-verified{background:var(--green-bg); color:var(--green);}
+  .card-loc{font-size:12px; color:var(--text-soft); margin-top:5px;} .card-loc b{color:var(--text);}
+  .card-desc{font-size:14px; margin:8px 0 3px; line-height:1.45;}
+  .card-comments{font-size:12.5px; color:var(--text-soft); font-style:italic; margin-bottom:6px;}
+  .card-media{display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; align-items:center;}
+  .card-media img{width:72px; height:72px; object-fit:cover; border-radius:6px; border:1px solid var(--line); cursor:pointer; background:var(--grey-bg);}
+  .pin-mini{position:relative; width:96px; height:68px; border-radius:6px; overflow:hidden; border:1px solid var(--line); background-repeat:no-repeat; cursor:pointer; flex-shrink:0;}
+  .pin-mini .marker{position:absolute; width:14px; height:14px; margin-left:-7px; margin-top:-7px; border-radius:50%; background:var(--red); border:2px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.4);}
+  .card-date{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--grey); margin-top:8px;}
+
+  .empty-state{text-align:center; padding:40px 20px; color:var(--text-soft); background:var(--card); border-radius:var(--radius); border:1px dashed var(--line);}
+
+  .overlay{position:fixed; inset:0; background:rgba(22,35,62,0.5); display:none; align-items:center; justify-content:center; padding:24px; z-index:50;}
+  .overlay.show{display:flex;}
+  .overlay img.full{max-width:92vw; max-height:88vh; border-radius:8px; box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .pin-lightbox-inner{max-width:640px; width:92vw; background:#fff; border-radius:12px; padding:12px; box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .pin-lightbox-plan{position:relative; width:100%; aspect-ratio:1500/1059; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:var(--grey-bg); background-repeat:no-repeat;}
+  .pin-lightbox-plan .marker{position:absolute; width:20px; height:20px; margin-left:-10px; margin-top:-10px; border-radius:50%; background:var(--red); border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.4);}
+  .pin-lightbox-zoom{display:flex; align-items:center; gap:8px; margin-top:10px;}
+  .pin-lightbox-zoom input{flex:1;}
+
+  .footer-note{text-align:center; font-size:11.5px; color:var(--text-soft); margin-top:24px;}
+
+  @media (max-width:640px){ h1{font-size:21px;} .stats{gap:6px;} .stat{min-width:62px; padding:6px 10px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="proj-label">Site Snag Report</div>
+    <h1 id="pageTitle">Loading…</h1>
+    <div class="stats">
+      <div class="stat"><div class="n" id="statTotal">0</div><div class="l">Total</div></div>
+      <div class="stat open"><div class="n" id="statOpen">0</div><div class="l">Open</div></div>
+      <div class="stat crit"><div class="n" id="statMajor">0</div><div class="l">Major+</div></div>
+      <div class="stat verified"><div class="n" id="statVerified">0</div><div class="l">Verified</div></div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="group-tabs">
+      <label>Group by:</label>
+      <button class="btn small" data-group="room" onclick="setGroupBy('room')">Room</button>
+      <button class="btn small" data-group="trade" onclick="setGroupBy('trade')">Trade</button>
+      <button class="btn small" data-group="severity" onclick="setGroupBy('severity')">Severity</button>
+      <button class="btn small" data-group="floor" onclick="setGroupBy('floor')">Floor</button>
+    </div>
+  </div>
+  <div class="toolbar">
+    <select id="fStatus" onchange="renderGroups()">
+      <option value="">All statuses</option>
+      <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
+      <option>Fixed - To Verify</option><option>Verified/Closed</option>
+    </select>
+    <div class="search-box"><input type="search" id="fSearch" placeholder="Search description, room, tag..." oninput="renderGroups()"></div>
+    <button class="btn small" onclick="expandAll()">Expand all</button>
+    <button class="btn small" onclick="collapseAll()">Collapse all</button>
+  </div>
+
+  <div id="groupsContainer"></div>
+
+  <div class="footer-note">Snag data exported from the site snagging app · photos hosted separately · pin locations are approximate</div>
+</div>
+
+<div class="overlay" id="photoLightbox" onclick="this.classList.remove('show')">
+  <img class="full" id="photoLightboxImg">
+</div>
+
+<div class="overlay" id="pinLightbox" onclick="this.classList.remove('show')">
+  <div class="pin-lightbox-inner" onclick="event.stopPropagation()">
+    <div class="pin-lightbox-plan" id="pinLightboxPlan"></div>
+    <div class="pin-lightbox-zoom">
+      <label style="font-size:12px;color:var(--text-soft);white-space:nowrap;">Zoom</label>
+      <input type="range" id="pinZoomSlider" min="1" max="4" step="0.1" value="1" oninput="onPinZoomChange()">
+      <span id="pinZoomValue" style="font-size:12px;color:var(--text-soft);width:34px;">1.0x</span>
+    </div>
+    <div style="text-align:right;margin-top:8px;"><button class="btn small" onclick="document.getElementById('pinLightbox').classList.remove('show')">Close</button></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="snags.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
