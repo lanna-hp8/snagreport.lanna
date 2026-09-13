@@ -359,7 +359,10 @@ function applyPinStates(){
   });
 }
 function onPinClick(tag){
-  selectedTags.add(tag);
+  // Replaces the current selection rather than adding to it — tapping a
+  // single pin shows just that one, consistent with drag-select doing the
+  // same (see the pointerup handler below).
+  selectedTags = new Set([tag]);
   activeTag = tag;
   applyPinStates();
   renderSelectedList();
@@ -405,6 +408,11 @@ function setupDragSelect(){
     if (moved && box){
       const bx1 = parseFloat(box.style.left), by1 = parseFloat(box.style.top);
       const bx2 = bx1 + parseFloat(box.style.width), by2 = by1 + parseFloat(box.style.height);
+      // Replaces the current selection with exactly what's in this drag —
+      // previously this added to whatever was already selected, so
+      // repeated drags kept accumulating instead of each one standing on
+      // its own.
+      selectedTags = new Set();
       explorerPinPositions.forEach(p => {
         if (p.left >= bx1 && p.left <= bx2 && p.top >= by1 && p.top <= by2) selectedTags.add(p.tag);
       });
@@ -469,6 +477,31 @@ function renderFullRoomList(){
   document.getElementById('fullRoomListBody').innerHTML = items.map(snagCardHtml).join('');
 }
 
+/* Lands the page fully populated on first load — floor plan, Selected
+   Snags list, and the detail panel all showing something real — rather
+   than requiring a floor and room click before anything's visible.
+   Picks the first floor that has any snags, then within it the room
+   with the most snags (the most informative place to land), selects
+   every snag in that room, and shows the first one's detail. */
+async function autoSelectDefaultRoom(){
+  const floor = FLOORS.find(f => f.code !== 'WH' && SNAGS.some(s => s.floorCode === f.code));
+  if (!floor) return;
+  let bestRoom = null, bestCount = 0;
+  floor.rooms.forEach(([code]) => {
+    const count = SNAGS.filter(s => s.floorCode === floor.code && s.roomCode === code).length;
+    if (count > bestCount){ bestCount = count; bestRoom = code; }
+  });
+  if (!bestRoom) return;
+  selectExplorerFloor(floor.code);
+  await selectExplorerRoom(bestRoom);
+  const roomSnags = SNAGS.filter(s => s.floorCode === floor.code && s.roomCode === bestRoom);
+  roomSnags.forEach(s => selectedTags.add(s.tag));
+  if (roomSnags.length) activeTag = roomSnags[0].tag;
+  applyPinStates();
+  renderSelectedList();
+  renderActiveDetail();
+}
+
 function printRoom(){
   const items = SNAGS.filter(s => s.floorCode === explorerFloor && s.roomCode === explorerRoom);
   const label = roomName(explorerFloor, explorerRoom) + ' — ' + floorName(explorerFloor);
@@ -504,6 +537,7 @@ function printRoom(){
   safe('render stats', renderStats);
   safe('render floor buttons', renderFloorButtons);
   safe('set up drag-select', setupDragSelect);
+  safe('auto-select a default room', () => { autoSelectDefaultRoom(); });
   safe('mark active group button', () => document.querySelector('[data-group="room"]').classList.add('btn-active'));
   safe('inject active-button style', () => {
     const style = document.createElement('style');
