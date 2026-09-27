@@ -634,7 +634,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD6",
     "roomName": "Bedroom 6",
-    "trade": "Structural / Building",
+    "trade": "Plastering & Drylining",
     "severity": "Minor",
     "status": "Open",
     "location": "Smart panel to RHS of bed",
@@ -653,7 +653,7 @@ const SNAGS = [
       "photos/2F-BD6-18_full_1.jpg"
     ],
     "createdAt": "2026-08-07T10:13:12.890Z",
-    "updatedAt": "2026-08-07T10:13:12.890Z"
+    "updatedAt": "2026-09-27T17:08:18.868Z"
   },
   {
     "tag": "2F-BD6-19",
@@ -911,7 +911,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD6",
     "roomName": "Bedroom 6",
-    "trade": "Structural / Building",
+    "trade": "Joinery & Internal Doors",
     "severity": "Major",
     "status": "Open",
     "location": "Wardrobe door",
@@ -930,7 +930,7 @@ const SNAGS = [
       "photos/2F-BD6-27_full_1.jpg"
     ],
     "createdAt": "2026-08-07T12:05:37.953Z",
-    "updatedAt": "2026-08-15T12:19:14.712Z"
+    "updatedAt": "2026-09-27T17:08:09.077Z"
   },
   {
     "tag": "2F-BD6-28",
@@ -1170,7 +1170,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "W6",
     "roomName": "Bedroom 6 Wardrobe Room",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Wall to RHS of wardrobe door",
@@ -1191,7 +1191,7 @@ const SNAGS = [
       "photos/2F-W6-06_full_2.jpg"
     ],
     "createdAt": "2026-08-07T12:48:54.800Z",
-    "updatedAt": "2026-08-15T12:04:52.309Z"
+    "updatedAt": "2026-09-27T17:07:57.429Z"
   },
   {
     "tag": "2F-W6-07",
@@ -1199,7 +1199,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "W6",
     "roomName": "Bedroom 6 Wardrobe Room",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Wall above skirting to RHS of wardrobe door",
@@ -1218,7 +1218,7 @@ const SNAGS = [
       "photos/2F-W6-07_full_1.jpg"
     ],
     "createdAt": "2026-08-07T12:56:08.161Z",
-    "updatedAt": "2026-08-15T12:03:49.504Z"
+    "updatedAt": "2026-09-27T17:07:49.698Z"
   },
   {
     "tag": "2F-W6-08",
@@ -1501,8 +1501,7 @@ const SNAGS = [
       "photos/2F-BD6-29-B_full_2.jpg"
     ],
     "createdAt": "2026-08-09T11:33:56.218Z",
-    "updatedAt": "2026-08-22T12:46:27.543Z",
-    "originalTag": "2F-BD6-29"
+    "updatedAt": "2026-09-27T16:46:14.078Z"
   },
   {
     "tag": "2F-BD6-30",
@@ -3157,7 +3156,7 @@ const SNAGS = [
     "severity": "Major",
     "status": "Open",
     "location": "Bathroom door",
-    "description": "Top not painter",
+    "description": "Top not painted",
     "comments": "",
     "pins": [
       {
@@ -3172,8 +3171,7 @@ const SNAGS = [
       "photos/2F-BA2-14-B_full_1.jpg"
     ],
     "createdAt": "2026-08-15T09:59:57.482Z",
-    "updatedAt": "2026-08-22T12:52:42.358Z",
-    "originalTag": "2F-BA2-14"
+    "updatedAt": "2026-09-27T16:41:51.718Z"
   },
   {
     "tag": "2F-BD7-01",
@@ -3243,7 +3241,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Bedroom door frame",
@@ -3272,7 +3270,7 @@ const SNAGS = [
       "photos/2F-BD7-03_full_6.jpg"
     ],
     "createdAt": "2026-08-15T14:36:29.236Z",
-    "updatedAt": "2026-08-15T14:36:29.237Z"
+    "updatedAt": "2026-09-27T17:07:43.244Z"
   },
   {
     "tag": "2F-BD7-04",
@@ -4436,7 +4434,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "To right and below wardobe room light switch",
@@ -4457,7 +4455,7 @@ const SNAGS = [
       "photos/2F-BD7-39_full_2.jpg"
     ],
     "createdAt": "2026-08-22T14:36:31.938Z",
-    "updatedAt": "2026-08-22T14:36:31.939Z"
+    "updatedAt": "2026-09-27T17:07:35.483Z"
   },
   {
     "tag": "2F-BD7-40",
@@ -4784,7 +4782,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "W7",
     "roomName": "Bedroom 7 Wardrobe Room",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Wardobe door frame",
@@ -4809,7 +4807,7 @@ const SNAGS = [
       "photos/2F-W7-05_full_2.jpg"
     ],
     "createdAt": "2026-08-23T09:19:46.760Z",
-    "updatedAt": "2026-08-23T09:19:46.760Z"
+    "updatedAt": "2026-09-27T17:07:28.595Z"
   },
   {
     "tag": "2F-W7-06",
@@ -4988,7 +4986,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Skeiling to LHS of wardrobe door before beam above MVHR vent",
@@ -5007,7 +5005,7 @@ const SNAGS = [
       "photos/2F-BD7-51_full_1.jpg"
     ],
     "createdAt": "2026-08-23T09:43:34.147Z",
-    "updatedAt": "2026-08-23T09:43:34.148Z"
+    "updatedAt": "2026-09-27T17:07:21.788Z"
   },
   {
     "tag": "2F-BD7-52",
@@ -5584,7 +5582,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Skirting on rear wall close to edge with rear dormer",
@@ -5603,7 +5601,7 @@ const SNAGS = [
       "photos/2F-BD7-69_full_1.jpg"
     ],
     "createdAt": "2026-08-23T11:18:20.877Z",
-    "updatedAt": "2026-08-23T11:18:20.878Z"
+    "updatedAt": "2026-09-27T17:07:12.723Z"
   },
   {
     "tag": "2F-BD7-70",
@@ -5810,7 +5808,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Lower sloped section of wall to RHS of rear dormer",
@@ -5833,7 +5831,7 @@ const SNAGS = [
       "photos/2F-BD7-75_full_3.jpg"
     ],
     "createdAt": "2026-08-23T11:45:40.160Z",
-    "updatedAt": "2026-08-23T11:45:40.161Z"
+    "updatedAt": "2026-09-27T17:07:06.178Z"
   },
   {
     "tag": "2F-BD7-76",
@@ -6055,7 +6053,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Wall below rear dormer",
@@ -6092,7 +6090,7 @@ const SNAGS = [
       "photos/2F-BD7-82_full_6.jpg"
     ],
     "createdAt": "2026-08-23T12:02:46.579Z",
-    "updatedAt": "2026-08-23T12:02:46.580Z"
+    "updatedAt": "2026-09-27T17:06:54.899Z"
   },
   {
     "tag": "2F-BD7-83",
@@ -6199,7 +6197,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Wall to LHS of rear dormer",
@@ -6240,7 +6238,7 @@ const SNAGS = [
       "photos/2F-BD7-86_full_6.jpg"
     ],
     "createdAt": "2026-08-23T12:56:30.074Z",
-    "updatedAt": "2026-08-23T12:56:30.075Z"
+    "updatedAt": "2026-09-27T17:06:48.047Z"
   },
   {
     "tag": "2F-BD7-87",
@@ -6566,7 +6564,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Ceiling between bed and LHS reading lamp",
@@ -6585,7 +6583,7 @@ const SNAGS = [
       "photos/2F-BD7-95_full_1.jpg"
     ],
     "createdAt": "2026-08-23T13:39:44.965Z",
-    "updatedAt": "2026-08-23T13:39:44.965Z"
+    "updatedAt": "2026-09-27T17:06:39.083Z"
   },
   {
     "tag": "2F-BD7-96",
@@ -6593,7 +6591,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "BD7",
     "roomName": "Bedroom 7",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Ceiling above wall to LHS of bed",
@@ -6618,7 +6616,7 @@ const SNAGS = [
       "photos/2F-BD7-96_full_2.jpg"
     ],
     "createdAt": "2026-08-23T13:41:58.106Z",
-    "updatedAt": "2026-08-23T13:41:58.106Z"
+    "updatedAt": "2026-09-27T17:06:32.748Z"
   },
   {
     "tag": "2F-BD7-97",
@@ -6759,7 +6757,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "W7",
     "roomName": "Bedroom 7 Wardrobe Room",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Skeiling and top of wall above roof hatch to LHS of velux",
@@ -6788,7 +6786,7 @@ const SNAGS = [
       "photos/2F-W7-09_full_4.jpg"
     ],
     "createdAt": "2026-08-23T14:24:25.737Z",
-    "updatedAt": "2026-08-23T14:24:25.737Z"
+    "updatedAt": "2026-09-27T17:06:25.900Z"
   },
   {
     "tag": "2F-W7-10",
@@ -7276,7 +7274,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "W7",
     "roomName": "Bedroom 7 Wardrobe Room",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "At head height, to LHS of wardrobe door",
@@ -7295,7 +7293,7 @@ const SNAGS = [
       "photos/2F-W7-22_full_1.jpg"
     ],
     "createdAt": "2026-08-23T15:13:59.028Z",
-    "updatedAt": "2026-08-23T15:13:59.032Z"
+    "updatedAt": "2026-09-27T17:05:28.924Z"
   },
   {
     "tag": "2F-W7-23",
@@ -7908,7 +7906,7 @@ const SNAGS = [
     "floorName": "Second Floor",
     "roomCode": "GAL2",
     "roomName": "Second Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Staircase",
     "severity": "Major",
     "status": "Open",
     "location": "1st to 2nd floor staircase balusters",
@@ -7935,7 +7933,7 @@ const SNAGS = [
       "photos/2F-GAL2-22_full_1.jpg"
     ],
     "createdAt": "2026-08-30T12:56:54.780Z",
-    "updatedAt": "2026-08-30T12:56:54.786Z"
+    "updatedAt": "2026-09-27T17:05:19.109Z"
   },
   {
     "tag": "2F-GAL2-23",
@@ -8755,7 +8753,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Hand-rail on diagonal section furthest from first to second staircase",
@@ -8773,7 +8771,7 @@ const SNAGS = [
       "photos/1F-GAL-12_full_3.jpg"
     ],
     "createdAt": "2026-09-06T08:03:19.373Z",
-    "updatedAt": "2026-09-06T08:03:19.373Z"
+    "updatedAt": "2026-09-27T17:05:00.028Z"
   },
   {
     "tag": "1F-GAL-13",
@@ -8781,7 +8779,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Newel post nearest front on walkway between first gallery and first landing",
@@ -8806,7 +8804,7 @@ const SNAGS = [
       "photos/1F-GAL-13_full_4.jpg"
     ],
     "createdAt": "2026-09-06T08:08:54.655Z",
-    "updatedAt": "2026-09-06T08:08:54.655Z"
+    "updatedAt": "2026-09-27T17:04:53.476Z"
   },
   {
     "tag": "1F-GAL-14",
@@ -9009,7 +9007,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Base rail between centre and landing side newel on walkway from first gallery to landing",
@@ -9028,7 +9026,7 @@ const SNAGS = [
       "photos/1F-GAL-19_full_1.jpg"
     ],
     "createdAt": "2026-09-06T08:42:53.924Z",
-    "updatedAt": "2026-09-06T09:03:24.202Z"
+    "updatedAt": "2026-09-27T17:04:37.564Z"
   },
   {
     "tag": "1F-GAL-20",
@@ -9093,7 +9091,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Bottom side of base rail immediately next to newel at top of ground to first staircase",
@@ -9112,7 +9110,7 @@ const SNAGS = [
       "photos/1F-GAL-21_full_1.jpg"
     ],
     "createdAt": "2026-09-06T09:13:58.877Z",
-    "updatedAt": "2026-09-06T09:13:58.878Z"
+    "updatedAt": "2026-09-27T17:04:24.444Z"
   },
   {
     "tag": "1F-GAL-22",
@@ -9155,7 +9153,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Apron lining below base rail on second floor and base rail on first floor",
@@ -9216,7 +9214,7 @@ const SNAGS = [
       "photos/1F-GAL-23_full_8.jpg"
     ],
     "createdAt": "2026-09-06T09:28:48.742Z",
-    "updatedAt": "2026-09-06T09:28:48.743Z"
+    "updatedAt": "2026-09-27T17:04:14.668Z"
   },
   {
     "tag": "1F-GAL-24",
@@ -9224,7 +9222,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Newel downpost from second to first and near it on apron below second floor baserail",
@@ -9247,7 +9245,7 @@ const SNAGS = [
       "photos/1F-GAL-24_full_3.jpg"
     ],
     "createdAt": "2026-09-06T09:32:15.053Z",
-    "updatedAt": "2026-09-06T09:32:15.053Z"
+    "updatedAt": "2026-09-27T17:04:05.908Z"
   },
   {
     "tag": "1F-GAL-25",
@@ -9733,7 +9731,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Wall inside paneling box nearest study",
@@ -9760,7 +9758,7 @@ const SNAGS = [
       "photos/1F-GAL-36_full_3.jpg"
     ],
     "createdAt": "2026-09-06T10:41:43.049Z",
-    "updatedAt": "2026-09-06T10:41:43.049Z"
+    "updatedAt": "2026-09-27T17:03:54.085Z"
   },
   {
     "tag": "1F-GAL-37",
@@ -9978,7 +9976,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "GAL",
     "roomName": "First Floor Gallery",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Bottom paneling pieces of paneling box nearest study and the one furthest from study",
@@ -10013,7 +10011,7 @@ const SNAGS = [
       "photos/1F-GAL-43_full_7.jpg"
     ],
     "createdAt": "2026-09-06T11:10:34.799Z",
-    "updatedAt": "2026-09-06T11:10:34.799Z"
+    "updatedAt": "2026-09-27T17:03:42.740Z"
   },
   {
     "tag": "1F-FLD-01",
@@ -10243,8 +10241,7 @@ const SNAGS = [
       "photos/1F-FLD-04-B_full_2.jpg"
     ],
     "createdAt": "2026-09-06T12:48:29.716Z",
-    "updatedAt": "2026-09-06T12:48:29.716Z",
-    "originalTag": "1F-FLD-04"
+    "updatedAt": "2026-09-27T16:40:09.221Z"
   },
   {
     "tag": "1F-FLD-05-B",
@@ -10291,8 +10288,7 @@ const SNAGS = [
       "photos/1F-FLD-05-B_full_5.jpg"
     ],
     "createdAt": "2026-09-06T12:56:48.102Z",
-    "updatedAt": "2026-09-06T12:56:48.103Z",
-    "originalTag": "1F-FLD-05"
+    "updatedAt": "2026-09-27T16:36:29.406Z"
   },
   {
     "tag": "1F-FLD-06",
@@ -10690,8 +10686,7 @@ const SNAGS = [
       "photos/1F-FHL-03-B_full_9.jpg"
     ],
     "createdAt": "2026-09-12T10:49:41.718Z",
-    "updatedAt": "2026-09-12T10:49:41.722Z",
-    "originalTag": "1F-FHL-03"
+    "updatedAt": "2026-09-27T16:44:38.823Z"
   },
   {
     "tag": "1F-FHL-04",
@@ -10790,7 +10785,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "FHL",
     "roomName": "First Floor Hallway",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Panelling box next to Bedroom 3 entrance",
@@ -10813,7 +10808,7 @@ const SNAGS = [
       "photos/1F-FHL-07_full_3.jpg"
     ],
     "createdAt": "2026-09-12T11:03:31.112Z",
-    "updatedAt": "2026-09-12T11:03:31.112Z"
+    "updatedAt": "2026-09-27T17:03:30.468Z"
   },
   {
     "tag": "1F-FHL-08",
@@ -12211,7 +12206,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "FHL",
     "roomName": "First Floor Hallway",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Plaster in downlights",
@@ -12236,7 +12231,7 @@ const SNAGS = [
       "photos/1F-FHL-22_full_2.jpg"
     ],
     "createdAt": "2026-09-12T18:20:06.700Z",
-    "updatedAt": "2026-09-12T18:20:06.700Z"
+    "updatedAt": "2026-09-27T17:03:07.796Z"
   },
   {
     "tag": "1F-FLD-22",
@@ -12353,7 +12348,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Door frame of hallway door",
@@ -12386,7 +12381,7 @@ const SNAGS = [
       "photos/1F-STD-03_full_8.jpg"
     ],
     "createdAt": "2026-09-13T11:29:18.942Z",
-    "updatedAt": "2026-09-13T11:29:18.942Z"
+    "updatedAt": "2026-09-27T17:02:52.070Z"
   },
   {
     "tag": "1F-STD-04",
@@ -12421,7 +12416,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Wall below switches near hallway door",
@@ -12440,7 +12435,7 @@ const SNAGS = [
       "photos/1F-STD-05_full_1.jpg"
     ],
     "createdAt": "2026-09-13T11:32:22.507Z",
-    "updatedAt": "2026-09-13T11:32:22.507Z"
+    "updatedAt": "2026-09-27T17:02:42.020Z"
   },
   {
     "tag": "1F-STD-06",
@@ -12549,7 +12544,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Window recess",
@@ -12578,7 +12573,7 @@ const SNAGS = [
       "photos/1F-STD-09_full_4.jpg"
     ],
     "createdAt": "2026-09-13T11:46:26.635Z",
-    "updatedAt": "2026-09-13T11:46:26.636Z"
+    "updatedAt": "2026-09-27T17:02:33.564Z"
   },
   {
     "tag": "1F-STD-10",
@@ -12586,7 +12581,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Window frame",
@@ -12623,7 +12618,7 @@ const SNAGS = [
       "photos/1F-STD-10_full_6.jpg"
     ],
     "createdAt": "2026-09-13T11:49:41.892Z",
-    "updatedAt": "2026-09-13T11:49:41.893Z"
+    "updatedAt": "2026-09-27T17:02:20.716Z"
   },
   {
     "tag": "1F-STD-11",
@@ -12631,7 +12626,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Under LHS edge of socket",
@@ -12650,7 +12645,7 @@ const SNAGS = [
       "photos/1F-STD-11_full_1.jpg"
     ],
     "createdAt": "2026-09-13T11:54:28.088Z",
-    "updatedAt": "2026-09-13T11:54:28.088Z"
+    "updatedAt": "2026-09-27T17:02:09.301Z"
   },
   {
     "tag": "1F-STD-12",
@@ -12726,7 +12721,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Major",
     "status": "Open",
     "location": "Edges and corners of skirting pieces and with wall",
@@ -12789,7 +12784,7 @@ const SNAGS = [
       "photos/1F-STD-14_full_7.jpg"
     ],
     "createdAt": "2026-09-13T12:13:00.010Z",
-    "updatedAt": "2026-09-13T12:13:00.010Z"
+    "updatedAt": "2026-09-27T17:02:02.668Z"
   },
   {
     "tag": "1F-STD-15",
@@ -12797,7 +12792,7 @@ const SNAGS = [
     "floorName": "First Floor",
     "roomCode": "STD",
     "roomName": "Study",
-    "trade": "Structural / Building",
+    "trade": "Decoration / Painting",
     "severity": "Minor",
     "status": "Open",
     "location": "Skirting to LHS of hallway door",
@@ -12822,7 +12817,7 @@ const SNAGS = [
       "photos/1F-STD-15_full_2.jpg"
     ],
     "createdAt": "2026-09-13T12:14:12.584Z",
-    "updatedAt": "2026-09-13T12:14:12.584Z"
+    "updatedAt": "2026-09-27T17:01:54.996Z"
   },
   {
     "tag": "1F-STD-16",
@@ -13080,5 +13075,8316 @@ const SNAGS = [
     ],
     "createdAt": "2026-09-13T12:50:25.035Z",
     "updatedAt": "2026-09-13T12:50:25.042Z"
+  },
+  {
+    "tag": "1F-MBD-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Smart Home / AV / Security / Network",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch at entrance",
+    "description": "First switch should be entrance spots\nSecond switch should be room spots\nThird switch should be chandelier",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.32,
+        "y": 49.34
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-01_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-01_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T13:41:00.522Z",
+    "updatedAt": "2026-09-19T13:41:00.528Z"
+  },
+  {
+    "tag": "1F-MBD-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch at entrance",
+    "description": "Switches are a little sunken in, not easy to press compared to others",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.25,
+        "y": 49.34
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-02_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-02_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T13:42:46.789Z",
+    "updatedAt": "2026-09-19T13:42:46.790Z"
+  },
+  {
+    "tag": "1F-MBD-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Around light switch at entrance",
+    "description": "Brush strokes around light switch, uneven finish to LHS, uneven finish underneath",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.26,
+        "y": 49.48
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-03_thumb_1.jpg",
+      "photos/1F-MBD-03_thumb_2.jpg",
+      "photos/1F-MBD-03_thumb_3.jpg",
+      "photos/1F-MBD-03_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-03_full_1.jpg",
+      "photos/1F-MBD-03_full_2.jpg",
+      "photos/1F-MBD-03_full_3.jpg",
+      "photos/1F-MBD-03_full_4.jpg"
+    ],
+    "createdAt": "2026-09-19T13:47:09.741Z",
+    "updatedAt": "2026-09-27T17:01:46.612Z"
+  },
+  {
+    "tag": "1F-MBD-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to LHS of room door",
+    "description": "White marks on skirting, dark marks above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.95,
+        "y": 53.43
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-04_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-04_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T13:55:52.788Z",
+    "updatedAt": "2026-09-19T13:55:52.789Z"
+  },
+  {
+    "tag": "1F-MBD-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "LHS & RHS Edges of room door architrave",
+    "description": "Areas not painted, paint drips, cracks in edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.87,
+        "y": 53.76
+      },
+      {
+        "x": 58.11,
+        "y": 50.31
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-05_thumb_1.jpg",
+      "photos/1F-MBD-05_thumb_2.jpg",
+      "photos/1F-MBD-05_thumb_3.jpg",
+      "photos/1F-MBD-05_thumb_4.jpg",
+      "photos/1F-MBD-05_thumb_5.jpg",
+      "photos/1F-MBD-05_thumb_6.jpg",
+      "photos/1F-MBD-05_thumb_7.jpg",
+      "photos/1F-MBD-05_thumb_8.jpg",
+      "photos/1F-MBD-05_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-05_full_1.jpg",
+      "photos/1F-MBD-05_full_2.jpg",
+      "photos/1F-MBD-05_full_3.jpg",
+      "photos/1F-MBD-05_full_4.jpg",
+      "photos/1F-MBD-05_full_5.jpg",
+      "photos/1F-MBD-05_full_6.jpg",
+      "photos/1F-MBD-05_full_7.jpg",
+      "photos/1F-MBD-05_full_8.jpg",
+      "photos/1F-MBD-05_full_9.jpg"
+    ],
+    "createdAt": "2026-09-19T14:03:59.573Z",
+    "updatedAt": "2026-09-19T14:03:59.580Z"
+  },
+  {
+    "tag": "1F-MBD-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bottom of room door architrave",
+    "description": "Paint drips on LHS\nUneven finish on RHS, chip on outer edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.05,
+        "y": 53.79
+      },
+      {
+        "x": 58.17,
+        "y": 49.94
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-06_thumb_1.jpg",
+      "photos/1F-MBD-06_thumb_2.jpg",
+      "photos/1F-MBD-06_thumb_3.jpg",
+      "photos/1F-MBD-06_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-06_full_1.jpg",
+      "photos/1F-MBD-06_full_2.jpg",
+      "photos/1F-MBD-06_full_3.jpg",
+      "photos/1F-MBD-06_full_4.jpg"
+    ],
+    "createdAt": "2026-09-19T14:08:38.752Z",
+    "updatedAt": "2026-09-27T17:01:38.587Z"
+  },
+  {
+    "tag": "1F-MBD-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of room door",
+    "description": "Brush strokes visible above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.04,
+        "y": 53.64
+      },
+      {
+        "x": 60.4,
+        "y": 53.64
+      },
+      {
+        "x": 62.05,
+        "y": 53.64
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-07_thumb_1.jpg",
+      "photos/1F-MBD-07_thumb_2.jpg",
+      "photos/1F-MBD-07_thumb_3.jpg",
+      "photos/1F-MBD-07_thumb_4.jpg",
+      "photos/1F-MBD-07_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-07_full_1.jpg",
+      "photos/1F-MBD-07_full_2.jpg",
+      "photos/1F-MBD-07_full_3.jpg",
+      "photos/1F-MBD-07_full_4.jpg",
+      "photos/1F-MBD-07_full_5.jpg"
+    ],
+    "createdAt": "2026-09-19T14:13:58.674Z",
+    "updatedAt": "2026-09-27T17:01:33.500Z"
+  },
+  {
+    "tag": "1F-MBD-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall above skirting to RHS of Study door",
+    "description": "Uneven finish, paint drips, non-wall colour paint mark",
+    "comments": "",
+    "pins": [
+      {
+        "x": 61.89,
+        "y": 53.7
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-08_thumb_1.jpg",
+      "photos/1F-MBD-08_thumb_2.jpg",
+      "photos/1F-MBD-08_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-08_full_1.jpg",
+      "photos/1F-MBD-08_full_2.jpg",
+      "photos/1F-MBD-08_full_3.jpg"
+    ],
+    "createdAt": "2026-09-19T14:15:39.211Z",
+    "updatedAt": "2026-09-27T17:01:26.787Z"
+  },
+  {
+    "tag": "1F-MBD-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to LHS of entrance",
+    "description": "Marks near Study door. Brush strokes visible along skirting\n\nPaint drip, uneven finish on skirting section to LHS of room door.",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.77,
+        "y": 53.43
+      },
+      {
+        "x": 59.76,
+        "y": 53.71
+      },
+      {
+        "x": 62.15,
+        "y": 53.71
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-09_thumb_1.jpg",
+      "photos/1F-MBD-09_thumb_2.jpg",
+      "photos/1F-MBD-09_thumb_3.jpg",
+      "photos/1F-MBD-09_thumb_4.jpg",
+      "photos/1F-MBD-09_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-09_full_1.jpg",
+      "photos/1F-MBD-09_full_2.jpg",
+      "photos/1F-MBD-09_full_3.jpg",
+      "photos/1F-MBD-09_full_4.jpg",
+      "photos/1F-MBD-09_full_5.jpg"
+    ],
+    "createdAt": "2026-09-19T14:24:35.369Z",
+    "updatedAt": "2026-09-19T14:24:35.370Z"
+  },
+  {
+    "tag": "1F-MBD-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of room door",
+    "description": "Brush strokes and uneven finish above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.32,
+        "y": 49.55
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-10_thumb_1.jpg",
+      "photos/1F-MBD-10_thumb_2.jpg",
+      "photos/1F-MBD-10_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-10_full_1.jpg",
+      "photos/1F-MBD-10_full_2.jpg",
+      "photos/1F-MBD-10_full_3.jpg"
+    ],
+    "createdAt": "2026-09-19T14:31:53.594Z",
+    "updatedAt": "2026-09-19T14:31:53.595Z"
+  },
+  {
+    "tag": "1F-MBD-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "End of skirting to LHS of MD1 entrance",
+    "description": "Uneven, discoloured finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.65,
+        "y": 49.4
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-11_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-11_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T14:34:05.709Z",
+    "updatedAt": "2026-09-27T17:01:20.036Z"
+  },
+  {
+    "tag": "1F-MBD-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Centre of wall to RHS of room entrance",
+    "description": "Paint drip low down at centre of wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 59.37,
+        "y": 49.11
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-12_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-12_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T14:35:38.967Z",
+    "updatedAt": "2026-09-19T14:35:38.969Z"
+  },
+  {
+    "tag": "1F-MBD-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Intumescent strip in room door frame",
+    "description": "Paint marks in places, top strip coming unstuck",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.87,
+        "y": 53.73
+      },
+      {
+        "x": 57.98,
+        "y": 50
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-13_thumb_1.jpg",
+      "photos/1F-MBD-13_thumb_2.jpg",
+      "photos/1F-MBD-13_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-13_full_1.jpg",
+      "photos/1F-MBD-13_full_2.jpg",
+      "photos/1F-MBD-13_full_3.jpg"
+    ],
+    "createdAt": "2026-09-19T14:44:16.922Z",
+    "updatedAt": "2026-09-19T14:44:16.923Z"
+  },
+  {
+    "tag": "1F-MBD-14",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Room door frame",
+    "description": "Paint drips in top corners\n\nChips around top and bottom hinges\n\nChips/marks around strike plate and lock\n\nUnpainted area at bottom right\n\nPaint drips around hinges, unfinished section below bottom hinge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.73,
+        "y": 53.62
+      },
+      {
+        "x": 57.83,
+        "y": 50.13
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-14_thumb_1.jpg",
+      "photos/1F-MBD-14_thumb_2.jpg",
+      "photos/1F-MBD-14_thumb_3.jpg",
+      "photos/1F-MBD-14_thumb_4.jpg",
+      "photos/1F-MBD-14_thumb_5.jpg",
+      "photos/1F-MBD-14_thumb_6.jpg",
+      "photos/1F-MBD-14_thumb_7.jpg",
+      "photos/1F-MBD-14_thumb_8.jpg",
+      "photos/1F-MBD-14_thumb_9.jpg",
+      "photos/1F-MBD-14_thumb_10.jpg",
+      "photos/1F-MBD-14_thumb_11.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-14_full_1.jpg",
+      "photos/1F-MBD-14_full_2.jpg",
+      "photos/1F-MBD-14_full_3.jpg",
+      "photos/1F-MBD-14_full_4.jpg",
+      "photos/1F-MBD-14_full_5.jpg",
+      "photos/1F-MBD-14_full_6.jpg",
+      "photos/1F-MBD-14_full_7.jpg",
+      "photos/1F-MBD-14_full_8.jpg",
+      "photos/1F-MBD-14_full_9.jpg",
+      "photos/1F-MBD-14_full_10.jpg",
+      "photos/1F-MBD-14_full_11.jpg"
+    ],
+    "createdAt": "2026-09-19T14:50:36.597Z",
+    "updatedAt": "2026-09-19T15:01:54.760Z"
+  },
+  {
+    "tag": "1F-MBD-15",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Room door hinges, latch, strike plate",
+    "description": "Scratches, paint visible",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.08,
+        "y": 51.4
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-15_thumb_1.jpg",
+      "photos/1F-MBD-15_thumb_2.jpg",
+      "photos/1F-MBD-15_thumb_3.jpg",
+      "photos/1F-MBD-15_thumb_4.jpg",
+      "photos/1F-MBD-15_thumb_5.jpg",
+      "photos/1F-MBD-15_thumb_6.jpg",
+      "photos/1F-MBD-15_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-15_full_1.jpg",
+      "photos/1F-MBD-15_full_2.jpg",
+      "photos/1F-MBD-15_full_3.jpg",
+      "photos/1F-MBD-15_full_4.jpg",
+      "photos/1F-MBD-15_full_5.jpg",
+      "photos/1F-MBD-15_full_6.jpg",
+      "photos/1F-MBD-15_full_7.jpg"
+    ],
+    "createdAt": "2026-09-19T14:58:49.998Z",
+    "updatedAt": "2026-09-19T14:59:33.744Z"
+  },
+  {
+    "tag": "1F-MBD-16",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Room door",
+    "description": "Door rattles when closed\n\nPaint drip at bottom left of top section and bottom of bottom section\n\nMinor paint drip below bottom section on LHS\n\nUnpainted areas or RHS edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.11,
+        "y": 51.85
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-16_thumb_1.jpg",
+      "photos/1F-MBD-16_thumb_2.jpg",
+      "photos/1F-MBD-16_thumb_3.jpg",
+      "photos/1F-MBD-16_thumb_4.jpg",
+      "photos/1F-MBD-16_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-16_full_1.jpg",
+      "photos/1F-MBD-16_full_2.jpg",
+      "photos/1F-MBD-16_full_3.jpg",
+      "photos/1F-MBD-16_full_4.jpg",
+      "photos/1F-MBD-16_full_5.jpg"
+    ],
+    "createdAt": "2026-09-19T15:06:36.208Z",
+    "updatedAt": "2026-09-19T15:06:36.208Z"
+  },
+  {
+    "tag": "1F-MBD-17",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding above Study door",
+    "description": "Paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.1,
+        "y": 53.75
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-17_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-17_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T15:22:39.401Z",
+    "updatedAt": "2026-09-27T17:01:14.540Z"
+  },
+  {
+    "tag": "1F-MBD-18",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding corner to LHS of room entrance",
+    "description": "Crack/gap in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.11,
+        "y": 53.68
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-18_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-18_full_1.jpg"
+    ],
+    "createdAt": "2026-09-19T15:25:14.507Z",
+    "updatedAt": "2026-09-27T17:01:06.932Z"
+  },
+  {
+    "tag": "1F-MBD-19",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting edges, joints, corners",
+    "description": "Cracks/gaps in pain",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.08,
+        "y": 49.54
+      },
+      {
+        "x": 60.83,
+        "y": 49.23
+      },
+      {
+        "x": 63.24,
+        "y": 49.23
+      },
+      {
+        "x": 67.08,
+        "y": 49.23
+      },
+      {
+        "x": 57.97,
+        "y": 54
+      },
+      {
+        "x": 60.46,
+        "y": 53.71
+      },
+      {
+        "x": 62.35,
+        "y": 53.71
+      },
+      {
+        "x": 72.22,
+        "y": 53.71
+      },
+      {
+        "x": 77.8,
+        "y": 53.71
+      },
+      {
+        "x": 74.51,
+        "y": 53.71
+      },
+      {
+        "x": 78.1,
+        "y": 33.1
+      },
+      {
+        "x": 70.43,
+        "y": 32.82
+      },
+      {
+        "x": 67.34,
+        "y": 33.1
+      },
+      {
+        "x": 67.24,
+        "y": 37.48
+      },
+      {
+        "x": 64.84,
+        "y": 37.9
+      },
+      {
+        "x": 64.84,
+        "y": 42.84
+      },
+      {
+        "x": 67.24,
+        "y": 43.12
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-19_thumb_1.jpg",
+      "photos/1F-MBD-19_thumb_2.jpg",
+      "photos/1F-MBD-19_thumb_3.jpg",
+      "photos/1F-MBD-19_thumb_4.jpg",
+      "photos/1F-MBD-19_thumb_5.jpg",
+      "photos/1F-MBD-19_thumb_6.jpg",
+      "photos/1F-MBD-19_thumb_7.jpg",
+      "photos/1F-MBD-19_thumb_8.jpg",
+      "photos/1F-MBD-19_thumb_9.jpg",
+      "photos/1F-MBD-19_thumb_10.jpg",
+      "photos/1F-MBD-19_thumb_11.jpg",
+      "photos/1F-MBD-19_thumb_12.jpg",
+      "photos/1F-MBD-19_thumb_13.jpg",
+      "photos/1F-MBD-19_thumb_14.jpg",
+      "photos/1F-MBD-19_thumb_15.jpg",
+      "photos/1F-MBD-19_thumb_16.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-19_full_1.jpg",
+      "photos/1F-MBD-19_full_2.jpg",
+      "photos/1F-MBD-19_full_3.jpg",
+      "photos/1F-MBD-19_full_4.jpg",
+      "photos/1F-MBD-19_full_5.jpg",
+      "photos/1F-MBD-19_full_6.jpg",
+      "photos/1F-MBD-19_full_7.jpg",
+      "photos/1F-MBD-19_full_8.jpg",
+      "photos/1F-MBD-19_full_9.jpg",
+      "photos/1F-MBD-19_full_10.jpg",
+      "photos/1F-MBD-19_full_11.jpg",
+      "photos/1F-MBD-19_full_12.jpg",
+      "photos/1F-MBD-19_full_13.jpg",
+      "photos/1F-MBD-19_full_14.jpg",
+      "photos/1F-MBD-19_full_15.jpg",
+      "photos/1F-MBD-19_full_16.jpg"
+    ],
+    "createdAt": "2026-09-19T15:36:25.580Z",
+    "updatedAt": "2026-09-19T15:36:25.582Z"
+  },
+  {
+    "tag": "1F-MBD-20",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Study door architrave and frame",
+    "description": "Architrave:\n\nPaint drips, uneven finish and chip at bottom left\n\nPaint drip to LHS of door handle\n\nPaint drips at top left\n\nPaint drip, chip in paint, uneven finish at bottom right\n\nCracks, gaps in paint at joints\n\nChip on RHS at eye level mark on wall adjacent\n\nCracks around outside edge with wall\n\n\nFrame:\n\nCracks/gaps in paint at joints\n\nUneven paint at bottom right\n\nMarks on edge at bottom left\n\nCracks on outside edge to wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 62.56,
+        "y": 53.77
+      },
+      {
+        "x": 60.09,
+        "y": 54.06
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-20_thumb_1.jpg",
+      "photos/1F-MBD-20_thumb_2.jpg",
+      "photos/1F-MBD-20_thumb_3.jpg",
+      "photos/1F-MBD-20_thumb_4.jpg",
+      "photos/1F-MBD-20_thumb_5.jpg",
+      "photos/1F-MBD-20_thumb_6.jpg",
+      "photos/1F-MBD-20_thumb_7.jpg",
+      "photos/1F-MBD-20_thumb_8.jpg",
+      "photos/1F-MBD-20_thumb_9.jpg",
+      "photos/1F-MBD-20_thumb_10.jpg",
+      "photos/1F-MBD-20_thumb_11.jpg",
+      "photos/1F-MBD-20_thumb_12.jpg",
+      "photos/1F-MBD-20_thumb_13.jpg",
+      "photos/1F-MBD-20_thumb_14.jpg",
+      "photos/1F-MBD-20_thumb_15.jpg",
+      "photos/1F-MBD-20_thumb_16.jpg",
+      "photos/1F-MBD-20_thumb_17.jpg",
+      "photos/1F-MBD-20_thumb_18.jpg",
+      "photos/1F-MBD-20_thumb_19.jpg",
+      "photos/1F-MBD-20_thumb_20.jpg",
+      "photos/1F-MBD-20_thumb_21.jpg",
+      "photos/1F-MBD-20_thumb_22.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-20_full_1.jpg",
+      "photos/1F-MBD-20_full_2.jpg",
+      "photos/1F-MBD-20_full_3.jpg",
+      "photos/1F-MBD-20_full_4.jpg",
+      "photos/1F-MBD-20_full_5.jpg",
+      "photos/1F-MBD-20_full_6.jpg",
+      "photos/1F-MBD-20_full_7.jpg",
+      "photos/1F-MBD-20_full_8.jpg",
+      "photos/1F-MBD-20_full_9.jpg",
+      "photos/1F-MBD-20_full_10.jpg",
+      "photos/1F-MBD-20_full_11.jpg",
+      "photos/1F-MBD-20_full_12.jpg",
+      "photos/1F-MBD-20_full_13.jpg",
+      "photos/1F-MBD-20_full_14.jpg",
+      "photos/1F-MBD-20_full_15.jpg",
+      "photos/1F-MBD-20_full_16.jpg",
+      "photos/1F-MBD-20_full_17.jpg",
+      "photos/1F-MBD-20_full_18.jpg",
+      "photos/1F-MBD-20_full_19.jpg",
+      "photos/1F-MBD-20_full_20.jpg",
+      "photos/1F-MBD-20_full_21.jpg",
+      "photos/1F-MBD-20_full_22.jpg"
+    ],
+    "createdAt": "2026-09-19T16:09:29.901Z",
+    "updatedAt": "2026-09-20T11:48:29.985Z"
+  },
+  {
+    "tag": "1F-MBD-21",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Study door",
+    "description": "Paint drip at top of bottom section\n\nMarks and paint drips at bottom\n\nUnpainted areas at bottom edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 61.25,
+        "y": 53.43
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-21_thumb_1.jpg",
+      "photos/1F-MBD-21_thumb_2.jpg",
+      "photos/1F-MBD-21_thumb_3.jpg",
+      "photos/1F-MBD-21_thumb_4.jpg",
+      "photos/1F-MBD-21_thumb_5.jpg",
+      "photos/1F-MBD-21_thumb_6.jpg",
+      "photos/1F-MBD-21_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-21_full_1.jpg",
+      "photos/1F-MBD-21_full_2.jpg",
+      "photos/1F-MBD-21_full_3.jpg",
+      "photos/1F-MBD-21_full_4.jpg",
+      "photos/1F-MBD-21_full_5.jpg",
+      "photos/1F-MBD-21_full_6.jpg",
+      "photos/1F-MBD-21_full_7.jpg"
+    ],
+    "createdAt": "2026-09-19T16:19:32.883Z",
+    "updatedAt": "2026-09-19T16:19:32.893Z"
+  },
+  {
+    "tag": "1F-MBD-22",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD1 door architrave & frame",
+    "description": "Architrave:\n\nUneven finish at top LHS outside edge\n\nPaint drips, white marks/banding at bottom LHS and marks on RHS\n\nChip on outside edge at bottom RHS\n\nCracks on outside edge to wall\n\nUnpainted areas on RHS outside edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.71,
+        "y": 49.11
+      },
+      {
+        "x": 62.97,
+        "y": 49.25
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-22_thumb_1.jpg",
+      "photos/1F-MBD-22_thumb_2.jpg",
+      "photos/1F-MBD-22_thumb_3.jpg",
+      "photos/1F-MBD-22_thumb_4.jpg",
+      "photos/1F-MBD-22_thumb_5.jpg",
+      "photos/1F-MBD-22_thumb_6.jpg",
+      "photos/1F-MBD-22_thumb_7.jpg",
+      "photos/1F-MBD-22_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-22_full_1.jpg",
+      "photos/1F-MBD-22_full_2.jpg",
+      "photos/1F-MBD-22_full_3.jpg",
+      "photos/1F-MBD-22_full_4.jpg",
+      "photos/1F-MBD-22_full_5.jpg",
+      "photos/1F-MBD-22_full_6.jpg",
+      "photos/1F-MBD-22_full_7.jpg",
+      "photos/1F-MBD-22_full_8.jpg"
+    ],
+    "createdAt": "2026-09-19T16:27:36.186Z",
+    "updatedAt": "2026-09-19T16:27:36.187Z"
+  },
+  {
+    "tag": "1F-MBD-23",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD1 door",
+    "description": "Chip in paint in bottom section\n\nWhite areas and marks at the bottom of the door, paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 61.85,
+        "y": 49.51
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-23_thumb_1.jpg",
+      "photos/1F-MBD-23_thumb_2.jpg",
+      "photos/1F-MBD-23_thumb_3.jpg",
+      "photos/1F-MBD-23_thumb_4.jpg",
+      "photos/1F-MBD-23_thumb_5.jpg",
+      "photos/1F-MBD-23_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-23_full_1.jpg",
+      "photos/1F-MBD-23_full_2.jpg",
+      "photos/1F-MBD-23_full_3.jpg",
+      "photos/1F-MBD-23_full_4.jpg",
+      "photos/1F-MBD-23_full_5.jpg",
+      "photos/1F-MBD-23_full_6.jpg"
+    ],
+    "createdAt": "2026-09-19T16:31:36.923Z",
+    "updatedAt": "2026-09-19T16:31:36.923Z"
+  },
+  {
+    "tag": "1F-MBD-24",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower down on wall to RHS of MD1 entrance",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.71,
+        "y": 49.3
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-24_thumb_1.jpg",
+      "photos/1F-MBD-24_thumb_2.jpg",
+      "photos/1F-MBD-24_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-24_full_1.jpg",
+      "photos/1F-MBD-24_full_2.jpg",
+      "photos/1F-MBD-24_full_3.jpg"
+    ],
+    "createdAt": "2026-09-19T16:34:22.215Z",
+    "updatedAt": "2026-09-19T16:34:22.217Z"
+  },
+  {
+    "tag": "1F-MBD-25",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to RHS of MD1",
+    "description": "Paint drips & brush strokes on skirting",
+    "comments": "",
+    "pins": [],
+    "thumbFiles": [
+      "photos/1F-MBD-25_thumb_1.jpg",
+      "photos/1F-MBD-25_thumb_2.jpg",
+      "photos/1F-MBD-25_thumb_3.jpg",
+      "photos/1F-MBD-25_thumb_4.jpg",
+      "photos/1F-MBD-25_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-25_full_1.jpg",
+      "photos/1F-MBD-25_full_2.jpg",
+      "photos/1F-MBD-25_full_3.jpg",
+      "photos/1F-MBD-25_full_4.jpg",
+      "photos/1F-MBD-25_full_5.jpg"
+    ],
+    "createdAt": "2026-09-19T16:36:31.430Z",
+    "updatedAt": "2026-09-19T16:36:31.430Z"
+  },
+  {
+    "tag": "1F-MBD-26",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of Study door in entrance hallway approaching room opening",
+    "description": "Mark,dark area in paint.. Paint drip to RHS of this",
+    "comments": "",
+    "pins": [
+      {
+        "x": 65.45,
+        "y": 53.35
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-26_thumb_1.jpg",
+      "photos/1F-MBD-26_thumb_2.jpg",
+      "photos/1F-MBD-26_thumb_3.jpg",
+      "photos/1F-MBD-26_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-26_full_1.jpg",
+      "photos/1F-MBD-26_full_2.jpg",
+      "photos/1F-MBD-26_full_3.jpg",
+      "photos/1F-MBD-26_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T11:55:24.646Z",
+    "updatedAt": "2026-09-20T11:55:24.647Z"
+  },
+  {
+    "tag": "1F-MBD-27",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall moulding to LHS of Study door near room opening and wall moulding & ceiling further along to LHS",
+    "description": "Paint drips/uneven finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 66.45,
+        "y": 53.18
+      },
+      {
+        "x": 68.92,
+        "y": 53.05
+      },
+      {
+        "x": 70.43,
+        "y": 53.15
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-27_thumb_1.jpg",
+      "photos/1F-MBD-27_thumb_2.jpg",
+      "photos/1F-MBD-27_thumb_3.jpg",
+      "photos/1F-MBD-27_thumb_4.jpg",
+      "photos/1F-MBD-27_thumb_5.jpg",
+      "photos/1F-MBD-27_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-27_full_1.jpg",
+      "photos/1F-MBD-27_full_2.jpg",
+      "photos/1F-MBD-27_full_3.jpg",
+      "photos/1F-MBD-27_full_4.jpg",
+      "photos/1F-MBD-27_full_5.jpg",
+      "photos/1F-MBD-27_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T12:01:02.196Z",
+    "updatedAt": "2026-09-20T12:01:59.026Z"
+  },
+  {
+    "tag": "1F-MBD-28",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding and ceiling from MD2 entrance to LHS",
+    "description": "Brush strokes, uneven finish on ceiling and ceiling moulding. Crack at corner with bed wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.51,
+        "y": 53.12
+      },
+      {
+        "x": 73.51,
+        "y": 53.24
+      },
+      {
+        "x": 75.5,
+        "y": 53.36
+      },
+      {
+        "x": 77.75,
+        "y": 53.36
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-28_thumb_1.jpg",
+      "photos/1F-MBD-28_thumb_2.jpg",
+      "photos/1F-MBD-28_thumb_3.jpg",
+      "photos/1F-MBD-28_thumb_4.jpg",
+      "photos/1F-MBD-28_thumb_5.jpg",
+      "photos/1F-MBD-28_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-28_full_1.jpg",
+      "photos/1F-MBD-28_full_2.jpg",
+      "photos/1F-MBD-28_full_3.jpg",
+      "photos/1F-MBD-28_full_4.jpg",
+      "photos/1F-MBD-28_full_5.jpg",
+      "photos/1F-MBD-28_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T12:07:32.015Z",
+    "updatedAt": "2026-09-20T12:07:32.017Z"
+  },
+  {
+    "tag": "1F-MBD-29",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall area around light switch to RHS of MD2 entrance",
+    "description": "Scratches on wall, brush strokes around switch.\n\nRecess visible on LHS edge of light switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.48,
+        "y": 53.05
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-29_thumb_1.jpg",
+      "photos/1F-MBD-29_thumb_2.jpg",
+      "photos/1F-MBD-29_thumb_3.jpg",
+      "photos/1F-MBD-29_thumb_4.jpg",
+      "photos/1F-MBD-29_thumb_5.jpg",
+      "photos/1F-MBD-29_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-29_full_1.jpg",
+      "photos/1F-MBD-29_full_2.jpg",
+      "photos/1F-MBD-29_full_3.jpg",
+      "photos/1F-MBD-29_full_4.jpg",
+      "photos/1F-MBD-29_full_5.jpg",
+      "photos/1F-MBD-29_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T12:15:39.249Z",
+    "updatedAt": "2026-09-20T12:15:39.250Z"
+  },
+  {
+    "tag": "1F-MBD-30",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave and door frame of MD2 door",
+    "description": "Paint drips/uneven finish at bottom and top on LHS architrave\n\nPaint, gaps cracks at joints in architrave and to wall around. Paint drips at outside edge of bottom right architrave\n\nPaint drips/uneven finish on door frame top and on RHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.21,
+        "y": 53.52
+      },
+      {
+        "x": 74.5,
+        "y": 53.39
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-30_thumb_1.jpg",
+      "photos/1F-MBD-30_thumb_2.jpg",
+      "photos/1F-MBD-30_thumb_3.jpg",
+      "photos/1F-MBD-30_thumb_4.jpg",
+      "photos/1F-MBD-30_thumb_5.jpg",
+      "photos/1F-MBD-30_thumb_6.jpg",
+      "photos/1F-MBD-30_thumb_7.jpg",
+      "photos/1F-MBD-30_thumb_8.jpg",
+      "photos/1F-MBD-30_thumb_9.jpg",
+      "photos/1F-MBD-30_thumb_10.jpg",
+      "photos/1F-MBD-30_thumb_11.jpg",
+      "photos/1F-MBD-30_thumb_12.jpg",
+      "photos/1F-MBD-30_thumb_13.jpg",
+      "photos/1F-MBD-30_thumb_14.jpg",
+      "photos/1F-MBD-30_thumb_15.jpg",
+      "photos/1F-MBD-30_thumb_16.jpg",
+      "photos/1F-MBD-30_thumb_17.jpg",
+      "photos/1F-MBD-30_thumb_18.jpg",
+      "photos/1F-MBD-30_thumb_19.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-30_full_1.jpg",
+      "photos/1F-MBD-30_full_2.jpg",
+      "photos/1F-MBD-30_full_3.jpg",
+      "photos/1F-MBD-30_full_4.jpg",
+      "photos/1F-MBD-30_full_5.jpg",
+      "photos/1F-MBD-30_full_6.jpg",
+      "photos/1F-MBD-30_full_7.jpg",
+      "photos/1F-MBD-30_full_8.jpg",
+      "photos/1F-MBD-30_full_9.jpg",
+      "photos/1F-MBD-30_full_10.jpg",
+      "photos/1F-MBD-30_full_11.jpg",
+      "photos/1F-MBD-30_full_12.jpg",
+      "photos/1F-MBD-30_full_13.jpg",
+      "photos/1F-MBD-30_full_14.jpg",
+      "photos/1F-MBD-30_full_15.jpg",
+      "photos/1F-MBD-30_full_16.jpg",
+      "photos/1F-MBD-30_full_17.jpg",
+      "photos/1F-MBD-30_full_18.jpg",
+      "photos/1F-MBD-30_full_19.jpg"
+    ],
+    "createdAt": "2026-09-20T12:25:24.120Z",
+    "updatedAt": "2026-09-20T12:25:24.122Z"
+  },
+  {
+    "tag": "1F-MBD-31",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD2 door",
+    "description": "Marks in bottom of and below central section\n\nPaint drip to LHS between central and bottom section\n\nPaint drips at top of central section\n\nMarks to bottom RHS of door\n\nSections in top & right of bottom pane not covered with base paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.15,
+        "y": 53.48
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-31_thumb_1.jpg",
+      "photos/1F-MBD-31_thumb_2.jpg",
+      "photos/1F-MBD-31_thumb_3.jpg",
+      "photos/1F-MBD-31_thumb_4.jpg",
+      "photos/1F-MBD-31_thumb_5.jpg",
+      "photos/1F-MBD-31_thumb_6.jpg",
+      "photos/1F-MBD-31_thumb_7.jpg",
+      "photos/1F-MBD-31_thumb_8.jpg",
+      "photos/1F-MBD-31_thumb_9.jpg",
+      "photos/1F-MBD-31_thumb_10.jpg",
+      "photos/1F-MBD-31_thumb_11.jpg",
+      "photos/1F-MBD-31_thumb_12.jpg",
+      "photos/1F-MBD-31_thumb_13.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-31_full_1.jpg",
+      "photos/1F-MBD-31_full_2.jpg",
+      "photos/1F-MBD-31_full_3.jpg",
+      "photos/1F-MBD-31_full_4.jpg",
+      "photos/1F-MBD-31_full_5.jpg",
+      "photos/1F-MBD-31_full_6.jpg",
+      "photos/1F-MBD-31_full_7.jpg",
+      "photos/1F-MBD-31_full_8.jpg",
+      "photos/1F-MBD-31_full_9.jpg",
+      "photos/1F-MBD-31_full_10.jpg",
+      "photos/1F-MBD-31_full_11.jpg",
+      "photos/1F-MBD-31_full_12.jpg",
+      "photos/1F-MBD-31_full_13.jpg"
+    ],
+    "createdAt": "2026-09-20T12:34:00.067Z",
+    "updatedAt": "2026-09-20T12:52:24.717Z"
+  },
+  {
+    "tag": "1F-MBD-32",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of MD2 entrance",
+    "description": "Marks on wall to LHS of MD2 architrave\n\nBrush strokes at centre of wall just above skirting\n\nUneven finish at bottom left corner\n\nCrack in paint at corner with bed wall\n\nBrush strokes around socket, cracks in paint finish on RHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 74.64,
+        "y": 53.53
+      },
+      {
+        "x": 77.96,
+        "y": 53.37
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-32_thumb_1.jpg",
+      "photos/1F-MBD-32_thumb_2.jpg",
+      "photos/1F-MBD-32_thumb_3.jpg",
+      "photos/1F-MBD-32_thumb_4.jpg",
+      "photos/1F-MBD-32_thumb_5.jpg",
+      "photos/1F-MBD-32_thumb_6.jpg",
+      "photos/1F-MBD-32_thumb_7.jpg",
+      "photos/1F-MBD-32_thumb_8.jpg",
+      "photos/1F-MBD-32_thumb_9.jpg",
+      "photos/1F-MBD-32_thumb_10.jpg",
+      "photos/1F-MBD-32_thumb_11.jpg",
+      "photos/1F-MBD-32_thumb_12.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-32_full_1.jpg",
+      "photos/1F-MBD-32_full_2.jpg",
+      "photos/1F-MBD-32_full_3.jpg",
+      "photos/1F-MBD-32_full_4.jpg",
+      "photos/1F-MBD-32_full_5.jpg",
+      "photos/1F-MBD-32_full_6.jpg",
+      "photos/1F-MBD-32_full_7.jpg",
+      "photos/1F-MBD-32_full_8.jpg",
+      "photos/1F-MBD-32_full_9.jpg",
+      "photos/1F-MBD-32_full_10.jpg",
+      "photos/1F-MBD-32_full_11.jpg",
+      "photos/1F-MBD-32_full_12.jpg"
+    ],
+    "createdAt": "2026-09-20T12:44:39.155Z",
+    "updatedAt": "2026-09-20T12:44:39.158Z"
+  },
+  {
+    "tag": "1F-MBD-33",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to LHS of MD2 entrance",
+    "description": "Paint drips, brush strokes visible on skirting\n\nMarks, scratches lower down",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.6,
+        "y": 53.43
+      },
+      {
+        "x": 74.61,
+        "y": 53.4
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-33_thumb_1.jpg",
+      "photos/1F-MBD-33_thumb_2.jpg",
+      "photos/1F-MBD-33_thumb_3.jpg",
+      "photos/1F-MBD-33_thumb_4.jpg",
+      "photos/1F-MBD-33_thumb_5.jpg",
+      "photos/1F-MBD-33_thumb_6.jpg",
+      "photos/1F-MBD-33_thumb_7.jpg",
+      "photos/1F-MBD-33_thumb_8.jpg",
+      "photos/1F-MBD-33_thumb_9.jpg",
+      "photos/1F-MBD-33_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-33_full_1.jpg",
+      "photos/1F-MBD-33_full_2.jpg",
+      "photos/1F-MBD-33_full_3.jpg",
+      "photos/1F-MBD-33_full_4.jpg",
+      "photos/1F-MBD-33_full_5.jpg",
+      "photos/1F-MBD-33_full_6.jpg",
+      "photos/1F-MBD-33_full_7.jpg",
+      "photos/1F-MBD-33_full_8.jpg",
+      "photos/1F-MBD-33_full_9.jpg",
+      "photos/1F-MBD-33_full_10.jpg"
+    ],
+    "createdAt": "2026-09-20T12:49:06.458Z",
+    "updatedAt": "2026-09-20T12:49:06.459Z"
+  },
+  {
+    "tag": "1F-MBD-34",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Smart Home / AV / Security / Network",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bedroom PIR",
+    "description": "PIR should be lifted so top sits directly below ceiling moulding",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.83,
+        "y": 53.36
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-34_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-34_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T12:57:51.303Z",
+    "updatedAt": "2026-09-20T12:57:51.304Z"
+  },
+  {
+    "tag": "1F-MBD-35",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall below window to RHS of bed",
+    "description": "Brush strokes, uneven finish visible above skirting\n\nMarks/scratches/patches at centre of wall and below ledge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.95,
+        "y": 52.32
+      },
+      {
+        "x": 77.95,
+        "y": 49.26
+      },
+      {
+        "x": 77.95,
+        "y": 46.47
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-35_thumb_1.jpg",
+      "photos/1F-MBD-35_thumb_2.jpg",
+      "photos/1F-MBD-35_thumb_3.jpg",
+      "photos/1F-MBD-35_thumb_4.jpg",
+      "photos/1F-MBD-35_thumb_5.jpg",
+      "photos/1F-MBD-35_thumb_6.jpg",
+      "photos/1F-MBD-35_thumb_7.jpg",
+      "photos/1F-MBD-35_thumb_8.jpg",
+      "photos/1F-MBD-35_thumb_9.jpg",
+      "photos/1F-MBD-35_thumb_10.jpg",
+      "photos/1F-MBD-35_thumb_11.jpg",
+      "photos/1F-MBD-35_thumb_12.jpg",
+      "photos/1F-MBD-35_thumb_13.jpg",
+      "photos/1F-MBD-35_thumb_14.jpg",
+      "photos/1F-MBD-35_thumb_15.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-35_full_1.jpg",
+      "photos/1F-MBD-35_full_2.jpg",
+      "photos/1F-MBD-35_full_3.jpg",
+      "photos/1F-MBD-35_full_4.jpg",
+      "photos/1F-MBD-35_full_5.jpg",
+      "photos/1F-MBD-35_full_6.jpg",
+      "photos/1F-MBD-35_full_7.jpg",
+      "photos/1F-MBD-35_full_8.jpg",
+      "photos/1F-MBD-35_full_9.jpg",
+      "photos/1F-MBD-35_full_10.jpg",
+      "photos/1F-MBD-35_full_11.jpg",
+      "photos/1F-MBD-35_full_12.jpg",
+      "photos/1F-MBD-35_full_13.jpg",
+      "photos/1F-MBD-35_full_14.jpg",
+      "photos/1F-MBD-35_full_15.jpg"
+    ],
+    "createdAt": "2026-09-20T13:06:23.120Z",
+    "updatedAt": "2026-09-27T17:00:58.268Z"
+  },
+  {
+    "tag": "1F-MBD-36",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall under PIR",
+    "description": "Uneven finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.79,
+        "y": 52.48
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-36_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-36_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T13:07:21.169Z",
+    "updatedAt": "2026-09-20T13:07:21.169Z"
+  },
+  {
+    "tag": "1F-MBD-37",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ledge and recess of window to RHS of bed",
+    "description": "Uneven finish on bottom/sides of ledge\n\nCracks at edge of ledge and recess\n\nMark, paint drips & brush strokes in recess",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.04,
+        "y": 50.85
+      },
+      {
+        "x": 78.12,
+        "y": 48.17
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-37_thumb_1.jpg",
+      "photos/1F-MBD-37_thumb_2.jpg",
+      "photos/1F-MBD-37_thumb_3.jpg",
+      "photos/1F-MBD-37_thumb_4.jpg",
+      "photos/1F-MBD-37_thumb_5.jpg",
+      "photos/1F-MBD-37_thumb_6.jpg",
+      "photos/1F-MBD-37_thumb_7.jpg",
+      "photos/1F-MBD-37_thumb_8.jpg",
+      "photos/1F-MBD-37_thumb_9.jpg",
+      "photos/1F-MBD-37_thumb_10.jpg",
+      "photos/1F-MBD-37_thumb_11.jpg",
+      "photos/1F-MBD-37_thumb_12.jpg",
+      "photos/1F-MBD-37_thumb_13.jpg",
+      "photos/1F-MBD-37_thumb_14.jpg",
+      "photos/1F-MBD-37_thumb_15.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-37_full_1.jpg",
+      "photos/1F-MBD-37_full_2.jpg",
+      "photos/1F-MBD-37_full_3.jpg",
+      "photos/1F-MBD-37_full_4.jpg",
+      "photos/1F-MBD-37_full_5.jpg",
+      "photos/1F-MBD-37_full_6.jpg",
+      "photos/1F-MBD-37_full_7.jpg",
+      "photos/1F-MBD-37_full_8.jpg",
+      "photos/1F-MBD-37_full_9.jpg",
+      "photos/1F-MBD-37_full_10.jpg",
+      "photos/1F-MBD-37_full_11.jpg",
+      "photos/1F-MBD-37_full_12.jpg",
+      "photos/1F-MBD-37_full_13.jpg",
+      "photos/1F-MBD-37_full_14.jpg",
+      "photos/1F-MBD-37_full_15.jpg"
+    ],
+    "createdAt": "2026-09-20T13:14:47.016Z",
+    "updatedAt": "2026-09-20T13:14:47.016Z"
+  },
+  {
+    "tag": "1F-MBD-38",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Wall above LHS of window to RHS of bed",
+    "description": "Crack in paint extending up",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.04,
+        "y": 48.05
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-38_thumb_1.jpg",
+      "photos/1F-MBD-38_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-38_full_1.jpg",
+      "photos/1F-MBD-38_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T13:16:48.190Z",
+    "updatedAt": "2026-09-20T13:16:48.190Z"
+  },
+  {
+    "tag": "1F-MBD-39",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding above/to RHS of bed",
+    "description": "Paint drips, uneven finish. Cracks in paint at joint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.96,
+        "y": 47.24
+      },
+      {
+        "x": 77.88,
+        "y": 44.68
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-39_thumb_1.jpg",
+      "photos/1F-MBD-39_thumb_2.jpg",
+      "photos/1F-MBD-39_thumb_3.jpg",
+      "photos/1F-MBD-39_thumb_4.jpg",
+      "photos/1F-MBD-39_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-39_full_1.jpg",
+      "photos/1F-MBD-39_full_2.jpg",
+      "photos/1F-MBD-39_full_3.jpg",
+      "photos/1F-MBD-39_full_4.jpg",
+      "photos/1F-MBD-39_full_5.jpg"
+    ],
+    "createdAt": "2026-09-20T13:20:37.180Z",
+    "updatedAt": "2026-09-20T13:20:37.180Z"
+  },
+  {
+    "tag": "1F-MBD-40",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around wall light to RHS of bed",
+    "description": "Brush strokes under and to RHS of wall light\n\nShiny marks/patches below under wall light\n\nChip in finish of window recess to RHS of wall light\n\nBrush strokes and gaps in paint on LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.96,
+        "y": 46.58
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-40_thumb_1.jpg",
+      "photos/1F-MBD-40_thumb_2.jpg",
+      "photos/1F-MBD-40_thumb_3.jpg",
+      "photos/1F-MBD-40_thumb_4.jpg",
+      "photos/1F-MBD-40_thumb_5.jpg",
+      "photos/1F-MBD-40_thumb_6.jpg",
+      "photos/1F-MBD-40_thumb_7.jpg",
+      "photos/1F-MBD-40_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-40_full_1.jpg",
+      "photos/1F-MBD-40_full_2.jpg",
+      "photos/1F-MBD-40_full_3.jpg",
+      "photos/1F-MBD-40_full_4.jpg",
+      "photos/1F-MBD-40_full_5.jpg",
+      "photos/1F-MBD-40_full_6.jpg",
+      "photos/1F-MBD-40_full_7.jpg",
+      "photos/1F-MBD-40_full_8.jpg"
+    ],
+    "createdAt": "2026-09-20T13:23:51.802Z",
+    "updatedAt": "2026-09-20T13:46:10.128Z"
+  },
+  {
+    "tag": "1F-MBD-41",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around switches to RHS of bed",
+    "description": "Brush strokes, shiny areas, marks visible visible around switches. Paint drip to RHS\n\nUneven finish to RHS of smart switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.12,
+        "y": 46.42
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-41_thumb_1.jpg",
+      "photos/1F-MBD-41_thumb_2.jpg",
+      "photos/1F-MBD-41_thumb_3.jpg",
+      "photos/1F-MBD-41_thumb_4.jpg",
+      "photos/1F-MBD-41_thumb_5.jpg",
+      "photos/1F-MBD-41_thumb_6.jpg",
+      "photos/1F-MBD-41_thumb_7.jpg",
+      "photos/1F-MBD-41_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-41_full_1.jpg",
+      "photos/1F-MBD-41_full_2.jpg",
+      "photos/1F-MBD-41_full_3.jpg",
+      "photos/1F-MBD-41_full_4.jpg",
+      "photos/1F-MBD-41_full_5.jpg",
+      "photos/1F-MBD-41_full_6.jpg",
+      "photos/1F-MBD-41_full_7.jpg",
+      "photos/1F-MBD-41_full_8.jpg"
+    ],
+    "createdAt": "2026-09-20T13:28:56.542Z",
+    "updatedAt": "2026-09-20T13:28:56.542Z"
+  },
+  {
+    "tag": "1F-MBD-42",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around socket to RHS of bed",
+    "description": "Brush strokes around socket. Mark above. Uneven finish to bottom right corner and wall to SE. Paint drip to SSE",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.21,
+        "y": 46.31
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-42_thumb_1.jpg",
+      "photos/1F-MBD-42_thumb_2.jpg",
+      "photos/1F-MBD-42_thumb_3.jpg",
+      "photos/1F-MBD-42_thumb_4.jpg",
+      "photos/1F-MBD-42_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-42_full_1.jpg",
+      "photos/1F-MBD-42_full_2.jpg",
+      "photos/1F-MBD-42_full_3.jpg",
+      "photos/1F-MBD-42_full_4.jpg",
+      "photos/1F-MBD-42_full_5.jpg"
+    ],
+    "createdAt": "2026-09-20T13:32:39.729Z",
+    "updatedAt": "2026-09-27T17:00:48.684Z"
+  },
+  {
+    "tag": "1F-MBD-43",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Switch and socket to RHS of bed",
+    "description": "Paint on light switch buttons. Scratch on socket faceplate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.96,
+        "y": 46.54
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-43_thumb_1.jpg",
+      "photos/1F-MBD-43_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-43_full_1.jpg",
+      "photos/1F-MBD-43_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T13:40:38.696Z",
+    "updatedAt": "2026-09-20T13:40:38.707Z"
+  },
+  {
+    "tag": "1F-MBD-44",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket to RHS of bed",
+    "description": "Movement in socket faceplate. Does not sit as flush to wall as others",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.04,
+        "y": 46.66
+      }
+    ],
+    "thumbFiles": [],
+    "photoFiles": [],
+    "createdAt": "2026-09-20T13:41:35.164Z",
+    "updatedAt": "2026-09-20T13:41:35.164Z"
+  },
+  {
+    "tag": "1F-MBD-45",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around wall light to LHS of bed",
+    "description": "Brush strokes visible on all sides and below wall light.\n\nMarks on LHS\n\nRecess gap visible on LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.04,
+        "y": 39.55
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-45_thumb_1.jpg",
+      "photos/1F-MBD-45_thumb_2.jpg",
+      "photos/1F-MBD-45_thumb_3.jpg",
+      "photos/1F-MBD-45_thumb_4.jpg",
+      "photos/1F-MBD-45_thumb_5.jpg",
+      "photos/1F-MBD-45_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-45_full_1.jpg",
+      "photos/1F-MBD-45_full_2.jpg",
+      "photos/1F-MBD-45_full_3.jpg",
+      "photos/1F-MBD-45_full_4.jpg",
+      "photos/1F-MBD-45_full_5.jpg",
+      "photos/1F-MBD-45_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T13:49:36.489Z",
+    "updatedAt": "2026-09-27T17:00:41.012Z"
+  },
+  {
+    "tag": "1F-MBD-46",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Edges, joints of wallpapered paneling box",
+    "description": "Cracks/ gaps in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.88,
+        "y": 45.38
+      },
+      {
+        "x": 77.96,
+        "y": 42.58
+      },
+      {
+        "x": 77.96,
+        "y": 39.78
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-46_thumb_1.jpg",
+      "photos/1F-MBD-46_thumb_2.jpg",
+      "photos/1F-MBD-46_thumb_3.jpg",
+      "photos/1F-MBD-46_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-46_full_1.jpg",
+      "photos/1F-MBD-46_full_2.jpg",
+      "photos/1F-MBD-46_full_3.jpg",
+      "photos/1F-MBD-46_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T13:53:14.165Z",
+    "updatedAt": "2026-09-20T13:53:14.166Z"
+  },
+  {
+    "tag": "1F-MBD-47",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower edge of ceiling moulding between bed and window to LHS of bed",
+    "description": "Paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.79,
+        "y": 41.9
+      },
+      {
+        "x": 77.96,
+        "y": 39.92
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-47_thumb_1.jpg",
+      "photos/1F-MBD-47_thumb_2.jpg",
+      "photos/1F-MBD-47_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-47_full_1.jpg",
+      "photos/1F-MBD-47_full_2.jpg",
+      "photos/1F-MBD-47_full_3.jpg"
+    ],
+    "createdAt": "2026-09-20T13:55:29.714Z",
+    "updatedAt": "2026-09-20T13:55:29.716Z"
+  },
+  {
+    "tag": "1F-MBD-48",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ledge and recess of window to LHS of bed",
+    "description": "Unfinished, paint drips & uneven finish on side and lower edge of ledge. Cracks in edge to wall, window frame\n\nUneven finish, marks, shiny areas in window recess",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.14,
+        "y": 38.17
+      },
+      {
+        "x": 78.23,
+        "y": 35.38
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-48_thumb_1.jpg",
+      "photos/1F-MBD-48_thumb_2.jpg",
+      "photos/1F-MBD-48_thumb_3.jpg",
+      "photos/1F-MBD-48_thumb_4.jpg",
+      "photos/1F-MBD-48_thumb_5.jpg",
+      "photos/1F-MBD-48_thumb_6.jpg",
+      "photos/1F-MBD-48_thumb_7.jpg",
+      "photos/1F-MBD-48_thumb_8.jpg",
+      "photos/1F-MBD-48_thumb_9.jpg",
+      "photos/1F-MBD-48_thumb_10.jpg",
+      "photos/1F-MBD-48_thumb_11.jpg",
+      "photos/1F-MBD-48_thumb_12.jpg",
+      "photos/1F-MBD-48_thumb_13.jpg",
+      "photos/1F-MBD-48_thumb_14.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-48_full_1.jpg",
+      "photos/1F-MBD-48_full_2.jpg",
+      "photos/1F-MBD-48_full_3.jpg",
+      "photos/1F-MBD-48_full_4.jpg",
+      "photos/1F-MBD-48_full_5.jpg",
+      "photos/1F-MBD-48_full_6.jpg",
+      "photos/1F-MBD-48_full_7.jpg",
+      "photos/1F-MBD-48_full_8.jpg",
+      "photos/1F-MBD-48_full_9.jpg",
+      "photos/1F-MBD-48_full_10.jpg",
+      "photos/1F-MBD-48_full_11.jpg",
+      "photos/1F-MBD-48_full_12.jpg",
+      "photos/1F-MBD-48_full_13.jpg",
+      "photos/1F-MBD-48_full_14.jpg"
+    ],
+    "createdAt": "2026-09-20T14:02:53.921Z",
+    "updatedAt": "2026-09-20T14:02:53.922Z"
+  },
+  {
+    "tag": "1F-MBD-49",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Wall under LHS of window to LHS of bed",
+    "description": "Mark, darker patch on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.12,
+        "y": 35.45
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-49_thumb_1.jpg",
+      "photos/1F-MBD-49_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-49_full_1.jpg",
+      "photos/1F-MBD-49_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T14:06:43.680Z",
+    "updatedAt": "2026-09-20T14:06:43.684Z"
+  },
+  {
+    "tag": "1F-MBD-50",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around switch and socket to LHS of bed",
+    "description": "Brush strokes, uneven finish visible around switch & socket\n\nUneven paint finish to LHS of socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.96,
+        "y": 38.74
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-50_thumb_1.jpg",
+      "photos/1F-MBD-50_thumb_2.jpg",
+      "photos/1F-MBD-50_thumb_3.jpg",
+      "photos/1F-MBD-50_thumb_4.jpg",
+      "photos/1F-MBD-50_thumb_5.jpg",
+      "photos/1F-MBD-50_thumb_6.jpg",
+      "photos/1F-MBD-50_thumb_7.jpg",
+      "photos/1F-MBD-50_thumb_8.jpg",
+      "photos/1F-MBD-50_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-50_full_1.jpg",
+      "photos/1F-MBD-50_full_2.jpg",
+      "photos/1F-MBD-50_full_3.jpg",
+      "photos/1F-MBD-50_full_4.jpg",
+      "photos/1F-MBD-50_full_5.jpg",
+      "photos/1F-MBD-50_full_6.jpg",
+      "photos/1F-MBD-50_full_7.jpg",
+      "photos/1F-MBD-50_full_8.jpg",
+      "photos/1F-MBD-50_full_9.jpg"
+    ],
+    "createdAt": "2026-09-20T14:10:27.760Z",
+    "updatedAt": "2026-09-23T08:52:54.657Z"
+  },
+  {
+    "tag": "1F-MBD-51",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch and socket to LHS of bed",
+    "description": "Paint on light switches and socket faceplate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.88,
+        "y": 39.67
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-51_thumb_1.jpg",
+      "photos/1F-MBD-51_thumb_2.jpg",
+      "photos/1F-MBD-51_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-51_full_1.jpg",
+      "photos/1F-MBD-51_full_2.jpg",
+      "photos/1F-MBD-51_full_3.jpg"
+    ],
+    "createdAt": "2026-09-20T14:11:55.555Z",
+    "updatedAt": "2026-09-23T08:51:27.167Z"
+  },
+  {
+    "tag": "1F-MBD-52",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting and wall above it to LHS of bed",
+    "description": "Paint drips, marks & brush strokes visible on skirting. Brush strokes visible on wall above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.96,
+        "y": 40.48
+      },
+      {
+        "x": 77.96,
+        "y": 36.87
+      },
+      {
+        "x": 77.88,
+        "y": 33.14
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-52_thumb_1.jpg",
+      "photos/1F-MBD-52_thumb_2.jpg",
+      "photos/1F-MBD-52_thumb_3.jpg",
+      "photos/1F-MBD-52_thumb_4.jpg",
+      "photos/1F-MBD-52_thumb_5.jpg",
+      "photos/1F-MBD-52_thumb_6.jpg",
+      "photos/1F-MBD-52_thumb_7.jpg",
+      "photos/1F-MBD-52_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-52_full_1.jpg",
+      "photos/1F-MBD-52_full_2.jpg",
+      "photos/1F-MBD-52_full_3.jpg",
+      "photos/1F-MBD-52_full_4.jpg",
+      "photos/1F-MBD-52_full_5.jpg",
+      "photos/1F-MBD-52_full_6.jpg",
+      "photos/1F-MBD-52_full_7.jpg",
+      "photos/1F-MBD-52_full_8.jpg"
+    ],
+    "createdAt": "2026-09-20T14:20:56.510Z",
+    "updatedAt": "2026-09-20T14:20:56.513Z"
+  },
+  {
+    "tag": "1F-MBD-53",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Windows & External Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Windows either side of bed",
+    "description": "Marks on frame",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.04,
+        "y": 36.44
+      },
+      {
+        "x": 78.32,
+        "y": 49.22
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-53_thumb_1.jpg",
+      "photos/1F-MBD-53_thumb_2.jpg",
+      "photos/1F-MBD-53_thumb_3.jpg",
+      "photos/1F-MBD-53_thumb_4.jpg",
+      "photos/1F-MBD-53_thumb_5.jpg",
+      "photos/1F-MBD-53_thumb_6.jpg",
+      "photos/1F-MBD-53_thumb_7.jpg",
+      "photos/1F-MBD-53_thumb_8.jpg",
+      "photos/1F-MBD-53_thumb_9.jpg",
+      "photos/1F-MBD-53_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-53_full_1.jpg",
+      "photos/1F-MBD-53_full_2.jpg",
+      "photos/1F-MBD-53_full_3.jpg",
+      "photos/1F-MBD-53_full_4.jpg",
+      "photos/1F-MBD-53_full_5.jpg",
+      "photos/1F-MBD-53_full_6.jpg",
+      "photos/1F-MBD-53_full_7.jpg",
+      "photos/1F-MBD-53_full_8.jpg",
+      "photos/1F-MBD-53_full_9.jpg",
+      "photos/1F-MBD-53_full_10.jpg"
+    ],
+    "createdAt": "2026-09-20T14:23:56.797Z",
+    "updatedAt": "2026-09-20T14:23:56.799Z"
+  },
+  {
+    "tag": "1F-MBD-54",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket and data point to RHS of balcony doors",
+    "description": "Brush strokes around socket and data point. Uneven finish around data point",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.47,
+        "y": 32.91
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-54_thumb_1.jpg",
+      "photos/1F-MBD-54_thumb_2.jpg",
+      "photos/1F-MBD-54_thumb_3.jpg",
+      "photos/1F-MBD-54_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-54_full_1.jpg",
+      "photos/1F-MBD-54_full_2.jpg",
+      "photos/1F-MBD-54_full_3.jpg",
+      "photos/1F-MBD-54_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T17:32:09.291Z",
+    "updatedAt": "2026-09-20T17:32:09.292Z"
+  },
+  {
+    "tag": "1F-MBD-55",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Data point to RHS of balcony doors",
+    "description": "Data point faceplate not sitting flush at bottom left corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.14,
+        "y": 33.03
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-55_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-55_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T17:33:33.775Z",
+    "updatedAt": "2026-09-20T17:33:33.775Z"
+  },
+  {
+    "tag": "1F-MBD-56",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall between balcony doors and light switch to RHS",
+    "description": "Mark and uneven finish to LHS of light switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 76.07,
+        "y": 33.03
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-56_thumb_1.jpg",
+      "photos/1F-MBD-56_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-56_full_1.jpg",
+      "photos/1F-MBD-56_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T17:35:48.305Z",
+    "updatedAt": "2026-09-27T17:00:32.844Z"
+  },
+  {
+    "tag": "1F-MBD-57",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Under and back side of ceiling moulding over balcony doors as well as ceiling behind",
+    "description": "Marks, scratches on under side of ceiling moulding in centre, brush strokes and paint drips to RHS. Unpainted areas around bottom & back edge.\n\nAreas to make good on ceiling behind ceiling moulding over balcony doors",
+    "comments": "",
+    "pins": [
+      {
+        "x": 66.94,
+        "y": 32.7
+      },
+      {
+        "x": 78.04,
+        "y": 32.59
+      },
+      {
+        "x": 69.98,
+        "y": 32.59
+      },
+      {
+        "x": 72.61,
+        "y": 32.59
+      },
+      {
+        "x": 75.49,
+        "y": 32.59
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-57_thumb_1.jpg",
+      "photos/1F-MBD-57_thumb_2.jpg",
+      "photos/1F-MBD-57_thumb_3.jpg",
+      "photos/1F-MBD-57_thumb_4.jpg",
+      "photos/1F-MBD-57_thumb_5.jpg",
+      "photos/1F-MBD-57_thumb_6.jpg",
+      "photos/1F-MBD-57_thumb_7.jpg",
+      "photos/1F-MBD-57_thumb_8.jpg",
+      "photos/1F-MBD-57_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-57_full_1.jpg",
+      "photos/1F-MBD-57_full_2.jpg",
+      "photos/1F-MBD-57_full_3.jpg",
+      "photos/1F-MBD-57_full_4.jpg",
+      "photos/1F-MBD-57_full_5.jpg",
+      "photos/1F-MBD-57_full_6.jpg",
+      "photos/1F-MBD-57_full_7.jpg",
+      "photos/1F-MBD-57_full_8.jpg",
+      "photos/1F-MBD-57_full_9.jpg"
+    ],
+    "createdAt": "2026-09-20T17:47:38.699Z",
+    "updatedAt": "2026-09-20T17:47:38.701Z"
+  },
+  {
+    "tag": "1F-MBD-58",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Balcony doors and surrounding area",
+    "description": "Cracks in paint at edge between frame and wall as well as around ledge\n\nUneven finish on curved side of ledge between top and bottom\n\nPatches, marks, brush strokes in paint on top side of ledge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.33,
+        "y": 32.72
+      },
+      {
+        "x": 72.78,
+        "y": 32.84
+      },
+      {
+        "x": 70.06,
+        "y": 32.61
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-58_thumb_1.jpg",
+      "photos/1F-MBD-58_thumb_2.jpg",
+      "photos/1F-MBD-58_thumb_3.jpg",
+      "photos/1F-MBD-58_thumb_4.jpg",
+      "photos/1F-MBD-58_thumb_5.jpg",
+      "photos/1F-MBD-58_thumb_6.jpg",
+      "photos/1F-MBD-58_thumb_7.jpg",
+      "photos/1F-MBD-58_thumb_8.jpg",
+      "photos/1F-MBD-58_thumb_9.jpg",
+      "photos/1F-MBD-58_thumb_10.jpg",
+      "photos/1F-MBD-58_thumb_11.jpg",
+      "photos/1F-MBD-58_thumb_12.jpg",
+      "photos/1F-MBD-58_thumb_13.jpg",
+      "photos/1F-MBD-58_thumb_14.jpg",
+      "photos/1F-MBD-58_thumb_15.jpg",
+      "photos/1F-MBD-58_thumb_16.jpg",
+      "photos/1F-MBD-58_thumb_17.jpg",
+      "photos/1F-MBD-58_thumb_18.jpg",
+      "photos/1F-MBD-58_thumb_19.jpg",
+      "photos/1F-MBD-58_thumb_20.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-58_full_1.jpg",
+      "photos/1F-MBD-58_full_2.jpg",
+      "photos/1F-MBD-58_full_3.jpg",
+      "photos/1F-MBD-58_full_4.jpg",
+      "photos/1F-MBD-58_full_5.jpg",
+      "photos/1F-MBD-58_full_6.jpg",
+      "photos/1F-MBD-58_full_7.jpg",
+      "photos/1F-MBD-58_full_8.jpg",
+      "photos/1F-MBD-58_full_9.jpg",
+      "photos/1F-MBD-58_full_10.jpg",
+      "photos/1F-MBD-58_full_11.jpg",
+      "photos/1F-MBD-58_full_12.jpg",
+      "photos/1F-MBD-58_full_13.jpg",
+      "photos/1F-MBD-58_full_14.jpg",
+      "photos/1F-MBD-58_full_15.jpg",
+      "photos/1F-MBD-58_full_16.jpg",
+      "photos/1F-MBD-58_full_17.jpg",
+      "photos/1F-MBD-58_full_18.jpg",
+      "photos/1F-MBD-58_full_19.jpg",
+      "photos/1F-MBD-58_full_20.jpg"
+    ],
+    "createdAt": "2026-09-20T18:02:35.982Z",
+    "updatedAt": "2026-09-20T18:02:35.983Z"
+  },
+  {
+    "tag": "1F-MBD-59",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to centre right of balcony doors",
+    "description": "Uneven finish, paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.86,
+        "y": 32.67
+      },
+      {
+        "x": 75,
+        "y": 32.67
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-59_thumb_1.jpg",
+      "photos/1F-MBD-59_thumb_2.jpg",
+      "photos/1F-MBD-59_thumb_3.jpg",
+      "photos/1F-MBD-59_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-59_full_1.jpg",
+      "photos/1F-MBD-59_full_2.jpg",
+      "photos/1F-MBD-59_full_3.jpg",
+      "photos/1F-MBD-59_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T18:06:28.556Z",
+    "updatedAt": "2026-09-20T18:06:28.558Z"
+  },
+  {
+    "tag": "1F-MBD-60",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall either side of LHS & RHS window ledge",
+    "description": "Scratch marks and uneven finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.33,
+        "y": 32.79
+      },
+      {
+        "x": 69.32,
+        "y": 32.79
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-60_thumb_1.jpg",
+      "photos/1F-MBD-60_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-60_full_1.jpg",
+      "photos/1F-MBD-60_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T18:09:12.950Z",
+    "updatedAt": "2026-09-20T18:09:12.950Z"
+  },
+  {
+    "tag": "1F-MBD-61",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Balcony doors",
+    "description": "Bottom frame is silver instead of white",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.12,
+        "y": 32.54
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-61_thumb_1.jpg",
+      "photos/1F-MBD-61_thumb_2.jpg",
+      "photos/1F-MBD-61_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-61_full_1.jpg",
+      "photos/1F-MBD-61_full_2.jpg",
+      "photos/1F-MBD-61_full_3.jpg"
+    ],
+    "createdAt": "2026-09-20T18:11:24.888Z",
+    "updatedAt": "2026-09-20T18:11:24.890Z"
+  },
+  {
+    "tag": "1F-MBD-62",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Balcony doors",
+    "description": "Marks on frame",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.12,
+        "y": 32.66
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-62_thumb_1.jpg",
+      "photos/1F-MBD-62_thumb_2.jpg",
+      "photos/1F-MBD-62_thumb_3.jpg",
+      "photos/1F-MBD-62_thumb_4.jpg",
+      "photos/1F-MBD-62_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-62_full_1.jpg",
+      "photos/1F-MBD-62_full_2.jpg",
+      "photos/1F-MBD-62_full_3.jpg",
+      "photos/1F-MBD-62_full_4.jpg",
+      "photos/1F-MBD-62_full_5.jpg"
+    ],
+    "createdAt": "2026-09-20T18:13:26.859Z",
+    "updatedAt": "2026-09-20T18:13:26.861Z"
+  },
+  {
+    "tag": "1F-MBD-63",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket to LHS of balcony doors",
+    "description": "Does not sit flush to wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.1,
+        "y": 35.01
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-63_thumb_1.jpg",
+      "photos/1F-MBD-63_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-63_full_1.jpg",
+      "photos/1F-MBD-63_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T18:15:33.546Z",
+    "updatedAt": "2026-09-20T18:15:33.546Z"
+  },
+  {
+    "tag": "1F-MBD-64",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket to LHS of balcony doors",
+    "description": "Brush strokes around socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.02,
+        "y": 35.08
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-64_thumb_1.jpg",
+      "photos/1F-MBD-64_thumb_2.jpg",
+      "photos/1F-MBD-64_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-64_full_1.jpg",
+      "photos/1F-MBD-64_full_2.jpg",
+      "photos/1F-MBD-64_full_3.jpg"
+    ],
+    "createdAt": "2026-09-20T18:16:27.130Z",
+    "updatedAt": "2026-09-20T18:16:27.130Z"
+  },
+  {
+    "tag": "1F-MBD-65",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall above skirting and skirting below socket to LHS of balcony doors",
+    "description": "Brush strokes visible above skirting\n\nBrush strokes and paint drips visible on skirting. Scratches lower down on skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.19,
+        "y": 33.61
+      },
+      {
+        "x": 67.19,
+        "y": 36.76
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-65_thumb_1.jpg",
+      "photos/1F-MBD-65_thumb_2.jpg",
+      "photos/1F-MBD-65_thumb_3.jpg",
+      "photos/1F-MBD-65_thumb_4.jpg",
+      "photos/1F-MBD-65_thumb_5.jpg",
+      "photos/1F-MBD-65_thumb_6.jpg",
+      "photos/1F-MBD-65_thumb_7.jpg",
+      "photos/1F-MBD-65_thumb_8.jpg",
+      "photos/1F-MBD-65_thumb_9.jpg",
+      "photos/1F-MBD-65_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-65_full_1.jpg",
+      "photos/1F-MBD-65_full_2.jpg",
+      "photos/1F-MBD-65_full_3.jpg",
+      "photos/1F-MBD-65_full_4.jpg",
+      "photos/1F-MBD-65_full_5.jpg",
+      "photos/1F-MBD-65_full_6.jpg",
+      "photos/1F-MBD-65_full_7.jpg",
+      "photos/1F-MBD-65_full_8.jpg",
+      "photos/1F-MBD-65_full_9.jpg",
+      "photos/1F-MBD-65_full_10.jpg"
+    ],
+    "createdAt": "2026-09-20T18:20:19.910Z",
+    "updatedAt": "2026-09-20T18:20:19.910Z"
+  },
+  {
+    "tag": "1F-MBD-66",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall at waste level above socket to LHS of balcony doors",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 66.94,
+        "y": 35.24
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-66_thumb_1.jpg",
+      "photos/1F-MBD-66_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-66_full_1.jpg",
+      "photos/1F-MBD-66_full_2.jpg"
+    ],
+    "createdAt": "2026-09-20T18:22:38.093Z",
+    "updatedAt": "2026-09-20T18:22:38.093Z"
+  },
+  {
+    "tag": "1F-MBD-67",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall of socket to LHS of balcony doors",
+    "description": "Marks lower down. Patches on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.1,
+        "y": 33.61
+      },
+      {
+        "x": 67.02,
+        "y": 37.1
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-67_thumb_1.jpg",
+      "photos/1F-MBD-67_thumb_2.jpg",
+      "photos/1F-MBD-67_thumb_3.jpg",
+      "photos/1F-MBD-67_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-67_full_1.jpg",
+      "photos/1F-MBD-67_full_2.jpg",
+      "photos/1F-MBD-67_full_3.jpg",
+      "photos/1F-MBD-67_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T18:26:28.642Z",
+    "updatedAt": "2026-09-20T18:26:28.642Z"
+  },
+  {
+    "tag": "1F-MBD-68",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch in dressing area",
+    "description": "Paint on light switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 66.45,
+        "y": 37.92
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-68_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-68_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T18:28:36.453Z",
+    "updatedAt": "2026-09-20T18:28:36.453Z"
+  },
+  {
+    "tag": "1F-MBD-69",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting around dressing area",
+    "description": "Paint drips & scratches on skirting\n\nUnfinished sections below socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.02,
+        "y": 37.92
+      },
+      {
+        "x": 64.47,
+        "y": 37.92
+      },
+      {
+        "x": 64.31,
+        "y": 43.05
+      },
+      {
+        "x": 66.94,
+        "y": 43.16
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-69_thumb_1.jpg",
+      "photos/1F-MBD-69_thumb_2.jpg",
+      "photos/1F-MBD-69_thumb_3.jpg",
+      "photos/1F-MBD-69_thumb_4.jpg",
+      "photos/1F-MBD-69_thumb_5.jpg",
+      "photos/1F-MBD-69_thumb_6.jpg",
+      "photos/1F-MBD-69_thumb_7.jpg",
+      "photos/1F-MBD-69_thumb_8.jpg",
+      "photos/1F-MBD-69_thumb_9.jpg",
+      "photos/1F-MBD-69_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-69_full_1.jpg",
+      "photos/1F-MBD-69_full_2.jpg",
+      "photos/1F-MBD-69_full_3.jpg",
+      "photos/1F-MBD-69_full_4.jpg",
+      "photos/1F-MBD-69_full_5.jpg",
+      "photos/1F-MBD-69_full_6.jpg",
+      "photos/1F-MBD-69_full_7.jpg",
+      "photos/1F-MBD-69_full_8.jpg",
+      "photos/1F-MBD-69_full_9.jpg",
+      "photos/1F-MBD-69_full_10.jpg"
+    ],
+    "createdAt": "2026-09-20T18:31:58.641Z",
+    "updatedAt": "2026-09-20T18:39:53.170Z"
+  },
+  {
+    "tag": "1F-MBD-70",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around socket in dressing area",
+    "description": "Brush strokes around socket. Uneven finish on top edge. Mark on wall diagonally to SW and brush strokes below",
+    "comments": "",
+    "pins": [
+      {
+        "x": 64.06,
+        "y": 40.48
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-70_thumb_1.jpg",
+      "photos/1F-MBD-70_thumb_2.jpg",
+      "photos/1F-MBD-70_thumb_3.jpg",
+      "photos/1F-MBD-70_thumb_4.jpg",
+      "photos/1F-MBD-70_thumb_5.jpg",
+      "photos/1F-MBD-70_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-70_full_1.jpg",
+      "photos/1F-MBD-70_full_2.jpg",
+      "photos/1F-MBD-70_full_3.jpg",
+      "photos/1F-MBD-70_full_4.jpg",
+      "photos/1F-MBD-70_full_5.jpg",
+      "photos/1F-MBD-70_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T18:35:31.688Z",
+    "updatedAt": "2026-09-20T18:38:35.473Z"
+  },
+  {
+    "tag": "1F-MBD-71",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket in dressing area",
+    "description": "Paint on socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 64.31,
+        "y": 40.6
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-71_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-71_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T18:36:09.079Z",
+    "updatedAt": "2026-09-20T18:36:09.079Z"
+  },
+  {
+    "tag": "1F-MBD-72",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Corner of main and RHS dressing area wall",
+    "description": "Mark low down near corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 64.39,
+        "y": 37.85
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-72_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-72_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T18:41:26.149Z",
+    "updatedAt": "2026-09-27T17:00:24.220Z"
+  },
+  {
+    "tag": "1F-MBD-73",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket low down on wall to LHS of dressing area",
+    "description": "Brush strokes and uneven finish around socket.\n\nPaint in socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.19,
+        "y": 46.42
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-73_thumb_1.jpg",
+      "photos/1F-MBD-73_thumb_2.jpg",
+      "photos/1F-MBD-73_thumb_3.jpg",
+      "photos/1F-MBD-73_thumb_4.jpg",
+      "photos/1F-MBD-73_thumb_5.jpg",
+      "photos/1F-MBD-73_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-73_full_1.jpg",
+      "photos/1F-MBD-73_full_2.jpg",
+      "photos/1F-MBD-73_full_3.jpg",
+      "photos/1F-MBD-73_full_4.jpg",
+      "photos/1F-MBD-73_full_5.jpg",
+      "photos/1F-MBD-73_full_6.jpg"
+    ],
+    "createdAt": "2026-09-20T18:44:44.646Z",
+    "updatedAt": "2026-09-20T18:44:44.647Z"
+  },
+  {
+    "tag": "1F-MBD-74",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of dressing area",
+    "description": "Brush strokes & paint drips on skirting. Uneven finish on LHS\n\nBrush strokes above skirting",
+    "comments": "",
+    "pins": [],
+    "thumbFiles": [
+      "photos/1F-MBD-74_thumb_1.jpg",
+      "photos/1F-MBD-74_thumb_2.jpg",
+      "photos/1F-MBD-74_thumb_3.jpg",
+      "photos/1F-MBD-74_thumb_4.jpg",
+      "photos/1F-MBD-74_thumb_5.jpg",
+      "photos/1F-MBD-74_thumb_6.jpg",
+      "photos/1F-MBD-74_thumb_7.jpg",
+      "photos/1F-MBD-74_thumb_8.jpg",
+      "photos/1F-MBD-74_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-74_full_1.jpg",
+      "photos/1F-MBD-74_full_2.jpg",
+      "photos/1F-MBD-74_full_3.jpg",
+      "photos/1F-MBD-74_full_4.jpg",
+      "photos/1F-MBD-74_full_5.jpg",
+      "photos/1F-MBD-74_full_6.jpg",
+      "photos/1F-MBD-74_full_7.jpg",
+      "photos/1F-MBD-74_full_8.jpg",
+      "photos/1F-MBD-74_full_9.jpg"
+    ],
+    "createdAt": "2026-09-20T18:48:45.742Z",
+    "updatedAt": "2026-09-20T18:48:45.743Z"
+  },
+  {
+    "tag": "1F-MBD-75",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Joint in ceiling moulding at center of wall to LHS of dressing area",
+    "description": "Crack in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 67.1,
+        "y": 46.31
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-75_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-75_full_1.jpg"
+    ],
+    "createdAt": "2026-09-20T18:50:18.916Z",
+    "updatedAt": "2026-09-20T18:50:18.916Z"
+  },
+  {
+    "tag": "1F-MBD-76",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "AC grille in dressing area",
+    "description": "Uneven finish on lower side and as points around grille",
+    "comments": "",
+    "pins": [
+      {
+        "x": 65.21,
+        "y": 40.37
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-76_thumb_1.jpg",
+      "photos/1F-MBD-76_thumb_2.jpg",
+      "photos/1F-MBD-76_thumb_3.jpg",
+      "photos/1F-MBD-76_thumb_4.jpg",
+      "photos/1F-MBD-76_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-76_full_1.jpg",
+      "photos/1F-MBD-76_full_2.jpg",
+      "photos/1F-MBD-76_full_3.jpg",
+      "photos/1F-MBD-76_full_4.jpg",
+      "photos/1F-MBD-76_full_5.jpg"
+    ],
+    "createdAt": "2026-09-20T18:52:50.771Z",
+    "updatedAt": "2026-09-20T18:52:50.771Z"
+  },
+  {
+    "tag": "1F-MBD-77",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Entrance downlights",
+    "description": "Uneven finish around first downlight",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.02,
+        "y": 51.57
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-77_thumb_1.jpg",
+      "photos/1F-MBD-77_thumb_2.jpg",
+      "photos/1F-MBD-77_thumb_3.jpg",
+      "photos/1F-MBD-77_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-77_full_1.jpg",
+      "photos/1F-MBD-77_full_2.jpg",
+      "photos/1F-MBD-77_full_3.jpg",
+      "photos/1F-MBD-77_full_4.jpg"
+    ],
+    "createdAt": "2026-09-20T18:55:47.216Z",
+    "updatedAt": "2026-09-20T18:55:47.218Z"
+  },
+  {
+    "tag": "1F-MBD-78",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Room plaster-in downlights",
+    "description": "Uneven finish around all downlights",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.92,
+        "y": 50.29
+      },
+      {
+        "x": 76.07,
+        "y": 50.29
+      },
+      {
+        "x": 72.31,
+        "y": 50.15
+      },
+      {
+        "x": 68.92,
+        "y": 42.57
+      },
+      {
+        "x": 69.11,
+        "y": 35.64
+      },
+      {
+        "x": 72.31,
+        "y": 35.38
+      },
+      {
+        "x": 76.16,
+        "y": 35.51
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-78_thumb_1.jpg",
+      "photos/1F-MBD-78_thumb_2.jpg",
+      "photos/1F-MBD-78_thumb_3.jpg",
+      "photos/1F-MBD-78_thumb_4.jpg",
+      "photos/1F-MBD-78_thumb_5.jpg",
+      "photos/1F-MBD-78_thumb_6.jpg",
+      "photos/1F-MBD-78_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-78_full_1.jpg",
+      "photos/1F-MBD-78_full_2.jpg",
+      "photos/1F-MBD-78_full_3.jpg",
+      "photos/1F-MBD-78_full_4.jpg",
+      "photos/1F-MBD-78_full_5.jpg",
+      "photos/1F-MBD-78_full_6.jpg",
+      "photos/1F-MBD-78_full_7.jpg"
+    ],
+    "createdAt": "2026-09-20T19:00:24.241Z",
+    "updatedAt": "2026-09-20T19:00:24.241Z"
+  },
+  {
+    "tag": "1F-MBD-79",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling plate for room chandelier",
+    "description": "Gaps to ceiling, wires visible - especially when viewed standing to LHS of balcony windows",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.78,
+        "y": 42.46
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-79_thumb_1.jpg",
+      "photos/1F-MBD-79_thumb_2.jpg",
+      "photos/1F-MBD-79_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-79_full_1.jpg",
+      "photos/1F-MBD-79_full_2.jpg",
+      "photos/1F-MBD-79_full_3.jpg"
+    ],
+    "createdAt": "2026-09-20T19:04:26.455Z",
+    "updatedAt": "2026-09-20T19:04:26.455Z"
+  },
+  {
+    "tag": "1F-MD2-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "MD2 door to Master",
+    "description": "Small cracks/gaps in paint at top corners",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.32,
+        "y": 54.02
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-01_thumb_1.jpg",
+      "photos/1F-MD2-01_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-01_full_1.jpg",
+      "photos/1F-MD2-01_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T08:42:22.198Z",
+    "updatedAt": "2026-09-26T08:46:10.454Z"
+  },
+  {
+    "tag": "1F-MD2-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD2 door to Master",
+    "description": "Scratches & paint on hinges, latch and strike plate plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.32,
+        "y": 53.98
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-02_thumb_1.jpg",
+      "photos/1F-MD2-02_thumb_2.jpg",
+      "photos/1F-MD2-02_thumb_3.jpg",
+      "photos/1F-MD2-02_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-02_full_1.jpg",
+      "photos/1F-MD2-02_full_2.jpg",
+      "photos/1F-MD2-02_full_3.jpg",
+      "photos/1F-MD2-02_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T08:45:43.918Z",
+    "updatedAt": "2026-09-26T08:45:43.919Z"
+  },
+  {
+    "tag": "1F-MD2-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall above MD2 door to Master,",
+    "description": "Marks on wall predominantly on RHS but also LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 74.48,
+        "y": 53.87
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-03_thumb_1.jpg",
+      "photos/1F-MD2-03_thumb_2.jpg",
+      "photos/1F-MD2-03_thumb_3.jpg",
+      "photos/1F-MD2-03_thumb_4.jpg",
+      "photos/1F-MD2-03_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-03_full_1.jpg",
+      "photos/1F-MD2-03_full_2.jpg",
+      "photos/1F-MD2-03_full_3.jpg",
+      "photos/1F-MD2-03_full_4.jpg",
+      "photos/1F-MD2-03_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T08:54:25.089Z",
+    "updatedAt": "2026-09-26T08:54:25.090Z"
+  },
+  {
+    "tag": "1F-MD2-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "MD2 door to Master",
+    "description": "Some movment in MD2 side handle",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.32,
+        "y": 53.98
+      }
+    ],
+    "thumbFiles": [],
+    "photoFiles": [],
+    "createdAt": "2026-09-26T08:56:34.807Z",
+    "updatedAt": "2026-09-26T08:56:34.811Z"
+  },
+  {
+    "tag": "1F-MD2-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling around LHS corner of fitting wardrobes",
+    "description": "Marks/chips in paint on ceiling directly next to fitted wardrobes on both sides of corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 69.95,
+        "y": 55.85
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-05_thumb_1.jpg",
+      "photos/1F-MD2-05_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-05_full_1.jpg",
+      "photos/1F-MD2-05_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T09:05:37.141Z",
+    "updatedAt": "2026-09-26T09:05:37.141Z"
+  },
+  {
+    "tag": "1F-MD2-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Above LHS & RHS edge of door to Master Ensuite and high up to LHS of Master Ensuite entrance",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.84,
+        "y": 61.32
+      },
+      {
+        "x": 74.11,
+        "y": 61.3
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-06_thumb_1.jpg",
+      "photos/1F-MD2-06_thumb_2.jpg",
+      "photos/1F-MD2-06_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-06_full_1.jpg",
+      "photos/1F-MD2-06_full_2.jpg",
+      "photos/1F-MD2-06_full_3.jpg"
+    ],
+    "createdAt": "2026-09-26T09:10:07.392Z",
+    "updatedAt": "2026-09-26T09:12:56.571Z"
+  },
+  {
+    "tag": "1F-MD2-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Wall above LHS of Master Ensuite door and extending it LHS toward fitted wardobe",
+    "description": "Orange/yellow mark on wall above LHS of Master Ensuite door. Two grey marks high up on wall extending to LHS of Master Ensuite door below plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.98,
+        "y": 61.2
+      },
+      {
+        "x": 75.71,
+        "y": 61.2
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-07_thumb_1.jpg",
+      "photos/1F-MD2-07_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-07_full_1.jpg",
+      "photos/1F-MD2-07_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T09:16:52.493Z",
+    "updatedAt": "2026-09-26T09:16:52.493Z"
+  },
+  {
+    "tag": "1F-MD2-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of Master Ensuite door",
+    "description": "Dark marks,uneven finish and brush strokes on wall lower down\nLighter spots on wall around light switch level\n\nBrush strokes visible below/above light switch\n\nMarks to LHS of switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 70.69,
+        "y": 61.09
+      },
+      {
+        "x": 68.72,
+        "y": 61.09
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-08_thumb_1.jpg",
+      "photos/1F-MD2-08_thumb_2.jpg",
+      "photos/1F-MD2-08_thumb_3.jpg",
+      "photos/1F-MD2-08_thumb_4.jpg",
+      "photos/1F-MD2-08_thumb_5.jpg",
+      "photos/1F-MD2-08_thumb_6.jpg",
+      "photos/1F-MD2-08_thumb_7.jpg",
+      "photos/1F-MD2-08_thumb_8.jpg",
+      "photos/1F-MD2-08_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-08_full_1.jpg",
+      "photos/1F-MD2-08_full_2.jpg",
+      "photos/1F-MD2-08_full_3.jpg",
+      "photos/1F-MD2-08_full_4.jpg",
+      "photos/1F-MD2-08_full_5.jpg",
+      "photos/1F-MD2-08_full_6.jpg",
+      "photos/1F-MD2-08_full_7.jpg",
+      "photos/1F-MD2-08_full_8.jpg",
+      "photos/1F-MD2-08_full_9.jpg"
+    ],
+    "createdAt": "2026-09-26T09:26:10.492Z",
+    "updatedAt": "2026-09-26T09:31:09.011Z"
+  },
+  {
+    "tag": "1F-MD2-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch to RHS of Master Ensuite door",
+    "description": "Movment on RHS -  faceplate does not sit flush to the wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.35,
+        "y": 61.2
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-09_thumb_1.jpg",
+      "photos/1F-MD2-09_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-09_full_1.jpg",
+      "photos/1F-MD2-09_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T09:28:42.016Z",
+    "updatedAt": "2026-09-26T09:28:42.020Z"
+  },
+  {
+    "tag": "1F-MD2-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to RHS of Master Ensuite door",
+    "description": "Non-base paint, marks, paint drips and brush strokes visible on skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.52,
+        "y": 60.97
+      },
+      {
+        "x": 69.21,
+        "y": 60.97
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-10_thumb_1.jpg",
+      "photos/1F-MD2-10_thumb_2.jpg",
+      "photos/1F-MD2-10_thumb_3.jpg",
+      "photos/1F-MD2-10_thumb_4.jpg",
+      "photos/1F-MD2-10_thumb_5.jpg",
+      "photos/1F-MD2-10_thumb_6.jpg",
+      "photos/1F-MD2-10_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-10_full_1.jpg",
+      "photos/1F-MD2-10_full_2.jpg",
+      "photos/1F-MD2-10_full_3.jpg",
+      "photos/1F-MD2-10_full_4.jpg",
+      "photos/1F-MD2-10_full_5.jpg",
+      "photos/1F-MD2-10_full_6.jpg",
+      "photos/1F-MD2-10_full_7.jpg"
+    ],
+    "createdAt": "2026-09-26T09:41:56.850Z",
+    "updatedAt": "2026-09-26T09:41:56.855Z"
+  },
+  {
+    "tag": "1F-MD2-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of Master Ensuite door",
+    "description": "Lower down, marks on walls. Brush strokes visible above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.44,
+        "y": 61.09
+      },
+      {
+        "x": 74.31,
+        "y": 61.09
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-11_thumb_1.jpg",
+      "photos/1F-MD2-11_thumb_2.jpg",
+      "photos/1F-MD2-11_thumb_3.jpg",
+      "photos/1F-MD2-11_thumb_4.jpg",
+      "photos/1F-MD2-11_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-11_full_1.jpg",
+      "photos/1F-MD2-11_full_2.jpg",
+      "photos/1F-MD2-11_full_3.jpg",
+      "photos/1F-MD2-11_full_4.jpg",
+      "photos/1F-MD2-11_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T09:46:22.622Z",
+    "updatedAt": "2026-09-27T17:00:14.668Z"
+  },
+  {
+    "tag": "1F-MD2-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to LHS of Master Ensuite door",
+    "description": "Non-base paint, paint drips, marks, uneven finish on skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 74.06,
+        "y": 61.16
+      },
+      {
+        "x": 77.6,
+        "y": 61.04
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-12_thumb_1.jpg",
+      "photos/1F-MD2-12_thumb_2.jpg",
+      "photos/1F-MD2-12_thumb_3.jpg",
+      "photos/1F-MD2-12_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-12_full_1.jpg",
+      "photos/1F-MD2-12_full_2.jpg",
+      "photos/1F-MD2-12_full_3.jpg",
+      "photos/1F-MD2-12_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T09:49:04.551Z",
+    "updatedAt": "2026-09-26T09:49:04.551Z"
+  },
+  {
+    "tag": "1F-MD2-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling, wall in front of fitted wardrobe to LHS of Master Ensuite door",
+    "description": "In RHS corner: Chips, non-base colour paint in corner\n\nToward LHS: uneven finish, unpainted/over painted sections",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.11,
+        "y": 61.09
+      },
+      {
+        "x": 77.03,
+        "y": 58.06
+      },
+      {
+        "x": 77,
+        "y": 55.33
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-13_thumb_1.jpg",
+      "photos/1F-MD2-13_thumb_2.jpg",
+      "photos/1F-MD2-13_thumb_3.jpg",
+      "photos/1F-MD2-13_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-13_full_1.jpg",
+      "photos/1F-MD2-13_full_2.jpg",
+      "photos/1F-MD2-13_full_3.jpg",
+      "photos/1F-MD2-13_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T09:59:25.698Z",
+    "updatedAt": "2026-09-26T09:59:25.698Z"
+  },
+  {
+    "tag": "1F-MD2-14",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Top of fitted wardrobe to LHS of Master Ensuite door",
+    "description": "Chip in top panel at edge with ceiling",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.11,
+        "y": 56.89
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-14_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-14_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T10:02:07.809Z",
+    "updatedAt": "2026-09-26T10:02:07.811Z"
+  },
+  {
+    "tag": "1F-MD2-15",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling around MVHR vent",
+    "description": "Better finish required: discoloured sections, sealant foam overspill",
+    "comments": "",
+    "pins": [
+      {
+        "x": 76.29,
+        "y": 56.78
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-15_thumb_1.jpg",
+      "photos/1F-MD2-15_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-15_full_1.jpg",
+      "photos/1F-MD2-15_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T10:03:55.303Z",
+    "updatedAt": "2026-09-26T10:03:55.303Z"
+  },
+  {
+    "tag": "1F-MD2-16",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Plaster-in downlights",
+    "description": "Finishing/touch-ups required",
+    "comments": "",
+    "pins": [
+      {
+        "x": 70.69,
+        "y": 57.71
+      },
+      {
+        "x": 75.79,
+        "y": 57.59
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-16_thumb_1.jpg",
+      "photos/1F-MD2-16_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-16_full_1.jpg",
+      "photos/1F-MD2-16_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T10:07:02.831Z",
+    "updatedAt": "2026-09-26T10:07:02.831Z"
+  },
+  {
+    "tag": "1F-MD2-17",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave and frame around Master Ensuite door",
+    "description": "Architrave:\n\nMarks lower down on RHS\nPaint drips on LHS edge \nPaint cracks around edge to wall and with skirting\n\n\nFrame:\n\nMark on RHS at lower chest level\nCracks/gaps in paint at corners\nNail heads, marks visible at bottom right and a little higher up\nPaint chip at bottom left corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.68,
+        "y": 61.32
+      },
+      {
+        "x": 74.15,
+        "y": 61.2
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-17_thumb_1.jpg",
+      "photos/1F-MD2-17_thumb_2.jpg",
+      "photos/1F-MD2-17_thumb_3.jpg",
+      "photos/1F-MD2-17_thumb_4.jpg",
+      "photos/1F-MD2-17_thumb_5.jpg",
+      "photos/1F-MD2-17_thumb_6.jpg",
+      "photos/1F-MD2-17_thumb_7.jpg",
+      "photos/1F-MD2-17_thumb_8.jpg",
+      "photos/1F-MD2-17_thumb_9.jpg",
+      "photos/1F-MD2-17_thumb_10.jpg",
+      "photos/1F-MD2-17_thumb_11.jpg",
+      "photos/1F-MD2-17_thumb_12.jpg",
+      "photos/1F-MD2-17_thumb_13.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-17_full_1.jpg",
+      "photos/1F-MD2-17_full_2.jpg",
+      "photos/1F-MD2-17_full_3.jpg",
+      "photos/1F-MD2-17_full_4.jpg",
+      "photos/1F-MD2-17_full_5.jpg",
+      "photos/1F-MD2-17_full_6.jpg",
+      "photos/1F-MD2-17_full_7.jpg",
+      "photos/1F-MD2-17_full_8.jpg",
+      "photos/1F-MD2-17_full_9.jpg",
+      "photos/1F-MD2-17_full_10.jpg",
+      "photos/1F-MD2-17_full_11.jpg",
+      "photos/1F-MD2-17_full_12.jpg",
+      "photos/1F-MD2-17_full_13.jpg"
+    ],
+    "createdAt": "2026-09-26T10:50:30.833Z",
+    "updatedAt": "2026-09-26T10:57:42.465Z"
+  },
+  {
+    "tag": "1F-MD2-18",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Master Ensuite door",
+    "description": "Unpainted/white section at bottom",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.24,
+        "y": 60.97
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-18_thumb_1.jpg",
+      "photos/1F-MD2-18_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-18_full_1.jpg",
+      "photos/1F-MD2-18_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T10:55:17.557Z",
+    "updatedAt": "2026-09-26T10:55:17.567Z"
+  },
+  {
+    "tag": "1F-MD2-19",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Master Ensuite door",
+    "description": "Scratches, paint on hinges, latch and strike plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.24,
+        "y": 61.25
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD2-19_thumb_1.jpg",
+      "photos/1F-MD2-19_thumb_2.jpg",
+      "photos/1F-MD2-19_thumb_3.jpg",
+      "photos/1F-MD2-19_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD2-19_full_1.jpg",
+      "photos/1F-MD2-19_full_2.jpg",
+      "photos/1F-MD2-19_full_3.jpg",
+      "photos/1F-MD2-19_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T11:04:25.959Z",
+    "updatedAt": "2026-09-26T11:04:25.959Z"
+  },
+  {
+    "tag": "1F-MD2-20",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD2",
+    "roomName": "Master Dressing Room 2",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Master Ensuite door",
+    "description": "Movement when door is closed",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.16,
+        "y": 61.44
+      }
+    ],
+    "thumbFiles": [],
+    "photoFiles": [],
+    "createdAt": "2026-09-26T11:08:18.715Z",
+    "updatedAt": "2026-09-26T11:08:18.715Z"
+  },
+  {
+    "tag": "1F-MEN-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Master Ensuite door",
+    "description": "White areas at bottom on door and to LHS of hinges",
+    "comments": "",
+    "pins": [
+      {
+        "x": 73.57,
+        "y": 61.3
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-01_thumb_1.jpg",
+      "photos/1F-MEN-01_thumb_2.jpg",
+      "photos/1F-MEN-01_thumb_3.jpg",
+      "photos/1F-MEN-01_thumb_4.jpg",
+      "photos/1F-MEN-01_thumb_5.jpg",
+      "photos/1F-MEN-01_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-01_full_1.jpg",
+      "photos/1F-MEN-01_full_2.jpg",
+      "photos/1F-MEN-01_full_3.jpg",
+      "photos/1F-MEN-01_full_4.jpg",
+      "photos/1F-MEN-01_full_5.jpg",
+      "photos/1F-MEN-01_full_6.jpg"
+    ],
+    "createdAt": "2026-09-26T11:13:13.141Z",
+    "updatedAt": "2026-09-26T11:13:13.143Z"
+  },
+  {
+    "tag": "1F-MEN-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave around Master Ensuite door",
+    "description": "Uneven finish at top left\nCracks at edges and to wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.01,
+        "y": 61.54
+      },
+      {
+        "x": 74.56,
+        "y": 61.54
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-02_thumb_1.jpg",
+      "photos/1F-MEN-02_thumb_2.jpg",
+      "photos/1F-MEN-02_thumb_3.jpg",
+      "photos/1F-MEN-02_thumb_4.jpg",
+      "photos/1F-MEN-02_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-02_full_1.jpg",
+      "photos/1F-MEN-02_full_2.jpg",
+      "photos/1F-MEN-02_full_3.jpg",
+      "photos/1F-MEN-02_full_4.jpg",
+      "photos/1F-MEN-02_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T11:17:07.234Z",
+    "updatedAt": "2026-09-26T11:17:07.236Z"
+  },
+  {
+    "tag": "1F-MEN-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of Master Ensuite door",
+    "description": "Marks on wall adjacent to top of door and to right of top hinge\n\nMarks to far side along edge with shower",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.13,
+        "y": 61.3
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-03_thumb_1.jpg",
+      "photos/1F-MEN-03_thumb_2.jpg",
+      "photos/1F-MEN-03_thumb_3.jpg",
+      "photos/1F-MEN-03_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-03_full_1.jpg",
+      "photos/1F-MEN-03_full_2.jpg",
+      "photos/1F-MEN-03_full_3.jpg",
+      "photos/1F-MEN-03_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T11:21:11.794Z",
+    "updatedAt": "2026-09-27T17:00:00.700Z"
+  },
+  {
+    "tag": "1F-MEN-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "To RHS of Master Ensuite door",
+    "description": "Uneven mastic finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.22,
+        "y": 61.42
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-04_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-04_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T11:23:50.053Z",
+    "updatedAt": "2026-09-26T11:23:50.053Z"
+  },
+  {
+    "tag": "1F-MEN-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall behind towel radiator",
+    "description": "Marks on wall\nBrush strokes visible",
+    "comments": "",
+    "pins": [
+      {
+        "x": 70.69,
+        "y": 61.54
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-05_thumb_1.jpg",
+      "photos/1F-MEN-05_thumb_2.jpg",
+      "photos/1F-MEN-05_thumb_3.jpg",
+      "photos/1F-MEN-05_thumb_4.jpg",
+      "photos/1F-MEN-05_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-05_full_1.jpg",
+      "photos/1F-MEN-05_full_2.jpg",
+      "photos/1F-MEN-05_full_3.jpg",
+      "photos/1F-MEN-05_full_4.jpg",
+      "photos/1F-MEN-05_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T12:33:24.173Z",
+    "updatedAt": "2026-09-26T12:33:24.184Z"
+  },
+  {
+    "tag": "1F-MEN-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall behind towel radiator",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 70.61,
+        "y": 61.77
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-06_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-06_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T12:34:26.132Z",
+    "updatedAt": "2026-09-26T12:34:26.132Z"
+  },
+  {
+    "tag": "1F-MEN-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Far edge of wall to LHS of Master Ensuite door",
+    "description": "Mark on ceiling near top corner\n\nUneven paint finish at bottom corner with tiling\n\nGap at tile trim edge and in mastic",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.8,
+        "y": 61.42
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-07_thumb_1.jpg",
+      "photos/1F-MEN-07_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-07_full_1.jpg",
+      "photos/1F-MEN-07_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T12:41:26.944Z",
+    "updatedAt": "2026-09-26T12:41:26.945Z"
+  },
+  {
+    "tag": "1F-MEN-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Vanity wall",
+    "description": "Brush strokes visible at lower edge above tile\n\nPaint on RHS wall light rose\n\nCracks in paint, uneven finish beneath LHS edge of mirror above RHS vanity\n\nMark to RHS of LHS wall light rose\n\nMarks on wall and uneven finish to LHS of LHS vanity",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.72,
+        "y": 71.79
+      },
+      {
+        "x": 68.64,
+        "y": 68.53
+      },
+      {
+        "x": 68.55,
+        "y": 64.91
+      },
+      {
+        "x": 68.55,
+        "y": 61.77
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-08_thumb_1.jpg",
+      "photos/1F-MEN-08_thumb_2.jpg",
+      "photos/1F-MEN-08_thumb_3.jpg",
+      "photos/1F-MEN-08_thumb_4.jpg",
+      "photos/1F-MEN-08_thumb_5.jpg",
+      "photos/1F-MEN-08_thumb_6.jpg",
+      "photos/1F-MEN-08_thumb_7.jpg",
+      "photos/1F-MEN-08_thumb_8.jpg",
+      "photos/1F-MEN-08_thumb_9.jpg",
+      "photos/1F-MEN-08_thumb_10.jpg",
+      "photos/1F-MEN-08_thumb_11.jpg",
+      "photos/1F-MEN-08_thumb_12.jpg",
+      "photos/1F-MEN-08_thumb_13.jpg",
+      "photos/1F-MEN-08_thumb_14.jpg",
+      "photos/1F-MEN-08_thumb_15.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-08_full_1.jpg",
+      "photos/1F-MEN-08_full_2.jpg",
+      "photos/1F-MEN-08_full_3.jpg",
+      "photos/1F-MEN-08_full_4.jpg",
+      "photos/1F-MEN-08_full_5.jpg",
+      "photos/1F-MEN-08_full_6.jpg",
+      "photos/1F-MEN-08_full_7.jpg",
+      "photos/1F-MEN-08_full_8.jpg",
+      "photos/1F-MEN-08_full_9.jpg",
+      "photos/1F-MEN-08_full_10.jpg",
+      "photos/1F-MEN-08_full_11.jpg",
+      "photos/1F-MEN-08_full_12.jpg",
+      "photos/1F-MEN-08_full_13.jpg",
+      "photos/1F-MEN-08_full_14.jpg",
+      "photos/1F-MEN-08_full_15.jpg"
+    ],
+    "createdAt": "2026-09-26T12:53:48.270Z",
+    "updatedAt": "2026-09-26T12:53:48.271Z"
+  },
+  {
+    "tag": "1F-MEN-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skeiling section to RHS of window",
+    "description": "Wall paint at edge with vanity wall at centre of slope and cracks, marks, unevenness further down",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.8,
+        "y": 71.9
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-09_thumb_1.jpg",
+      "photos/1F-MEN-09_thumb_2.jpg",
+      "photos/1F-MEN-09_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-09_full_1.jpg",
+      "photos/1F-MEN-09_full_2.jpg",
+      "photos/1F-MEN-09_full_3.jpg"
+    ],
+    "createdAt": "2026-09-26T12:58:29.501Z",
+    "updatedAt": "2026-09-26T13:02:13.233Z"
+  },
+  {
+    "tag": "1F-MEN-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skeiling section to RHS of bathroom window",
+    "description": "Uneven finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.5,
+        "y": 72.32
+      },
+      {
+        "x": 71.15,
+        "y": 72.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-10_thumb_1.jpg",
+      "photos/1F-MEN-10_thumb_2.jpg",
+      "photos/1F-MEN-10_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-10_full_1.jpg",
+      "photos/1F-MEN-10_full_2.jpg",
+      "photos/1F-MEN-10_full_3.jpg"
+    ],
+    "createdAt": "2026-09-26T13:05:49.806Z",
+    "updatedAt": "2026-09-26T13:05:49.808Z"
+  },
+  {
+    "tag": "1F-MEN-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall below skeiling to RHS of bathroom window",
+    "description": "Brush strokes visible",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.55,
+        "y": 72.49
+      },
+      {
+        "x": 70.86,
+        "y": 72.37
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-11_thumb_1.jpg",
+      "photos/1F-MEN-11_thumb_2.jpg",
+      "photos/1F-MEN-11_thumb_3.jpg",
+      "photos/1F-MEN-11_thumb_4.jpg",
+      "photos/1F-MEN-11_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-11_full_1.jpg",
+      "photos/1F-MEN-11_full_2.jpg",
+      "photos/1F-MEN-11_full_3.jpg",
+      "photos/1F-MEN-11_full_4.jpg",
+      "photos/1F-MEN-11_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T13:07:55.867Z",
+    "updatedAt": "2026-09-26T13:07:55.869Z"
+  },
+  {
+    "tag": "1F-MEN-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "RHS window dormer wall",
+    "description": "Uneven skeiling edge finish\nMarks on sloped section and poor paint finish\nBrush strokes visible at wall edges",
+    "comments": "",
+    "pins": [
+      {
+        "x": 70.86,
+        "y": 72.49
+      },
+      {
+        "x": 71.02,
+        "y": 75.42
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-12_thumb_1.jpg",
+      "photos/1F-MEN-12_thumb_2.jpg",
+      "photos/1F-MEN-12_thumb_3.jpg",
+      "photos/1F-MEN-12_thumb_4.jpg",
+      "photos/1F-MEN-12_thumb_5.jpg",
+      "photos/1F-MEN-12_thumb_6.jpg",
+      "photos/1F-MEN-12_thumb_7.jpg",
+      "photos/1F-MEN-12_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-12_full_1.jpg",
+      "photos/1F-MEN-12_full_2.jpg",
+      "photos/1F-MEN-12_full_3.jpg",
+      "photos/1F-MEN-12_full_4.jpg",
+      "photos/1F-MEN-12_full_5.jpg",
+      "photos/1F-MEN-12_full_6.jpg",
+      "photos/1F-MEN-12_full_7.jpg",
+      "photos/1F-MEN-12_full_8.jpg"
+    ],
+    "createdAt": "2026-09-26T13:14:38.960Z",
+    "updatedAt": "2026-09-26T13:14:38.962Z"
+  },
+  {
+    "tag": "1F-MEN-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling to RHS of chandelier",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.26,
+        "y": 74.11
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-13_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-13_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T13:16:17.182Z",
+    "updatedAt": "2026-09-26T13:16:17.182Z"
+  },
+  {
+    "tag": "1F-MEN-14",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of dormer window",
+    "description": "Brush strokes along edge\n\nUneven finish at lower side of sloped section",
+    "comments": "",
+    "pins": [],
+    "thumbFiles": [
+      "photos/1F-MEN-14_thumb_1.jpg",
+      "photos/1F-MEN-14_thumb_2.jpg",
+      "photos/1F-MEN-14_thumb_3.jpg",
+      "photos/1F-MEN-14_thumb_4.jpg",
+      "photos/1F-MEN-14_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-14_full_1.jpg",
+      "photos/1F-MEN-14_full_2.jpg",
+      "photos/1F-MEN-14_full_3.jpg",
+      "photos/1F-MEN-14_full_4.jpg",
+      "photos/1F-MEN-14_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T13:19:27.802Z",
+    "updatedAt": "2026-09-26T13:19:27.803Z"
+  },
+  {
+    "tag": "1F-MEN-15",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Window frame",
+    "description": "Cracks/gaps in paint/mastic around window frame\n\nMarks/paint on window frame",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.6,
+        "y": 75.28
+      },
+      {
+        "x": 73.65,
+        "y": 75.16
+      },
+      {
+        "x": 75.71,
+        "y": 75.16
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-15_thumb_1.jpg",
+      "photos/1F-MEN-15_thumb_2.jpg",
+      "photos/1F-MEN-15_thumb_3.jpg",
+      "photos/1F-MEN-15_thumb_4.jpg",
+      "photos/1F-MEN-15_thumb_5.jpg",
+      "photos/1F-MEN-15_thumb_6.jpg",
+      "photos/1F-MEN-15_thumb_7.jpg",
+      "photos/1F-MEN-15_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-15_full_1.jpg",
+      "photos/1F-MEN-15_full_2.jpg",
+      "photos/1F-MEN-15_full_3.jpg",
+      "photos/1F-MEN-15_full_4.jpg",
+      "photos/1F-MEN-15_full_5.jpg",
+      "photos/1F-MEN-15_full_6.jpg",
+      "photos/1F-MEN-15_full_7.jpg",
+      "photos/1F-MEN-15_full_8.jpg"
+    ],
+    "createdAt": "2026-09-26T13:25:24.243Z",
+    "updatedAt": "2026-09-26T13:25:24.244Z"
+  },
+  {
+    "tag": "1F-MEN-16",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skeiling to LHS of window",
+    "description": "Wall paint on skeiling higher up at RHS edge\n\nUneven finish, white paint patches visible at top left and along top edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.79,
+        "y": 71.9
+      },
+      {
+        "x": 78.26,
+        "y": 71.44
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-16_thumb_1.jpg",
+      "photos/1F-MEN-16_thumb_2.jpg",
+      "photos/1F-MEN-16_thumb_3.jpg",
+      "photos/1F-MEN-16_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-16_full_1.jpg",
+      "photos/1F-MEN-16_full_2.jpg",
+      "photos/1F-MEN-16_full_3.jpg",
+      "photos/1F-MEN-16_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T13:33:37.636Z",
+    "updatedAt": "2026-09-26T13:33:37.638Z"
+  },
+  {
+    "tag": "1F-MEN-17",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Toilet wall",
+    "description": "Mark just above tile line all along",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.34,
+        "y": 71.32
+      },
+      {
+        "x": 78.26,
+        "y": 68.41
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-17_thumb_1.jpg",
+      "photos/1F-MEN-17_thumb_2.jpg",
+      "photos/1F-MEN-17_thumb_3.jpg",
+      "photos/1F-MEN-17_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-17_full_1.jpg",
+      "photos/1F-MEN-17_full_2.jpg",
+      "photos/1F-MEN-17_full_3.jpg",
+      "photos/1F-MEN-17_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T13:36:21.786Z",
+    "updatedAt": "2026-09-27T16:59:49.028Z"
+  },
+  {
+    "tag": "1F-MEN-18",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Edge between toilet wall and shower wall",
+    "description": "Cracks in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 78.01,
+        "y": 68.06
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-18_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-18_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T13:38:03.505Z",
+    "updatedAt": "2026-09-26T13:38:03.505Z"
+  },
+  {
+    "tag": "1F-MEN-19",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Narrow wall to RHS of shower",
+    "description": "Fill gap between tile and wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 75.46,
+        "y": 67.96
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-19_thumb_1.jpg",
+      "photos/1F-MEN-19_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-19_full_1.jpg",
+      "photos/1F-MEN-19_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T13:40:10.055Z",
+    "updatedAt": "2026-09-26T13:40:10.057Z"
+  },
+  {
+    "tag": "1F-MEN-20",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Inside shower",
+    "description": "Gaps in mastic between tile and ceiling to RHS of shower",
+    "comments": "",
+    "pins": [
+      {
+        "x": 77.85,
+        "y": 67.71
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-20_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-20_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T13:44:04.439Z",
+    "updatedAt": "2026-09-26T13:44:04.439Z"
+  },
+  {
+    "tag": "1F-MEN-21",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling inside shower",
+    "description": "Dink in plaster on RHS\nPlaster bulge on LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 76.86,
+        "y": 66.43
+      },
+      {
+        "x": 76.78,
+        "y": 62.64
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-21_thumb_1.jpg",
+      "photos/1F-MEN-21_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-21_full_1.jpg",
+      "photos/1F-MEN-21_full_2.jpg"
+    ],
+    "createdAt": "2026-09-26T13:46:39.880Z",
+    "updatedAt": "2026-09-27T16:59:40.436Z"
+  },
+  {
+    "tag": "1F-MEN-22",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MEN",
+    "roomName": "Master Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling around downlights",
+    "description": "Mark near shower downlight\n\nUneven finish around centere and vanity downlight",
+    "comments": "",
+    "pins": [
+      {
+        "x": 76.94,
+        "y": 64.33
+      },
+      {
+        "x": 73.65,
+        "y": 64.45
+      },
+      {
+        "x": 70.69,
+        "y": 64.33
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MEN-22_thumb_1.jpg",
+      "photos/1F-MEN-22_thumb_2.jpg",
+      "photos/1F-MEN-22_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MEN-22_full_1.jpg",
+      "photos/1F-MEN-22_full_2.jpg",
+      "photos/1F-MEN-22_full_3.jpg"
+    ],
+    "createdAt": "2026-09-26T13:50:26.124Z",
+    "updatedAt": "2026-09-26T13:50:26.126Z"
+  },
+  {
+    "tag": "1F-BL1-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BL1",
+    "roomName": "Balcony",
+    "trade": "Tiling",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Balcony floor tiles",
+    "description": "Significant movement in balcony tiles - especially one directly below the LHS balcony door and the one to the left of it",
+    "comments": "",
+    "pins": [
+      {
+        "x": 71.71,
+        "y": 31.11
+      },
+      {
+        "x": 69.91,
+        "y": 30.99
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BL1-01_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BL1-01_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T14:16:45.903Z",
+    "updatedAt": "2026-09-26T14:16:45.903Z"
+  },
+  {
+    "tag": "1F-BL1-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BL1",
+    "roomName": "Balcony",
+    "trade": "Structural / Building",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Under balcony doors",
+    "description": "No flashing under balcony doors",
+    "comments": "",
+    "pins": [
+      {
+        "x": 72.62,
+        "y": 32.04
+      },
+      {
+        "x": 74.67,
+        "y": 31.93
+      },
+      {
+        "x": 70.32,
+        "y": 31.93
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BL1-02_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BL1-02_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T14:18:32.487Z",
+    "updatedAt": "2026-09-26T14:40:15.742Z"
+  },
+  {
+    "tag": "1F-BL1-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BL1",
+    "roomName": "Balcony",
+    "trade": "Structural / Building",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Flashing at edge with brick wall",
+    "description": "Cracks in mastic",
+    "comments": "",
+    "pins": [
+      {
+        "x": 69.08,
+        "y": 26.8
+      },
+      {
+        "x": 71.06,
+        "y": 26.68
+      },
+      {
+        "x": 74.1,
+        "y": 26.8
+      },
+      {
+        "x": 76.57,
+        "y": 26.92
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BL1-03_thumb_1.jpg",
+      "photos/1F-BL1-03_thumb_2.jpg",
+      "photos/1F-BL1-03_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BL1-03_full_1.jpg",
+      "photos/1F-BL1-03_full_2.jpg",
+      "photos/1F-BL1-03_full_3.jpg"
+    ],
+    "createdAt": "2026-09-26T14:20:23.754Z",
+    "updatedAt": "2026-09-26T14:39:54.450Z"
+  },
+  {
+    "tag": "1F-BL1-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BL1",
+    "roomName": "Balcony",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Balcony rail",
+    "description": "Uneven finish and red parts on top, outside",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.18,
+        "y": 26.8
+      },
+      {
+        "x": 70.81,
+        "y": 26.92
+      },
+      {
+        "x": 73.03,
+        "y": 26.8
+      },
+      {
+        "x": 78.13,
+        "y": 26.8
+      },
+      {
+        "x": 75.58,
+        "y": 26.68
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BL1-04_thumb_1.jpg",
+      "photos/1F-BL1-04_thumb_2.jpg",
+      "photos/1F-BL1-04_thumb_3.jpg",
+      "photos/1F-BL1-04_thumb_4.jpg",
+      "photos/1F-BL1-04_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BL1-04_full_1.jpg",
+      "photos/1F-BL1-04_full_2.jpg",
+      "photos/1F-BL1-04_full_3.jpg",
+      "photos/1F-BL1-04_full_4.jpg",
+      "photos/1F-BL1-04_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T14:24:05.378Z",
+    "updatedAt": "2026-09-26T14:24:05.379Z"
+  },
+  {
+    "tag": "1F-BL1-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BL1",
+    "roomName": "Balcony",
+    "trade": "Structural / Building",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to side of balcony doors",
+    "description": "Screw in wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.67,
+        "y": 32.51
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BL1-05_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BL1-05_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T14:25:51.699Z",
+    "updatedAt": "2026-09-26T14:39:20.933Z"
+  },
+  {
+    "tag": "1F-MD1-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD1 door",
+    "description": "Scratches, paint on hinges, latch and strike plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 62.16,
+        "y": 49.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-01_thumb_1.jpg",
+      "photos/1F-MD1-01_thumb_2.jpg",
+      "photos/1F-MD1-01_thumb_3.jpg",
+      "photos/1F-MD1-01_thumb_4.jpg",
+      "photos/1F-MD1-01_thumb_5.jpg",
+      "photos/1F-MD1-01_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-01_full_1.jpg",
+      "photos/1F-MD1-01_full_2.jpg",
+      "photos/1F-MD1-01_full_3.jpg",
+      "photos/1F-MD1-01_full_4.jpg",
+      "photos/1F-MD1-01_full_5.jpg",
+      "photos/1F-MD1-01_full_6.jpg"
+    ],
+    "createdAt": "2026-09-26T14:31:51.791Z",
+    "updatedAt": "2026-09-26T14:32:49.102Z"
+  },
+  {
+    "tag": "1F-MD1-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Side with controls",
+    "description": "Underfloor heating gauges are inaccessible, boxed in",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.38,
+        "y": 44.08
+      },
+      {
+        "x": 58.46,
+        "y": 46.65
+      },
+      {
+        "x": 58.46,
+        "y": 48.63
+      }
+    ],
+    "thumbFiles": [],
+    "photoFiles": [],
+    "createdAt": "2026-09-26T14:35:58.705Z",
+    "updatedAt": "2026-09-26T14:35:58.705Z"
+  },
+  {
+    "tag": "1F-MD1-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "LHS of underfloor pipe/gauge boxing and top surface",
+    "description": "Holes in finish, marks",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.38,
+        "y": 48.74
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-03_thumb_1.jpg",
+      "photos/1F-MD1-03_thumb_2.jpg",
+      "photos/1F-MD1-03_thumb_3.jpg",
+      "photos/1F-MD1-03_thumb_4.jpg",
+      "photos/1F-MD1-03_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-03_full_1.jpg",
+      "photos/1F-MD1-03_full_2.jpg",
+      "photos/1F-MD1-03_full_3.jpg",
+      "photos/1F-MD1-03_full_4.jpg",
+      "photos/1F-MD1-03_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T14:37:29.659Z",
+    "updatedAt": "2026-09-26T15:24:55.373Z"
+  },
+  {
+    "tag": "1F-MD1-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lock stile edge of MD1 door",
+    "description": "Chips in paint at bottom, mark a little higher up. \n\nSix distinct holes below latch\n\nRough and uneven finish above latch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 62.16,
+        "y": 49.56
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-04_thumb_1.jpg",
+      "photos/1F-MD1-04_thumb_2.jpg",
+      "photos/1F-MD1-04_thumb_3.jpg",
+      "photos/1F-MD1-04_thumb_4.jpg",
+      "photos/1F-MD1-04_thumb_5.jpg",
+      "photos/1F-MD1-04_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-04_full_1.jpg",
+      "photos/1F-MD1-04_full_2.jpg",
+      "photos/1F-MD1-04_full_3.jpg",
+      "photos/1F-MD1-04_full_4.jpg",
+      "photos/1F-MD1-04_full_5.jpg",
+      "photos/1F-MD1-04_full_6.jpg"
+    ],
+    "createdAt": "2026-09-26T14:48:49.522Z",
+    "updatedAt": "2026-09-27T16:59:04.196Z"
+  },
+  {
+    "tag": "1F-MD1-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave & frame around MD1 door",
+    "description": "Cracks around outside edge to wall\n\nChips, uneven finish at bottom left and higher up in line with bottom pane\n\nMark, paint drips at bottom right\n\nUneven finish on LHS just above handle\n\nPaint drips on RHS in line with handle\n\nWhite areas on hinge side door frame in line with door handle",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.23,
+        "y": 49.21
+      },
+      {
+        "x": 61.09,
+        "y": 49.21
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-05_thumb_1.jpg",
+      "photos/1F-MD1-05_thumb_2.jpg",
+      "photos/1F-MD1-05_thumb_3.jpg",
+      "photos/1F-MD1-05_thumb_4.jpg",
+      "photos/1F-MD1-05_thumb_5.jpg",
+      "photos/1F-MD1-05_thumb_6.jpg",
+      "photos/1F-MD1-05_thumb_7.jpg",
+      "photos/1F-MD1-05_thumb_8.jpg",
+      "photos/1F-MD1-05_thumb_9.jpg",
+      "photos/1F-MD1-05_thumb_10.jpg",
+      "photos/1F-MD1-05_thumb_11.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-05_full_1.jpg",
+      "photos/1F-MD1-05_full_2.jpg",
+      "photos/1F-MD1-05_full_3.jpg",
+      "photos/1F-MD1-05_full_4.jpg",
+      "photos/1F-MD1-05_full_5.jpg",
+      "photos/1F-MD1-05_full_6.jpg",
+      "photos/1F-MD1-05_full_7.jpg",
+      "photos/1F-MD1-05_full_8.jpg",
+      "photos/1F-MD1-05_full_9.jpg",
+      "photos/1F-MD1-05_full_10.jpg",
+      "photos/1F-MD1-05_full_11.jpg"
+    ],
+    "createdAt": "2026-09-26T14:55:33.057Z",
+    "updatedAt": "2026-09-26T15:00:26.390Z"
+  },
+  {
+    "tag": "1F-MD1-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "MD1 door",
+    "description": "Uneven finish just above bottom hinge\nPaint drips, white paint on bottom edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 62.16,
+        "y": 49.21
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-06_thumb_1.jpg",
+      "photos/1F-MD1-06_thumb_2.jpg",
+      "photos/1F-MD1-06_thumb_3.jpg",
+      "photos/1F-MD1-06_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-06_full_1.jpg",
+      "photos/1F-MD1-06_full_2.jpg",
+      "photos/1F-MD1-06_full_3.jpg",
+      "photos/1F-MD1-06_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T14:58:49.693Z",
+    "updatedAt": "2026-09-26T14:58:49.694Z"
+  },
+  {
+    "tag": "1F-MD1-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of door",
+    "description": "Brush strokes visible above skirting\n\nMarks on wall low down\n\nMarks under alarm panel",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.56,
+        "y": 48.86
+      },
+      {
+        "x": 65.54,
+        "y": 48.63
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-07_thumb_1.jpg",
+      "photos/1F-MD1-07_thumb_2.jpg",
+      "photos/1F-MD1-07_thumb_3.jpg",
+      "photos/1F-MD1-07_thumb_4.jpg",
+      "photos/1F-MD1-07_thumb_5.jpg",
+      "photos/1F-MD1-07_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-07_full_1.jpg",
+      "photos/1F-MD1-07_full_2.jpg",
+      "photos/1F-MD1-07_full_3.jpg",
+      "photos/1F-MD1-07_full_4.jpg",
+      "photos/1F-MD1-07_full_5.jpg",
+      "photos/1F-MD1-07_full_6.jpg"
+    ],
+    "createdAt": "2026-09-26T15:06:26.295Z",
+    "updatedAt": "2026-09-26T15:06:26.296Z"
+  },
+  {
+    "tag": "1F-MD1-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling above wall to LHS of door",
+    "description": "Plaster bulge near fitted wardrobe",
+    "comments": "",
+    "pins": [
+      {
+        "x": 65.54,
+        "y": 47.81
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-08_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-08_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T15:07:57.945Z",
+    "updatedAt": "2026-09-26T15:07:57.945Z"
+  },
+  {
+    "tag": "1F-MD1-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Skirting to LHS of door",
+    "description": "Paint drips, white paint marks, brush strokes and scratches visible on skirting\n\nCrack/gap in paint to RHS edge with door architrave",
+    "comments": "",
+    "pins": [
+      {
+        "x": 64.05,
+        "y": 49.21
+      },
+      {
+        "x": 66.6,
+        "y": 48.98
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-09_thumb_1.jpg",
+      "photos/1F-MD1-09_thumb_2.jpg",
+      "photos/1F-MD1-09_thumb_3.jpg",
+      "photos/1F-MD1-09_thumb_4.jpg",
+      "photos/1F-MD1-09_thumb_5.jpg",
+      "photos/1F-MD1-09_thumb_6.jpg",
+      "photos/1F-MD1-09_thumb_7.jpg",
+      "photos/1F-MD1-09_thumb_8.jpg",
+      "photos/1F-MD1-09_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-09_full_1.jpg",
+      "photos/1F-MD1-09_full_2.jpg",
+      "photos/1F-MD1-09_full_3.jpg",
+      "photos/1F-MD1-09_full_4.jpg",
+      "photos/1F-MD1-09_full_5.jpg",
+      "photos/1F-MD1-09_full_6.jpg",
+      "photos/1F-MD1-09_full_7.jpg",
+      "photos/1F-MD1-09_full_8.jpg",
+      "photos/1F-MD1-09_full_9.jpg"
+    ],
+    "createdAt": "2026-09-26T15:13:01.570Z",
+    "updatedAt": "2026-09-26T15:13:01.570Z"
+  },
+  {
+    "tag": "1F-MD1-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling above RHS of door",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 61.67,
+        "y": 49.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-10_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-10_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T15:14:38.263Z",
+    "updatedAt": "2026-09-26T15:14:38.265Z"
+  },
+  {
+    "tag": "1F-MD1-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of door",
+    "description": "Marks lower down\n\nMarks higher up around edge with control",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.68,
+        "y": 48.86
+      },
+      {
+        "x": 58.63,
+        "y": 48.86
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-11_thumb_1.jpg",
+      "photos/1F-MD1-11_thumb_2.jpg",
+      "photos/1F-MD1-11_thumb_3.jpg",
+      "photos/1F-MD1-11_thumb_4.jpg",
+      "photos/1F-MD1-11_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-11_full_1.jpg",
+      "photos/1F-MD1-11_full_2.jpg",
+      "photos/1F-MD1-11_full_3.jpg",
+      "photos/1F-MD1-11_full_4.jpg",
+      "photos/1F-MD1-11_full_5.jpg"
+    ],
+    "createdAt": "2026-09-26T15:19:49.882Z",
+    "updatedAt": "2026-09-26T15:19:49.884Z"
+  },
+  {
+    "tag": "1F-MD1-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to RHS of door",
+    "description": "Marks, uneven finish on skirting\n\nCrack/gap in paint at edge with architrave",
+    "comments": "",
+    "pins": [
+      {
+        "x": 61.01,
+        "y": 48.98
+      },
+      {
+        "x": 58.54,
+        "y": 48.98
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-12_thumb_1.jpg",
+      "photos/1F-MD1-12_thumb_2.jpg",
+      "photos/1F-MD1-12_thumb_3.jpg",
+      "photos/1F-MD1-12_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-12_full_1.jpg",
+      "photos/1F-MD1-12_full_2.jpg",
+      "photos/1F-MD1-12_full_3.jpg",
+      "photos/1F-MD1-12_full_4.jpg"
+    ],
+    "createdAt": "2026-09-26T15:22:20.575Z",
+    "updatedAt": "2026-09-26T15:22:20.576Z"
+  },
+  {
+    "tag": "1F-MD1-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MD1",
+    "roomName": "Master Dressing Room 1",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling to LHS of LHS plaster-in downlight",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.93,
+        "y": 45.6
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MD1-13_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MD1-13_full_1.jpg"
+    ],
+    "createdAt": "2026-09-26T18:40:41.769Z",
+    "updatedAt": "2026-09-26T18:40:41.775Z"
+  },
+  {
+    "tag": "1F-MBD-80",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling",
+    "description": "Around firealarm & downlight nearest:\nPatchy finish, marks\n\nAround chandelier and towards speaker nearer MD2:\n\nPatches",
+    "comments": "",
+    "pins": [
+      {
+        "x": 68.83,
+        "y": 42.7
+      },
+      {
+        "x": 72.94,
+        "y": 42.58
+      },
+      {
+        "x": 75.57,
+        "y": 45.61
+      },
+      {
+        "x": 70.15,
+        "y": 45.49
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-80_thumb_1.jpg",
+      "photos/1F-MBD-80_thumb_2.jpg",
+      "photos/1F-MBD-80_thumb_3.jpg",
+      "photos/1F-MBD-80_thumb_4.jpg",
+      "photos/1F-MBD-80_thumb_5.jpg",
+      "photos/1F-MBD-80_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-80_full_1.jpg",
+      "photos/1F-MBD-80_full_2.jpg",
+      "photos/1F-MBD-80_full_3.jpg",
+      "photos/1F-MBD-80_full_4.jpg",
+      "photos/1F-MBD-80_full_5.jpg",
+      "photos/1F-MBD-80_full_6.jpg"
+    ],
+    "createdAt": "2026-09-27T07:18:48.732Z",
+    "updatedAt": "2026-09-27T07:18:48.745Z"
+  },
+  {
+    "tag": "1F-MBD-81",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "MBD",
+    "roomName": "Master Bedroom",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Hallway side of Master bedroom door",
+    "description": "Mark on RHS in line with bottom of second pane\n\nMark on RHS in line with centre of bottom pane and nearer bottom\n\nUneven finish in groove at bottom right and mark at bottom right corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.83,
+        "y": 51.7
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-MBD-81_thumb_1.jpg",
+      "photos/1F-MBD-81_thumb_2.jpg",
+      "photos/1F-MBD-81_thumb_3.jpg",
+      "photos/1F-MBD-81_thumb_4.jpg",
+      "photos/1F-MBD-81_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-MBD-81_full_1.jpg",
+      "photos/1F-MBD-81_full_2.jpg",
+      "photos/1F-MBD-81_full_3.jpg",
+      "photos/1F-MBD-81_full_4.jpg",
+      "photos/1F-MBD-81_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T08:34:36.746Z",
+    "updatedAt": "2026-09-27T08:34:36.762Z"
+  },
+  {
+    "tag": "1F-BD2-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bedroom 2 door frame",
+    "description": "Intumescent strip unsticking\n\nDoor frame below top hinge is chipped and has movement when pressed",
+    "comments": "",
+    "pins": [
+      {
+        "x": 56.6,
+        "y": 48.91
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-01_thumb_1.jpg",
+      "photos/1F-BD2-01_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-01_full_1.jpg",
+      "photos/1F-BD2-01_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T08:39:06.211Z",
+    "updatedAt": "2026-09-27T08:39:06.212Z"
+  },
+  {
+    "tag": "1F-BD2-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bedroom door",
+    "description": "Hallway side:\n\nChips and paint drip below at bottom right of second pane\n\nPaint drip at top left & right of bottom pane\n\n\nRoom side:\n\nTwo scratches at top right of top pane\nMarks on right edge in line with lower part of bottom pane\nChipped bottom right side corner",
+    "comments": "",
+    "pins": [
+      {
+        "x": 55.53,
+        "y": 48.68
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-02_thumb_1.jpg",
+      "photos/1F-BD2-02_thumb_2.jpg",
+      "photos/1F-BD2-02_thumb_3.jpg",
+      "photos/1F-BD2-02_thumb_4.jpg",
+      "photos/1F-BD2-02_thumb_5.jpg",
+      "photos/1F-BD2-02_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-02_full_1.jpg",
+      "photos/1F-BD2-02_full_2.jpg",
+      "photos/1F-BD2-02_full_3.jpg",
+      "photos/1F-BD2-02_full_4.jpg",
+      "photos/1F-BD2-02_full_5.jpg",
+      "photos/1F-BD2-02_full_6.jpg"
+    ],
+    "createdAt": "2026-09-27T08:47:24.560Z",
+    "updatedAt": "2026-09-27T08:48:57.261Z"
+  },
+  {
+    "tag": "1F-BD2-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Joinery & Internal Doors",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bedroom 2 door",
+    "description": "Movment in room side handle\nScratches on latch and strike plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 55.61,
+        "y": 48.79
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-03_thumb_1.jpg",
+      "photos/1F-BD2-03_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-03_full_1.jpg",
+      "photos/1F-BD2-03_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T08:52:16.211Z",
+    "updatedAt": "2026-09-27T08:52:16.225Z"
+  },
+  {
+    "tag": "1F-BD2-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Bedroom 2 frame, architrave",
+    "description": "Frame:\n\nCracks/gaps in paint at top corner\nUnfinished areas, chips, marks at bottom left and right\n\n\nArchitrave:\n\nOn LHS: Chip, uneven finish, paint drips at bottom upto middle hinge. Uneven finish under and around top hinge\n\nOn RHS: paint drip in line with middle of bottom pane\n\nCracks/gaps in paint at corners and edge to wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 56.68,
+        "y": 49.03
+      },
+      {
+        "x": 54.87,
+        "y": 49.03
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-04_thumb_1.jpg",
+      "photos/1F-BD2-04_thumb_2.jpg",
+      "photos/1F-BD2-04_thumb_3.jpg",
+      "photos/1F-BD2-04_thumb_4.jpg",
+      "photos/1F-BD2-04_thumb_5.jpg",
+      "photos/1F-BD2-04_thumb_6.jpg",
+      "photos/1F-BD2-04_thumb_7.jpg",
+      "photos/1F-BD2-04_thumb_8.jpg",
+      "photos/1F-BD2-04_thumb_9.jpg",
+      "photos/1F-BD2-04_thumb_10.jpg",
+      "photos/1F-BD2-04_thumb_11.jpg",
+      "photos/1F-BD2-04_thumb_12.jpg",
+      "photos/1F-BD2-04_thumb_13.jpg",
+      "photos/1F-BD2-04_thumb_14.jpg",
+      "photos/1F-BD2-04_thumb_15.jpg",
+      "photos/1F-BD2-04_thumb_16.jpg",
+      "photos/1F-BD2-04_thumb_17.jpg",
+      "photos/1F-BD2-04_thumb_18.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-04_full_1.jpg",
+      "photos/1F-BD2-04_full_2.jpg",
+      "photos/1F-BD2-04_full_3.jpg",
+      "photos/1F-BD2-04_full_4.jpg",
+      "photos/1F-BD2-04_full_5.jpg",
+      "photos/1F-BD2-04_full_6.jpg",
+      "photos/1F-BD2-04_full_7.jpg",
+      "photos/1F-BD2-04_full_8.jpg",
+      "photos/1F-BD2-04_full_9.jpg",
+      "photos/1F-BD2-04_full_10.jpg",
+      "photos/1F-BD2-04_full_11.jpg",
+      "photos/1F-BD2-04_full_12.jpg",
+      "photos/1F-BD2-04_full_13.jpg",
+      "photos/1F-BD2-04_full_14.jpg",
+      "photos/1F-BD2-04_full_15.jpg",
+      "photos/1F-BD2-04_full_16.jpg",
+      "photos/1F-BD2-04_full_17.jpg",
+      "photos/1F-BD2-04_full_18.jpg"
+    ],
+    "createdAt": "2026-09-27T09:05:31.467Z",
+    "updatedAt": "2026-09-27T09:05:31.469Z"
+  },
+  {
+    "tag": "1F-BD2-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "PIR and wall behind",
+    "description": "Paint on PIR\nWall behind PIR not painted properly",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.83,
+        "y": 48.79
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-05_thumb_1.jpg",
+      "photos/1F-BD2-05_thumb_2.jpg",
+      "photos/1F-BD2-05_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-05_full_1.jpg",
+      "photos/1F-BD2-05_full_2.jpg",
+      "photos/1F-BD2-05_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T09:09:48.542Z",
+    "updatedAt": "2026-09-27T09:09:48.543Z"
+  },
+  {
+    "tag": "1F-BD2-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling above bedroom door and that in corner to LHS",
+    "description": "Paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 55.53,
+        "y": 49.03
+      },
+      {
+        "x": 57.67,
+        "y": 49.03
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-06_thumb_1.jpg",
+      "photos/1F-BD2-06_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-06_full_1.jpg",
+      "photos/1F-BD2-06_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T09:16:49.382Z",
+    "updatedAt": "2026-09-27T09:16:49.384Z"
+  },
+  {
+    "tag": "1F-BD2-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Centre of dressing room wall to RHS of lower socket",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58,
+        "y": 43.79
+      },
+      {
+        "x": 58,
+        "y": 46.81
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-07_thumb_1.jpg",
+      "photos/1F-BD2-07_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-07_full_1.jpg",
+      "photos/1F-BD2-07_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T09:20:09.549Z",
+    "updatedAt": "2026-09-27T09:20:09.551Z"
+  },
+  {
+    "tag": "1F-BD2-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room wall upto Dressing room entrance",
+    "description": "Patches across wall: mainly around sockets and lower down",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58,
+        "y": 36.45
+      },
+      {
+        "x": 58.08,
+        "y": 42.5
+      },
+      {
+        "x": 58.16,
+        "y": 48.56
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-08_thumb_1.jpg",
+      "photos/1F-BD2-08_thumb_2.jpg",
+      "photos/1F-BD2-08_thumb_3.jpg",
+      "photos/1F-BD2-08_thumb_4.jpg",
+      "photos/1F-BD2-08_thumb_5.jpg",
+      "photos/1F-BD2-08_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-08_full_1.jpg",
+      "photos/1F-BD2-08_full_2.jpg",
+      "photos/1F-BD2-08_full_3.jpg",
+      "photos/1F-BD2-08_full_4.jpg",
+      "photos/1F-BD2-08_full_5.jpg",
+      "photos/1F-BD2-08_full_6.jpg"
+    ],
+    "createdAt": "2026-09-27T09:26:31.408Z",
+    "updatedAt": "2026-09-27T09:26:31.409Z"
+  },
+  {
+    "tag": "1F-BD2-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Flooring",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Above TV, data socket",
+    "description": "Uneven finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.75,
+        "y": 42.04
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-09_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-09_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T09:27:52.508Z",
+    "updatedAt": "2026-09-27T09:27:52.508Z"
+  },
+  {
+    "tag": "1F-BD2-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower socket, below TV/data socket",
+    "description": "Brush strokes visible around socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.83,
+        "y": 42.15
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-10_thumb_1.jpg",
+      "photos/1F-BD2-10_thumb_2.jpg",
+      "photos/1F-BD2-10_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-10_full_1.jpg",
+      "photos/1F-BD2-10_full_2.jpg",
+      "photos/1F-BD2-10_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T09:29:57.583Z",
+    "updatedAt": "2026-09-27T09:29:57.587Z"
+  },
+  {
+    "tag": "1F-BD2-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower socket, below TV/data socket",
+    "description": "Socket does not sit flush to wall",
+    "comments": "",
+    "pins": [],
+    "thumbFiles": [
+      "photos/1F-BD2-11_thumb_1.jpg",
+      "photos/1F-BD2-11_thumb_2.jpg",
+      "photos/1F-BD2-11_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-11_full_1.jpg",
+      "photos/1F-BD2-11_full_2.jpg",
+      "photos/1F-BD2-11_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T09:31:32.481Z",
+    "updatedAt": "2026-09-27T09:31:32.482Z"
+  },
+  {
+    "tag": "1F-BD2-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting on Dressing room wall upto Dressing room entrance",
+    "description": "Paint drips on skirting midway between lower socket and RHS\n\nMarks on skirting midway between lower socket and LHS, and extending to LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.08,
+        "y": 49.14
+      },
+      {
+        "x": 58,
+        "y": 43.79
+      },
+      {
+        "x": 58.16,
+        "y": 36.45
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-12_thumb_1.jpg",
+      "photos/1F-BD2-12_thumb_2.jpg",
+      "photos/1F-BD2-12_thumb_3.jpg",
+      "photos/1F-BD2-12_thumb_4.jpg",
+      "photos/1F-BD2-12_thumb_5.jpg",
+      "photos/1F-BD2-12_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-12_full_1.jpg",
+      "photos/1F-BD2-12_full_2.jpg",
+      "photos/1F-BD2-12_full_3.jpg",
+      "photos/1F-BD2-12_full_4.jpg",
+      "photos/1F-BD2-12_full_5.jpg",
+      "photos/1F-BD2-12_full_6.jpg"
+    ],
+    "createdAt": "2026-09-27T09:46:14.568Z",
+    "updatedAt": "2026-09-27T09:46:14.569Z"
+  },
+  {
+    "tag": "1F-BD2-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall just above skirting to LHS of lower socket on Dressing room wall",
+    "description": "Marks above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58,
+        "y": 39.59
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-13_thumb_1.jpg",
+      "photos/1F-BD2-13_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-13_full_1.jpg",
+      "photos/1F-BD2-13_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T09:48:03.991Z",
+    "updatedAt": "2026-09-27T09:48:03.993Z"
+  },
+  {
+    "tag": "1F-BD2-14",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of Dressing room entrance",
+    "description": "Marks on wall lower down and around socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.08,
+        "y": 36.45
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-14_thumb_1.jpg",
+      "photos/1F-BD2-14_thumb_2.jpg",
+      "photos/1F-BD2-14_thumb_3.jpg",
+      "photos/1F-BD2-14_thumb_4.jpg",
+      "photos/1F-BD2-14_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-14_full_1.jpg",
+      "photos/1F-BD2-14_full_2.jpg",
+      "photos/1F-BD2-14_full_3.jpg",
+      "photos/1F-BD2-14_full_4.jpg",
+      "photos/1F-BD2-14_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T09:51:09.149Z",
+    "updatedAt": "2026-09-27T09:51:09.151Z"
+  },
+  {
+    "tag": "1F-BD2-15",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch to RHS of Dressing room",
+    "description": "Paint on face plate\n\nUneven finish on top and RHS edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.92,
+        "y": 36.91
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-15_thumb_1.jpg",
+      "photos/1F-BD2-15_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-15_full_1.jpg",
+      "photos/1F-BD2-15_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T09:52:44.758Z",
+    "updatedAt": "2026-09-27T09:52:44.758Z"
+  },
+  {
+    "tag": "1F-BD2-16",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting joints/edges around room",
+    "description": "Gaps, cracks in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.25,
+        "y": 48.56
+      },
+      {
+        "x": 56.52,
+        "y": 48.79
+      },
+      {
+        "x": 58.16,
+        "y": 36.33
+      },
+      {
+        "x": 58.08,
+        "y": 33.42
+      },
+      {
+        "x": 58.08,
+        "y": 30.62
+      },
+      {
+        "x": 58.28,
+        "y": 26.85
+      },
+      {
+        "x": 47.92,
+        "y": 26.81
+      },
+      {
+        "x": 47.92,
+        "y": 49.12
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-16_thumb_1.jpg",
+      "photos/1F-BD2-16_thumb_2.jpg",
+      "photos/1F-BD2-16_thumb_3.jpg",
+      "photos/1F-BD2-16_thumb_4.jpg",
+      "photos/1F-BD2-16_thumb_5.jpg",
+      "photos/1F-BD2-16_thumb_6.jpg",
+      "photos/1F-BD2-16_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-16_full_1.jpg",
+      "photos/1F-BD2-16_full_2.jpg",
+      "photos/1F-BD2-16_full_3.jpg",
+      "photos/1F-BD2-16_full_4.jpg",
+      "photos/1F-BD2-16_full_5.jpg",
+      "photos/1F-BD2-16_full_6.jpg",
+      "photos/1F-BD2-16_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T09:59:03.164Z",
+    "updatedAt": "2026-09-27T09:59:42.553Z"
+  },
+  {
+    "tag": "1F-BD2-17",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling above Master dressing",
+    "description": "Paint drips on ceiling",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.33,
+        "y": 34.82
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-17_thumb_1.jpg",
+      "photos/1F-BD2-17_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-17_full_1.jpg",
+      "photos/1F-BD2-17_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T10:03:30.590Z",
+    "updatedAt": "2026-09-27T10:03:30.592Z"
+  },
+  {
+    "tag": "1F-BD2-18",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Dressing room architrave and wall above",
+    "description": "Paint drips, cracks in finish",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.16,
+        "y": 34.7
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-18_thumb_1.jpg",
+      "photos/1F-BD2-18_thumb_2.jpg",
+      "photos/1F-BD2-18_thumb_3.jpg",
+      "photos/1F-BD2-18_thumb_4.jpg",
+      "photos/1F-BD2-18_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-18_full_1.jpg",
+      "photos/1F-BD2-18_full_2.jpg",
+      "photos/1F-BD2-18_full_3.jpg",
+      "photos/1F-BD2-18_full_4.jpg",
+      "photos/1F-BD2-18_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T10:05:48.177Z",
+    "updatedAt": "2026-09-27T10:05:48.179Z"
+  },
+  {
+    "tag": "1F-BD2-19",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room door frame",
+    "description": "Mark on LHS bottom and RHS bottom",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.33,
+        "y": 34.93
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-19_thumb_1.jpg",
+      "photos/1F-BD2-19_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-19_full_1.jpg",
+      "photos/1F-BD2-19_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T10:08:32.375Z",
+    "updatedAt": "2026-09-27T10:08:32.375Z"
+  },
+  {
+    "tag": "1F-BD2-20",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room door",
+    "description": "Marks below bottom pane at low left, low centre and high right\n\nMarks in middle pane\n\nPaint drip to RHS of top pane",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.25,
+        "y": 34.93
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-20_thumb_1.jpg",
+      "photos/1F-BD2-20_thumb_2.jpg",
+      "photos/1F-BD2-20_thumb_3.jpg",
+      "photos/1F-BD2-20_thumb_4.jpg",
+      "photos/1F-BD2-20_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-20_full_1.jpg",
+      "photos/1F-BD2-20_full_2.jpg",
+      "photos/1F-BD2-20_full_3.jpg",
+      "photos/1F-BD2-20_full_4.jpg",
+      "photos/1F-BD2-20_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T10:10:42.055Z",
+    "updatedAt": "2026-09-27T16:58:54.811Z"
+  },
+  {
+    "tag": "1F-BD2-21",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room architrave",
+    "description": "Uneven finish at bottom LHS, marks at bottom RHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.16,
+        "y": 34
+      },
+      {
+        "x": 58.16,
+        "y": 36.45
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-21_thumb_1.jpg",
+      "photos/1F-BD2-21_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-21_full_1.jpg",
+      "photos/1F-BD2-21_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T10:12:13.224Z",
+    "updatedAt": "2026-09-27T10:12:13.225Z"
+  },
+  {
+    "tag": "1F-BD2-22",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of Dressing room door",
+    "description": "Marks at lower chest level",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.33,
+        "y": 32.86
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-22_thumb_1.jpg",
+      "photos/1F-BD2-22_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-22_full_1.jpg",
+      "photos/1F-BD2-22_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T10:15:17.996Z",
+    "updatedAt": "2026-09-27T10:15:17.999Z"
+  },
+  {
+    "tag": "1F-BD2-23",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower down on Wall between Ensuite and Dressing room doors",
+    "description": "Mark at centre\n\nBrush strokes visible above skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.16,
+        "y": 30.97
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-23_thumb_1.jpg",
+      "photos/1F-BD2-23_thumb_2.jpg",
+      "photos/1F-BD2-23_thumb_3.jpg",
+      "photos/1F-BD2-23_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-23_full_1.jpg",
+      "photos/1F-BD2-23_full_2.jpg",
+      "photos/1F-BD2-23_full_3.jpg",
+      "photos/1F-BD2-23_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T10:18:39.707Z",
+    "updatedAt": "2026-09-27T10:18:39.709Z"
+  },
+  {
+    "tag": "1F-BD2-24",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting between Ensuite and Dressing room doors",
+    "description": "Bad finish at LHS, marks & scratches to centre left, white paint drip right of centre",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.16,
+        "y": 30.86
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-24_thumb_1.jpg",
+      "photos/1F-BD2-24_thumb_2.jpg",
+      "photos/1F-BD2-24_thumb_3.jpg",
+      "photos/1F-BD2-24_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-24_full_1.jpg",
+      "photos/1F-BD2-24_full_2.jpg",
+      "photos/1F-BD2-24_full_3.jpg",
+      "photos/1F-BD2-24_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T10:21:20.188Z",
+    "updatedAt": "2026-09-27T10:21:20.191Z"
+  },
+  {
+    "tag": "1F-BD2-25",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ensuite architrave and frame",
+    "description": "Architrave:\n\nScratch and unevenness finish to bottom left\nHole and paint drips to bottom right\n\n\nFrame:\n\nUneven finish at bottom left\n\n\nPaint cracks/gaps at corners and edges of frame and architrave",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.23,
+        "y": 26.91
+      },
+      {
+        "x": 58.06,
+        "y": 30.31
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-25_thumb_1.jpg",
+      "photos/1F-BD2-25_thumb_2.jpg",
+      "photos/1F-BD2-25_thumb_3.jpg",
+      "photos/1F-BD2-25_thumb_4.jpg",
+      "photos/1F-BD2-25_thumb_5.jpg",
+      "photos/1F-BD2-25_thumb_6.jpg",
+      "photos/1F-BD2-25_thumb_7.jpg",
+      "photos/1F-BD2-25_thumb_8.jpg",
+      "photos/1F-BD2-25_thumb_9.jpg",
+      "photos/1F-BD2-25_thumb_10.jpg",
+      "photos/1F-BD2-25_thumb_11.jpg",
+      "photos/1F-BD2-25_thumb_12.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-25_full_1.jpg",
+      "photos/1F-BD2-25_full_2.jpg",
+      "photos/1F-BD2-25_full_3.jpg",
+      "photos/1F-BD2-25_full_4.jpg",
+      "photos/1F-BD2-25_full_5.jpg",
+      "photos/1F-BD2-25_full_6.jpg",
+      "photos/1F-BD2-25_full_7.jpg",
+      "photos/1F-BD2-25_full_8.jpg",
+      "photos/1F-BD2-25_full_9.jpg",
+      "photos/1F-BD2-25_full_10.jpg",
+      "photos/1F-BD2-25_full_11.jpg",
+      "photos/1F-BD2-25_full_12.jpg"
+    ],
+    "createdAt": "2026-09-27T11:17:26.506Z",
+    "updatedAt": "2026-09-27T11:17:26.519Z"
+  },
+  {
+    "tag": "1F-BD2-26",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Wall above RHS of Ensuite door",
+    "description": "Cracks in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58,
+        "y": 29.11
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-26_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-26_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T11:18:11.050Z",
+    "updatedAt": "2026-09-27T11:18:11.050Z"
+  },
+  {
+    "tag": "1F-BD2-27",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ensuite door",
+    "description": "Marks to RHS between centre and bottom pane\n\nGreen mark below right of bottom pane\n\nWhite paint, brush strokes visible at bottom of door\n\nChips on LHS a little above lower hinge\n\nWhite marks on LHS, hallway up",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.41,
+        "y": 28.29
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-27_thumb_1.jpg",
+      "photos/1F-BD2-27_thumb_2.jpg",
+      "photos/1F-BD2-27_thumb_3.jpg",
+      "photos/1F-BD2-27_thumb_4.jpg",
+      "photos/1F-BD2-27_thumb_5.jpg",
+      "photos/1F-BD2-27_thumb_6.jpg",
+      "photos/1F-BD2-27_thumb_7.jpg",
+      "photos/1F-BD2-27_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-27_full_1.jpg",
+      "photos/1F-BD2-27_full_2.jpg",
+      "photos/1F-BD2-27_full_3.jpg",
+      "photos/1F-BD2-27_full_4.jpg",
+      "photos/1F-BD2-27_full_5.jpg",
+      "photos/1F-BD2-27_full_6.jpg",
+      "photos/1F-BD2-27_full_7.jpg",
+      "photos/1F-BD2-27_full_8.jpg"
+    ],
+    "createdAt": "2026-09-27T11:21:52.406Z",
+    "updatedAt": "2026-09-27T13:40:50.018Z"
+  },
+  {
+    "tag": "1F-BD2-28",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting to LHS of Ensuite door",
+    "description": "Paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.26,
+        "y": 27.02
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-28_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-28_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T11:23:07.416Z",
+    "updatedAt": "2026-09-27T11:23:07.416Z"
+  },
+  {
+    "tag": "1F-BD2-29",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to RHS of window",
+    "description": "Marks on wall around waste level and more extensively lower down",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.99,
+        "y": 26.51
+      },
+      {
+        "x": 54.7,
+        "y": 26.66
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-29_thumb_1.jpg",
+      "photos/1F-BD2-29_thumb_2.jpg",
+      "photos/1F-BD2-29_thumb_3.jpg",
+      "photos/1F-BD2-29_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-29_full_1.jpg",
+      "photos/1F-BD2-29_full_2.jpg",
+      "photos/1F-BD2-29_full_3.jpg",
+      "photos/1F-BD2-29_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T11:29:11.442Z",
+    "updatedAt": "2026-09-27T16:58:46.204Z"
+  },
+  {
+    "tag": "1F-BD2-30",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting in corner to RHS of window",
+    "description": "Paint drips",
+    "comments": "",
+    "pins": [
+      {
+        "x": 57.78,
+        "y": 26.57
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-30_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-30_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T11:30:20.406Z",
+    "updatedAt": "2026-09-27T16:58:38.052Z"
+  },
+  {
+    "tag": "1F-BD2-31",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall under window",
+    "description": "Brush strokes, paint drips and marks",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.51,
+        "y": 26.28
+      },
+      {
+        "x": 52.4,
+        "y": 26.28
+      },
+      {
+        "x": 54.69,
+        "y": 26.28
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-31_thumb_1.jpg",
+      "photos/1F-BD2-31_thumb_2.jpg",
+      "photos/1F-BD2-31_thumb_3.jpg",
+      "photos/1F-BD2-31_thumb_4.jpg",
+      "photos/1F-BD2-31_thumb_5.jpg",
+      "photos/1F-BD2-31_thumb_6.jpg",
+      "photos/1F-BD2-31_thumb_7.jpg",
+      "photos/1F-BD2-31_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-31_full_1.jpg",
+      "photos/1F-BD2-31_full_2.jpg",
+      "photos/1F-BD2-31_full_3.jpg",
+      "photos/1F-BD2-31_full_4.jpg",
+      "photos/1F-BD2-31_full_5.jpg",
+      "photos/1F-BD2-31_full_6.jpg",
+      "photos/1F-BD2-31_full_7.jpg",
+      "photos/1F-BD2-31_full_8.jpg"
+    ],
+    "createdAt": "2026-09-27T11:34:46.758Z",
+    "updatedAt": "2026-09-27T11:34:46.760Z"
+  },
+  {
+    "tag": "1F-BD2-32",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting below window",
+    "description": "Dark marks, non-base colour paint on skirting\nMarks, paint drips and brush strokes visible",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.08,
+        "y": 26.35
+      },
+      {
+        "x": 52.15,
+        "y": 26.48
+      },
+      {
+        "x": 54.5,
+        "y": 26.35
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-32_thumb_1.jpg",
+      "photos/1F-BD2-32_thumb_2.jpg",
+      "photos/1F-BD2-32_thumb_3.jpg",
+      "photos/1F-BD2-32_thumb_4.jpg",
+      "photos/1F-BD2-32_thumb_5.jpg",
+      "photos/1F-BD2-32_thumb_6.jpg",
+      "photos/1F-BD2-32_thumb_7.jpg",
+      "photos/1F-BD2-32_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-32_full_1.jpg",
+      "photos/1F-BD2-32_full_2.jpg",
+      "photos/1F-BD2-32_full_3.jpg",
+      "photos/1F-BD2-32_full_4.jpg",
+      "photos/1F-BD2-32_full_5.jpg",
+      "photos/1F-BD2-32_full_6.jpg",
+      "photos/1F-BD2-32_full_7.jpg",
+      "photos/1F-BD2-32_full_8.jpg"
+    ],
+    "createdAt": "2026-09-27T11:40:10.549Z",
+    "updatedAt": "2026-09-27T16:58:32.845Z"
+  },
+  {
+    "tag": "1F-BD2-33",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Below LHS of window ledge",
+    "description": "Major crack running below ledge to skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.54,
+        "y": 26.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-33_thumb_1.jpg",
+      "photos/1F-BD2-33_thumb_2.jpg",
+      "photos/1F-BD2-33_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-33_full_1.jpg",
+      "photos/1F-BD2-33_full_2.jpg",
+      "photos/1F-BD2-33_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T11:42:29.901Z",
+    "updatedAt": "2026-09-27T11:42:29.903Z"
+  },
+  {
+    "tag": "1F-BD2-34",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall below and to LHS of LHS of window ledge",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 49.7,
+        "y": 26.57
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-34_thumb_1.jpg",
+      "photos/1F-BD2-34_thumb_2.jpg",
+      "photos/1F-BD2-34_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-34_full_1.jpg",
+      "photos/1F-BD2-34_full_2.jpg",
+      "photos/1F-BD2-34_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T11:43:43.322Z",
+    "updatedAt": "2026-09-27T11:43:43.324Z"
+  },
+  {
+    "tag": "1F-BD2-35",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of window",
+    "description": "Marks on wall at ledge level",
+    "comments": "",
+    "pins": [
+      {
+        "x": 49.93,
+        "y": 26.36
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-35_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-35_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T11:45:48.377Z",
+    "updatedAt": "2026-09-27T11:45:48.379Z"
+  },
+  {
+    "tag": "1F-BD2-36",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "",
+    "description": "Wall around sockets to LHS of window",
+    "comments": "Marks below and to RHS of electrical socket\n\nUneven finish between data and electrical socket",
+    "pins": [
+      {
+        "x": 48.84,
+        "y": 26.8
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-36_thumb_1.jpg",
+      "photos/1F-BD2-36_thumb_2.jpg",
+      "photos/1F-BD2-36_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-36_full_1.jpg",
+      "photos/1F-BD2-36_full_2.jpg",
+      "photos/1F-BD2-36_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T11:48:36.323Z",
+    "updatedAt": "2026-09-27T16:58:23.149Z"
+  },
+  {
+    "tag": "1F-BD2-37",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Data socket to LHS of window",
+    "description": "Data socket does not sit flush",
+    "comments": "",
+    "pins": [
+      {
+        "x": 48.55,
+        "y": 26.8
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-37_thumb_1.jpg",
+      "photos/1F-BD2-37_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-37_full_1.jpg",
+      "photos/1F-BD2-37_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T11:49:41.194Z",
+    "updatedAt": "2026-09-27T11:49:41.196Z"
+  },
+  {
+    "tag": "1F-BD2-38",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Window ledge",
+    "description": "Marks at LHS on top side\nPaint drips, unpaint areas beneath\nCracks in paint around edges",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.09,
+        "y": 26.39
+      },
+      {
+        "x": 52.13,
+        "y": 26.52
+      },
+      {
+        "x": 54.34,
+        "y": 26.17
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-38_thumb_1.jpg",
+      "photos/1F-BD2-38_thumb_2.jpg",
+      "photos/1F-BD2-38_thumb_3.jpg",
+      "photos/1F-BD2-38_thumb_4.jpg",
+      "photos/1F-BD2-38_thumb_5.jpg",
+      "photos/1F-BD2-38_thumb_6.jpg",
+      "photos/1F-BD2-38_thumb_7.jpg",
+      "photos/1F-BD2-38_thumb_8.jpg",
+      "photos/1F-BD2-38_thumb_9.jpg",
+      "photos/1F-BD2-38_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-38_full_1.jpg",
+      "photos/1F-BD2-38_full_2.jpg",
+      "photos/1F-BD2-38_full_3.jpg",
+      "photos/1F-BD2-38_full_4.jpg",
+      "photos/1F-BD2-38_full_5.jpg",
+      "photos/1F-BD2-38_full_6.jpg",
+      "photos/1F-BD2-38_full_7.jpg",
+      "photos/1F-BD2-38_full_8.jpg",
+      "photos/1F-BD2-38_full_9.jpg",
+      "photos/1F-BD2-38_full_10.jpg"
+    ],
+    "createdAt": "2026-09-27T11:58:18.106Z",
+    "updatedAt": "2026-09-27T11:58:18.108Z"
+  },
+  {
+    "tag": "1F-BD2-39",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Window recess",
+    "description": "Marks at top LHS and top RHS\n\nPatches at upper chest level ON RHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.38,
+        "y": 26.11
+      },
+      {
+        "x": 54.4,
+        "y": 26.08
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-39_thumb_1.jpg",
+      "photos/1F-BD2-39_thumb_2.jpg",
+      "photos/1F-BD2-39_thumb_3.jpg",
+      "photos/1F-BD2-39_thumb_4.jpg",
+      "photos/1F-BD2-39_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-39_full_1.jpg",
+      "photos/1F-BD2-39_full_2.jpg",
+      "photos/1F-BD2-39_full_3.jpg",
+      "photos/1F-BD2-39_full_4.jpg",
+      "photos/1F-BD2-39_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T12:01:01.791Z",
+    "updatedAt": "2026-09-27T12:01:01.792Z"
+  },
+  {
+    "tag": "1F-BD2-40",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Right of centre above skirting, on wall between bed and exterior wall",
+    "description": "Uneven finish, scratch in plaster",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.67,
+        "y": 33.15
+      },
+      {
+        "x": 47.5,
+        "y": 29.93
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-40_thumb_1.jpg",
+      "photos/1F-BD2-40_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-40_full_1.jpg",
+      "photos/1F-BD2-40_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:07:03.120Z",
+    "updatedAt": "2026-09-27T12:07:03.121Z"
+  },
+  {
+    "tag": "1F-BD2-41",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "On skirting, starting at mid point between bed and exterior wall and extending to RHS",
+    "description": "Marks on skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.82,
+        "y": 33.61
+      },
+      {
+        "x": 47.82,
+        "y": 29.94
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-41_thumb_1.jpg",
+      "photos/1F-BD2-41_thumb_2.jpg",
+      "photos/1F-BD2-41_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-41_full_1.jpg",
+      "photos/1F-BD2-41_full_2.jpg",
+      "photos/1F-BD2-41_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T12:10:11.852Z",
+    "updatedAt": "2026-09-27T16:58:18.461Z"
+  },
+  {
+    "tag": "1F-BD2-42",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Just above waste level left of centre, on wall between bed and exterior wall",
+    "description": "Marks on wall and to SW",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.64,
+        "y": 34.58
+      },
+      {
+        "x": 47.64,
+        "y": 32.72
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-42_thumb_1.jpg",
+      "photos/1F-BD2-42_thumb_2.jpg",
+      "photos/1F-BD2-42_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-42_full_1.jpg",
+      "photos/1F-BD2-42_full_2.jpg",
+      "photos/1F-BD2-42_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T12:14:44.539Z",
+    "updatedAt": "2026-09-27T12:14:44.542Z"
+  },
+  {
+    "tag": "1F-BD2-43",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch to RHS of bed",
+    "description": "Marks to left and above",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.88,
+        "y": 36.33
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-43_thumb_1.jpg",
+      "photos/1F-BD2-43_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-43_full_1.jpg",
+      "photos/1F-BD2-43_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:17:15.691Z",
+    "updatedAt": "2026-09-27T12:17:15.691Z"
+  },
+  {
+    "tag": "1F-BD2-44",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around wall light to RHS of bed",
+    "description": "Patches on wall to top right of wall light\nBrush strokes visible below",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.64,
+        "y": 35.62
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-44_thumb_1.jpg",
+      "photos/1F-BD2-44_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-44_full_1.jpg",
+      "photos/1F-BD2-44_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:20:33.118Z",
+    "updatedAt": "2026-09-27T12:20:33.118Z"
+  },
+  {
+    "tag": "1F-BD2-45",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Ceiling moulding at and near corner between exterior wall and that adjoining Bedroom 3",
+    "description": "Cracks/gap in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.83,
+        "y": 28.93
+      },
+      {
+        "x": 48.01,
+        "y": 26.41
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-45_thumb_1.jpg",
+      "photos/1F-BD2-45_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-45_full_1.jpg",
+      "photos/1F-BD2-45_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:22:05.659Z",
+    "updatedAt": "2026-09-27T12:22:05.659Z"
+  },
+  {
+    "tag": "1F-BD2-46",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding above centre of bed",
+    "description": "Cracks in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.97,
+        "y": 39.62
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-46_thumb_1.jpg",
+      "photos/1F-BD2-46_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-46_full_1.jpg",
+      "photos/1F-BD2-46_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:24:45.738Z",
+    "updatedAt": "2026-09-27T12:24:45.739Z"
+  },
+  {
+    "tag": "1F-BD2-47",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around switches and socket to LHS of bed",
+    "description": "Brush strokes above and below switches. Marks between as well as above/below switches\n\nBrush stokes above and below socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.97,
+        "y": 43.44
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-47_thumb_1.jpg",
+      "photos/1F-BD2-47_thumb_2.jpg",
+      "photos/1F-BD2-47_thumb_3.jpg",
+      "photos/1F-BD2-47_thumb_4.jpg",
+      "photos/1F-BD2-47_thumb_5.jpg",
+      "photos/1F-BD2-47_thumb_6.jpg",
+      "photos/1F-BD2-47_thumb_7.jpg",
+      "photos/1F-BD2-47_thumb_8.jpg",
+      "photos/1F-BD2-47_thumb_9.jpg",
+      "photos/1F-BD2-47_thumb_10.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-47_full_1.jpg",
+      "photos/1F-BD2-47_full_2.jpg",
+      "photos/1F-BD2-47_full_3.jpg",
+      "photos/1F-BD2-47_full_4.jpg",
+      "photos/1F-BD2-47_full_5.jpg",
+      "photos/1F-BD2-47_full_6.jpg",
+      "photos/1F-BD2-47_full_7.jpg",
+      "photos/1F-BD2-47_full_8.jpg",
+      "photos/1F-BD2-47_full_9.jpg",
+      "photos/1F-BD2-47_full_10.jpg"
+    ],
+    "createdAt": "2026-09-27T12:29:33.328Z",
+    "updatedAt": "2026-09-27T12:33:39.740Z"
+  },
+  {
+    "tag": "1F-BD2-48",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of bed towards corner",
+    "description": "Marks on wall at bottom left",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.97,
+        "y": 45.42
+      },
+      {
+        "x": 47.97,
+        "y": 48.91
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-48_thumb_1.jpg",
+      "photos/1F-BD2-48_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-48_full_1.jpg",
+      "photos/1F-BD2-48_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:31:19.449Z",
+    "updatedAt": "2026-09-27T12:31:19.449Z"
+  },
+  {
+    "tag": "1F-BD2-49",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of bed",
+    "description": "Brush strokes, shiny areas to left of LHS bed wall light",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.64,
+        "y": 43.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-49_thumb_1.jpg",
+      "photos/1F-BD2-49_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-49_full_1.jpg",
+      "photos/1F-BD2-49_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:32:31.319Z",
+    "updatedAt": "2026-09-27T12:32:31.320Z"
+  },
+  {
+    "tag": "1F-BD2-50",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Switches and socket to LHS of bed",
+    "description": "Gaps in plaster behind smart switch\n\nLight switch and socket do not sit flush on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.64,
+        "y": 43.2
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-50_thumb_1.jpg",
+      "photos/1F-BD2-50_thumb_2.jpg",
+      "photos/1F-BD2-50_thumb_3.jpg",
+      "photos/1F-BD2-50_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-50_full_1.jpg",
+      "photos/1F-BD2-50_full_2.jpg",
+      "photos/1F-BD2-50_full_3.jpg",
+      "photos/1F-BD2-50_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T12:36:01.607Z",
+    "updatedAt": "2026-09-27T12:36:01.608Z"
+  },
+  {
+    "tag": "1F-BD2-51",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling moulding at/near corner between wall adjoining Bedroom 3 & hallway",
+    "description": "Paint drips, cracks in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 47.97,
+        "y": 49
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-51_thumb_1.jpg",
+      "photos/1F-BD2-51_thumb_2.jpg",
+      "photos/1F-BD2-51_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-51_full_1.jpg",
+      "photos/1F-BD2-51_full_2.jpg",
+      "photos/1F-BD2-51_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T12:39:33.651Z",
+    "updatedAt": "2026-09-27T12:39:33.653Z"
+  },
+  {
+    "tag": "1F-BD2-52",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall around socket on hallway adjoining wall",
+    "description": "Brush stokes, paint drips around socket. Marks to SW of socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 48.72,
+        "y": 48.95
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-52_thumb_1.jpg",
+      "photos/1F-BD2-52_thumb_2.jpg",
+      "photos/1F-BD2-52_thumb_3.jpg",
+      "photos/1F-BD2-52_thumb_4.jpg",
+      "photos/1F-BD2-52_thumb_5.jpg",
+      "photos/1F-BD2-52_thumb_6.jpg",
+      "photos/1F-BD2-52_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-52_full_1.jpg",
+      "photos/1F-BD2-52_full_2.jpg",
+      "photos/1F-BD2-52_full_3.jpg",
+      "photos/1F-BD2-52_full_4.jpg",
+      "photos/1F-BD2-52_full_5.jpg",
+      "photos/1F-BD2-52_full_6.jpg",
+      "photos/1F-BD2-52_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T12:42:23.246Z",
+    "updatedAt": "2026-09-27T12:42:23.248Z"
+  },
+  {
+    "tag": "1F-BD2-53",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Electrical",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket on wall adjoining hallway",
+    "description": "Does not sit flush to wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 48.79,
+        "y": 49.22
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-53_thumb_1.jpg",
+      "photos/1F-BD2-53_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-53_full_1.jpg",
+      "photos/1F-BD2-53_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T12:43:49.592Z",
+    "updatedAt": "2026-09-27T12:43:49.593Z"
+  },
+  {
+    "tag": "1F-BD2-54",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting on wall adjoining hallway",
+    "description": "Paint drips and white mark around center\n\nFurther paint drips and white market towards bedroom door",
+    "comments": "",
+    "pins": [
+      {
+        "x": 54.54,
+        "y": 49.17
+      },
+      {
+        "x": 48.15,
+        "y": 49.04
+      },
+      {
+        "x": 51.16,
+        "y": 48.97
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-54_thumb_1.jpg",
+      "photos/1F-BD2-54_thumb_2.jpg",
+      "photos/1F-BD2-54_thumb_3.jpg",
+      "photos/1F-BD2-54_thumb_4.jpg",
+      "photos/1F-BD2-54_thumb_5.jpg",
+      "photos/1F-BD2-54_thumb_6.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-54_full_1.jpg",
+      "photos/1F-BD2-54_full_2.jpg",
+      "photos/1F-BD2-54_full_3.jpg",
+      "photos/1F-BD2-54_full_4.jpg",
+      "photos/1F-BD2-54_full_5.jpg",
+      "photos/1F-BD2-54_full_6.jpg"
+    ],
+    "createdAt": "2026-09-27T12:46:17.272Z",
+    "updatedAt": "2026-09-27T12:47:59.022Z"
+  },
+  {
+    "tag": "1F-BD2-55",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower down on wall adjoining hallway",
+    "description": "Marks on wall around centre",
+    "comments": "",
+    "pins": [
+      {
+        "x": 50.68,
+        "y": 49.14
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-55_thumb_1.jpg",
+      "photos/1F-BD2-55_thumb_2.jpg",
+      "photos/1F-BD2-55_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-55_full_1.jpg",
+      "photos/1F-BD2-55_full_2.jpg",
+      "photos/1F-BD2-55_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T12:50:40.729Z",
+    "updatedAt": "2026-09-27T12:50:40.730Z"
+  },
+  {
+    "tag": "1F-BD2-56",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Light switch to RHS of Bedroom door",
+    "description": "Marks around light switch",
+    "comments": "",
+    "pins": [
+      {
+        "x": 53.94,
+        "y": 49.3
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-56_thumb_1.jpg",
+      "photos/1F-BD2-56_thumb_2.jpg",
+      "photos/1F-BD2-56_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-56_full_1.jpg",
+      "photos/1F-BD2-56_full_2.jpg",
+      "photos/1F-BD2-56_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T12:52:22.265Z",
+    "updatedAt": "2026-09-27T12:52:22.266Z"
+  },
+  {
+    "tag": "1F-BD2-57",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Plastering & Drylining",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ac grilles",
+    "description": "To RHS of bed:\nBetter finish required on two sides\n\nIn front on Dressing room:\n\nBetter finish required on one edge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 56.4,
+        "y": 34.32
+      },
+      {
+        "x": 49.72,
+        "y": 34.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-57_thumb_1.jpg",
+      "photos/1F-BD2-57_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-57_full_1.jpg",
+      "photos/1F-BD2-57_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T13:13:55.743Z",
+    "updatedAt": "2026-09-27T13:13:55.744Z"
+  },
+  {
+    "tag": "1F-EN2-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ensuite door",
+    "description": "White areas at bottom of door",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.17,
+        "y": 28.49
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-01_thumb_1.jpg",
+      "photos/1F-EN2-01_thumb_2.jpg",
+      "photos/1F-EN2-01_thumb_3.jpg",
+      "photos/1F-EN2-01_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-01_full_1.jpg",
+      "photos/1F-EN2-01_full_2.jpg",
+      "photos/1F-EN2-01_full_3.jpg",
+      "photos/1F-EN2-01_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T13:23:30.747Z",
+    "updatedAt": "2026-09-27T13:23:30.748Z"
+  },
+  {
+    "tag": "1F-EN2-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ensuite door",
+    "description": "Scratch, paint on hinges, handles, latch and strike plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.15,
+        "y": 28.35
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-02_thumb_1.jpg",
+      "photos/1F-EN2-02_thumb_2.jpg",
+      "photos/1F-EN2-02_thumb_3.jpg",
+      "photos/1F-EN2-02_thumb_4.jpg",
+      "photos/1F-EN2-02_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-02_full_1.jpg",
+      "photos/1F-EN2-02_full_2.jpg",
+      "photos/1F-EN2-02_full_3.jpg",
+      "photos/1F-EN2-02_full_4.jpg",
+      "photos/1F-EN2-02_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T13:26:08.947Z",
+    "updatedAt": "2026-09-27T13:26:08.950Z"
+  },
+  {
+    "tag": "1F-EN2-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave, door frame of Ensuite door",
+    "description": "Architrave:\n\nUneven finish, paint drips at bottom left\nUneven finish paint drips and gaps in mastic at bottom right\nGap, cracks in paint at edge to wall\n\nFrame:\n\nUneven, unpainted areas at bottom left and bottom right\nPaint drips at bottom LHS at edge with room\nUneven finish above bottom hinge on RHS\nUneven finish below top hinge on RHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.12,
+        "y": 29.9
+      },
+      {
+        "x": 58.12,
+        "y": 27.34
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-03_thumb_1.jpg",
+      "photos/1F-EN2-03_thumb_2.jpg",
+      "photos/1F-EN2-03_thumb_3.jpg",
+      "photos/1F-EN2-03_thumb_4.jpg",
+      "photos/1F-EN2-03_thumb_5.jpg",
+      "photos/1F-EN2-03_thumb_6.jpg",
+      "photos/1F-EN2-03_thumb_7.jpg",
+      "photos/1F-EN2-03_thumb_8.jpg",
+      "photos/1F-EN2-03_thumb_9.jpg",
+      "photos/1F-EN2-03_thumb_10.jpg",
+      "photos/1F-EN2-03_thumb_11.jpg",
+      "photos/1F-EN2-03_thumb_12.jpg",
+      "photos/1F-EN2-03_thumb_13.jpg",
+      "photos/1F-EN2-03_thumb_14.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-03_full_1.jpg",
+      "photos/1F-EN2-03_full_2.jpg",
+      "photos/1F-EN2-03_full_3.jpg",
+      "photos/1F-EN2-03_full_4.jpg",
+      "photos/1F-EN2-03_full_5.jpg",
+      "photos/1F-EN2-03_full_6.jpg",
+      "photos/1F-EN2-03_full_7.jpg",
+      "photos/1F-EN2-03_full_8.jpg",
+      "photos/1F-EN2-03_full_9.jpg",
+      "photos/1F-EN2-03_full_10.jpg",
+      "photos/1F-EN2-03_full_11.jpg",
+      "photos/1F-EN2-03_full_12.jpg",
+      "photos/1F-EN2-03_full_13.jpg",
+      "photos/1F-EN2-03_full_14.jpg"
+    ],
+    "createdAt": "2026-09-27T13:37:27.956Z",
+    "updatedAt": "2026-09-27T13:37:27.959Z"
+  },
+  {
+    "tag": "1F-EN2-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Corners to RHS & LHS of ensuite door",
+    "description": "Major cracks in corner down the wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.28,
+        "y": 27.34
+      },
+      {
+        "x": 58.28,
+        "y": 32.12
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-04_thumb_1.jpg",
+      "photos/1F-EN2-04_thumb_2.jpg",
+      "photos/1F-EN2-04_thumb_3.jpg",
+      "photos/1F-EN2-04_thumb_4.jpg",
+      "photos/1F-EN2-04_thumb_5.jpg",
+      "photos/1F-EN2-04_thumb_6.jpg",
+      "photos/1F-EN2-04_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-04_full_1.jpg",
+      "photos/1F-EN2-04_full_2.jpg",
+      "photos/1F-EN2-04_full_3.jpg",
+      "photos/1F-EN2-04_full_4.jpg",
+      "photos/1F-EN2-04_full_5.jpg",
+      "photos/1F-EN2-04_full_6.jpg",
+      "photos/1F-EN2-04_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T13:45:05.308Z",
+    "updatedAt": "2026-09-27T13:45:05.308Z"
+  },
+  {
+    "tag": "1F-EN2-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Lower down on wall to LHS of ensuite door",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.28,
+        "y": 31.56
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-05_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-05_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T13:46:41.187Z",
+    "updatedAt": "2026-09-27T16:58:12.549Z"
+  },
+  {
+    "tag": "1F-EN2-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Wall to RHS of shower, to LHS of toilet above ledge",
+    "description": "Mark on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.96,
+        "y": 31.77
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-06_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-06_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T13:50:47.574Z",
+    "updatedAt": "2026-09-27T13:50:47.574Z"
+  },
+  {
+    "tag": "1F-EN2-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Window ledge",
+    "description": "Cracks at edge, unpainted areas beneath",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.26,
+        "y": 25.94
+      },
+      {
+        "x": 62.4,
+        "y": 25.94
+      },
+      {
+        "x": 64.29,
+        "y": 25.94
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-07_thumb_1.jpg",
+      "photos/1F-EN2-07_thumb_2.jpg",
+      "photos/1F-EN2-07_thumb_3.jpg",
+      "photos/1F-EN2-07_thumb_4.jpg",
+      "photos/1F-EN2-07_thumb_5.jpg",
+      "photos/1F-EN2-07_thumb_6.jpg",
+      "photos/1F-EN2-07_thumb_7.jpg",
+      "photos/1F-EN2-07_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-07_full_1.jpg",
+      "photos/1F-EN2-07_full_2.jpg",
+      "photos/1F-EN2-07_full_3.jpg",
+      "photos/1F-EN2-07_full_4.jpg",
+      "photos/1F-EN2-07_full_5.jpg",
+      "photos/1F-EN2-07_full_6.jpg",
+      "photos/1F-EN2-07_full_7.jpg",
+      "photos/1F-EN2-07_full_8.jpg"
+    ],
+    "createdAt": "2026-09-27T13:55:41.757Z",
+    "updatedAt": "2026-09-27T13:55:41.759Z"
+  },
+  {
+    "tag": "1F-EN2-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Window frame",
+    "description": "Cracks in mastic around frame\nMarks on frame",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.09,
+        "y": 26.06
+      },
+      {
+        "x": 62.31,
+        "y": 25.94
+      },
+      {
+        "x": 64.21,
+        "y": 25.71
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-08_thumb_1.jpg",
+      "photos/1F-EN2-08_thumb_2.jpg",
+      "photos/1F-EN2-08_thumb_3.jpg",
+      "photos/1F-EN2-08_thumb_4.jpg",
+      "photos/1F-EN2-08_thumb_5.jpg",
+      "photos/1F-EN2-08_thumb_6.jpg",
+      "photos/1F-EN2-08_thumb_7.jpg",
+      "photos/1F-EN2-08_thumb_8.jpg",
+      "photos/1F-EN2-08_thumb_9.jpg",
+      "photos/1F-EN2-08_thumb_10.jpg",
+      "photos/1F-EN2-08_thumb_11.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-08_full_1.jpg",
+      "photos/1F-EN2-08_full_2.jpg",
+      "photos/1F-EN2-08_full_3.jpg",
+      "photos/1F-EN2-08_full_4.jpg",
+      "photos/1F-EN2-08_full_5.jpg",
+      "photos/1F-EN2-08_full_6.jpg",
+      "photos/1F-EN2-08_full_7.jpg",
+      "photos/1F-EN2-08_full_8.jpg",
+      "photos/1F-EN2-08_full_9.jpg",
+      "photos/1F-EN2-08_full_10.jpg",
+      "photos/1F-EN2-08_full_11.jpg"
+    ],
+    "createdAt": "2026-09-27T13:58:30.836Z",
+    "updatedAt": "2026-09-27T13:58:30.839Z"
+  },
+  {
+    "tag": "1F-EN2-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall below window",
+    "description": "Marks on wall",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.18,
+        "y": 26.18
+      },
+      {
+        "x": 62.23,
+        "y": 26.18
+      },
+      {
+        "x": 64.21,
+        "y": 26.29
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-09_thumb_1.jpg",
+      "photos/1F-EN2-09_thumb_2.jpg",
+      "photos/1F-EN2-09_thumb_3.jpg",
+      "photos/1F-EN2-09_thumb_4.jpg",
+      "photos/1F-EN2-09_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-09_full_1.jpg",
+      "photos/1F-EN2-09_full_2.jpg",
+      "photos/1F-EN2-09_full_3.jpg",
+      "photos/1F-EN2-09_full_4.jpg",
+      "photos/1F-EN2-09_full_5.jpg"
+    ],
+    "createdAt": "2026-09-27T14:00:19.519Z",
+    "updatedAt": "2026-09-27T14:00:19.519Z"
+  },
+  {
+    "tag": "1F-EN2-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall below LHS edge of window ledge",
+    "description": "Major crack",
+    "comments": "",
+    "pins": [
+      {
+        "x": 60.26,
+        "y": 25.94
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-10_thumb_1.jpg",
+      "photos/1F-EN2-10_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-10_full_1.jpg",
+      "photos/1F-EN2-10_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T14:01:28.654Z",
+    "updatedAt": "2026-09-27T14:01:28.655Z"
+  },
+  {
+    "tag": "1F-EN2-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "EN2",
+    "roomName": "Bedroom 2 Ensuite",
+    "trade": "Plumbing & Sanitaryware",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Towel radiator",
+    "description": "Sleeves missing, collars do not match",
+    "comments": "",
+    "pins": [
+      {
+        "x": 59.19,
+        "y": 26.53
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-EN2-11_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-EN2-11_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T14:04:11.559Z",
+    "updatedAt": "2026-09-27T14:04:11.560Z"
+  },
+  {
+    "tag": "1F-BD2-58",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "BD2",
+    "roomName": "Bedroom 2",
+    "trade": "Decoration / Painting",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Window frame",
+    "description": "Marks on frame",
+    "comments": "",
+    "pins": [
+      {
+        "x": 49.92,
+        "y": 26.17
+      },
+      {
+        "x": 51.97,
+        "y": 26.32
+      },
+      {
+        "x": 54.13,
+        "y": 26.32
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-BD2-58_thumb_1.jpg",
+      "photos/1F-BD2-58_thumb_2.jpg",
+      "photos/1F-BD2-58_thumb_3.jpg",
+      "photos/1F-BD2-58_thumb_4.jpg",
+      "photos/1F-BD2-58_thumb_5.jpg",
+      "photos/1F-BD2-58_thumb_6.jpg",
+      "photos/1F-BD2-58_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-BD2-58_full_1.jpg",
+      "photos/1F-BD2-58_full_2.jpg",
+      "photos/1F-BD2-58_full_3.jpg",
+      "photos/1F-BD2-58_full_4.jpg",
+      "photos/1F-BD2-58_full_5.jpg",
+      "photos/1F-BD2-58_full_6.jpg",
+      "photos/1F-BD2-58_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T14:08:24.698Z",
+    "updatedAt": "2026-09-27T14:08:24.700Z"
+  },
+  {
+    "tag": "1F-D2-01",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room door",
+    "description": "Lock stile:\nChips on corner with front face below latch\nChip lower down\n\n\nHinge stile:\n\nPaint chip, white areas lower down\nChips  on edge below top hinge, paint drips above top hinge\nPaint drip at top corners with front face",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.25,
+        "y": 34.66
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-01_thumb_1.jpg",
+      "photos/1F-D2-01_thumb_2.jpg",
+      "photos/1F-D2-01_thumb_3.jpg",
+      "photos/1F-D2-01_thumb_4.jpg",
+      "photos/1F-D2-01_thumb_5.jpg",
+      "photos/1F-D2-01_thumb_6.jpg",
+      "photos/1F-D2-01_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-01_full_1.jpg",
+      "photos/1F-D2-01_full_2.jpg",
+      "photos/1F-D2-01_full_3.jpg",
+      "photos/1F-D2-01_full_4.jpg",
+      "photos/1F-D2-01_full_5.jpg",
+      "photos/1F-D2-01_full_6.jpg",
+      "photos/1F-D2-01_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T14:23:20.660Z",
+    "updatedAt": "2026-09-27T14:23:20.661Z"
+  },
+  {
+    "tag": "1F-D2-02",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Dressing room door",
+    "description": "Scratches, paint on hinges, handle latch and strike plate",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.34,
+        "y": 34.89
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-02_thumb_1.jpg",
+      "photos/1F-D2-02_thumb_2.jpg",
+      "photos/1F-D2-02_thumb_3.jpg",
+      "photos/1F-D2-02_thumb_4.jpg",
+      "photos/1F-D2-02_thumb_5.jpg",
+      "photos/1F-D2-02_thumb_6.jpg",
+      "photos/1F-D2-02_thumb_7.jpg",
+      "photos/1F-D2-02_thumb_8.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-02_full_1.jpg",
+      "photos/1F-D2-02_full_2.jpg",
+      "photos/1F-D2-02_full_3.jpg",
+      "photos/1F-D2-02_full_4.jpg",
+      "photos/1F-D2-02_full_5.jpg",
+      "photos/1F-D2-02_full_6.jpg",
+      "photos/1F-D2-02_full_7.jpg",
+      "photos/1F-D2-02_full_8.jpg"
+    ],
+    "createdAt": "2026-09-27T14:31:15.393Z",
+    "updatedAt": "2026-09-27T14:32:53.471Z"
+  },
+  {
+    "tag": "1F-D2-03",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Architrave and door frame",
+    "description": "Architrave:\nPaint drips at bottom\nPaint drips on LHS edge\nUneven finish at top, center\n\n\nFrame:\nUneven finish at bottom left, uneven finish and paint drip at bottom right\nUnpaint, uneven finish behind hinges\n\n\nCracks/gaps in paint at architrave & frame joints and edges",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.25,
+        "y": 33.37
+      },
+      {
+        "x": 58.25,
+        "y": 36.99
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-03_thumb_1.jpg",
+      "photos/1F-D2-03_thumb_2.jpg",
+      "photos/1F-D2-03_thumb_3.jpg",
+      "photos/1F-D2-03_thumb_4.jpg",
+      "photos/1F-D2-03_thumb_5.jpg",
+      "photos/1F-D2-03_thumb_6.jpg",
+      "photos/1F-D2-03_thumb_7.jpg",
+      "photos/1F-D2-03_thumb_8.jpg",
+      "photos/1F-D2-03_thumb_9.jpg",
+      "photos/1F-D2-03_thumb_10.jpg",
+      "photos/1F-D2-03_thumb_11.jpg",
+      "photos/1F-D2-03_thumb_12.jpg",
+      "photos/1F-D2-03_thumb_13.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-03_full_1.jpg",
+      "photos/1F-D2-03_full_2.jpg",
+      "photos/1F-D2-03_full_3.jpg",
+      "photos/1F-D2-03_full_4.jpg",
+      "photos/1F-D2-03_full_5.jpg",
+      "photos/1F-D2-03_full_6.jpg",
+      "photos/1F-D2-03_full_7.jpg",
+      "photos/1F-D2-03_full_8.jpg",
+      "photos/1F-D2-03_full_9.jpg",
+      "photos/1F-D2-03_full_10.jpg",
+      "photos/1F-D2-03_full_11.jpg",
+      "photos/1F-D2-03_full_12.jpg",
+      "photos/1F-D2-03_full_13.jpg"
+    ],
+    "createdAt": "2026-09-27T14:44:52.322Z",
+    "updatedAt": "2026-09-27T14:44:52.323Z"
+  },
+  {
+    "tag": "1F-D2-04",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Small wall area to LHS of Dressing room door LHS architrave",
+    "description": "Unpainted areas",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.09,
+        "y": 36.87
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-04_thumb_1.jpg",
+      "photos/1F-D2-04_thumb_2.jpg",
+      "photos/1F-D2-04_thumb_3.jpg",
+      "photos/1F-D2-04_thumb_4.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-04_full_1.jpg",
+      "photos/1F-D2-04_full_2.jpg",
+      "photos/1F-D2-04_full_3.jpg",
+      "photos/1F-D2-04_full_4.jpg"
+    ],
+    "createdAt": "2026-09-27T14:47:49.915Z",
+    "updatedAt": "2026-09-27T14:47:49.917Z"
+  },
+  {
+    "tag": "1F-D2-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall above Dressing room door",
+    "description": "Crack and paint drips to LHS",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.25,
+        "y": 36.4
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-05_thumb_1.jpg",
+      "photos/1F-D2-05_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-05_full_1.jpg",
+      "photos/1F-D2-05_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T14:49:49.133Z",
+    "updatedAt": "2026-09-27T16:58:01.420Z"
+  },
+  {
+    "tag": "1F-D2-06",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall to LHS of Dressing room door",
+    "description": "Marks on wall lower down",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.34,
+        "y": 36.64
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-06_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-06_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T14:52:14.848Z",
+    "updatedAt": "2026-09-27T14:52:14.849Z"
+  },
+  {
+    "tag": "1F-D2-07",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket wall & skirting below to LHS of Dressing room door",
+    "description": "Marks higher up and below socket\n\nBrush strokes visible above socket\n\nMarks on RHS of skirting below\n\nWhite areas on skirting",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.58,
+        "y": 36.17
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-07_thumb_1.jpg",
+      "photos/1F-D2-07_thumb_2.jpg",
+      "photos/1F-D2-07_thumb_3.jpg",
+      "photos/1F-D2-07_thumb_4.jpg",
+      "photos/1F-D2-07_thumb_5.jpg",
+      "photos/1F-D2-07_thumb_6.jpg",
+      "photos/1F-D2-07_thumb_7.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-07_full_1.jpg",
+      "photos/1F-D2-07_full_2.jpg",
+      "photos/1F-D2-07_full_3.jpg",
+      "photos/1F-D2-07_full_4.jpg",
+      "photos/1F-D2-07_full_5.jpg",
+      "photos/1F-D2-07_full_6.jpg",
+      "photos/1F-D2-07_full_7.jpg"
+    ],
+    "createdAt": "2026-09-27T14:57:47.864Z",
+    "updatedAt": "2026-09-27T14:57:47.864Z"
+  },
+  {
+    "tag": "1F-D2-08",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling to LHS outside fitted wardrobe area",
+    "description": "Chips, marks on ceiling",
+    "comments": "",
+    "pins": [
+      {
+        "x": 63.02,
+        "y": 36.17
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-08_thumb_1.jpg",
+      "photos/1F-D2-08_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-08_full_1.jpg",
+      "photos/1F-D2-08_full_2.jpg"
+    ],
+    "createdAt": "2026-09-27T15:00:45.076Z",
+    "updatedAt": "2026-09-27T15:00:45.077Z"
+  },
+  {
+    "tag": "1F-D2-09",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Socket wall opposite Dressing room door",
+    "description": "Patches around socket.\n\nCracks in finish on LHS of socket",
+    "comments": "",
+    "pins": [
+      {
+        "x": 66.56,
+        "y": 34.31
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-09_thumb_1.jpg",
+      "photos/1F-D2-09_thumb_2.jpg",
+      "photos/1F-D2-09_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-09_full_1.jpg",
+      "photos/1F-D2-09_full_2.jpg",
+      "photos/1F-D2-09_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T15:05:41.310Z",
+    "updatedAt": "2026-09-27T16:57:52.253Z"
+  },
+  {
+    "tag": "1F-D2-10",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Wall adjoing Ensuite",
+    "description": "Brush strokes visible above skirting\nMarks on the lower half of the wall all along",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.42,
+        "y": 32.19
+      },
+      {
+        "x": 62.53,
+        "y": 32.42
+      },
+      {
+        "x": 66.31,
+        "y": 32.19
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-10_thumb_1.jpg",
+      "photos/1F-D2-10_thumb_2.jpg",
+      "photos/1F-D2-10_thumb_3.jpg",
+      "photos/1F-D2-10_thumb_4.jpg",
+      "photos/1F-D2-10_thumb_5.jpg",
+      "photos/1F-D2-10_thumb_6.jpg",
+      "photos/1F-D2-10_thumb_7.jpg",
+      "photos/1F-D2-10_thumb_8.jpg",
+      "photos/1F-D2-10_thumb_9.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-10_full_1.jpg",
+      "photos/1F-D2-10_full_2.jpg",
+      "photos/1F-D2-10_full_3.jpg",
+      "photos/1F-D2-10_full_4.jpg",
+      "photos/1F-D2-10_full_5.jpg",
+      "photos/1F-D2-10_full_6.jpg",
+      "photos/1F-D2-10_full_7.jpg",
+      "photos/1F-D2-10_full_8.jpg",
+      "photos/1F-D2-10_full_9.jpg"
+    ],
+    "createdAt": "2026-09-27T15:12:23.790Z",
+    "updatedAt": "2026-09-27T15:12:23.791Z"
+  },
+  {
+    "tag": "1F-D2-11",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Plastering & Drylining",
+    "severity": "Minor",
+    "status": "Open",
+    "location": "Above skirting on wall adjoing Ensuite, right of centre",
+    "description": "Plaster bulge",
+    "comments": "",
+    "pins": [
+      {
+        "x": 64.09,
+        "y": 32.33
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-11_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-11_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T15:13:40.339Z",
+    "updatedAt": "2026-09-27T15:13:40.341Z"
+  },
+  {
+    "tag": "1F-D2-12",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting below wall adjoining Ensuite",
+    "description": "Mark at centre, paint drips to LHS of centre",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.58,
+        "y": 32.2
+      },
+      {
+        "x": 62.36,
+        "y": 32.55
+      },
+      {
+        "x": 66.31,
+        "y": 32.2
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-12_thumb_1.jpg",
+      "photos/1F-D2-12_thumb_2.jpg",
+      "photos/1F-D2-12_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-12_full_1.jpg",
+      "photos/1F-D2-12_full_2.jpg",
+      "photos/1F-D2-12_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T15:15:28.492Z",
+    "updatedAt": "2026-09-27T16:57:41.902Z"
+  },
+  {
+    "tag": "1F-D2-13",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Skirting",
+    "description": "Cracks, gaps in paint",
+    "comments": "",
+    "pins": [
+      {
+        "x": 58.5,
+        "y": 36.29
+      },
+      {
+        "x": 58.5,
+        "y": 32.79
+      },
+      {
+        "x": 66.48,
+        "y": 36.75
+      },
+      {
+        "x": 66.31,
+        "y": 32.44
+      },
+      {
+        "x": 64.59,
+        "y": 36.64
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-D2-13_thumb_1.jpg",
+      "photos/1F-D2-13_thumb_2.jpg",
+      "photos/1F-D2-13_thumb_3.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-13_full_1.jpg",
+      "photos/1F-D2-13_full_2.jpg",
+      "photos/1F-D2-13_full_3.jpg"
+    ],
+    "createdAt": "2026-09-27T15:17:52.123Z",
+    "updatedAt": "2026-09-27T16:57:31.421Z"
+  },
+  {
+    "tag": "1F-D2-14",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "D2",
+    "roomName": "Bedroom 2 Dressing Room",
+    "trade": "Decoration / Painting",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Ceiling near downlight in dressing area",
+    "description": "Marks",
+    "comments": "",
+    "pins": [],
+    "thumbFiles": [
+      "photos/1F-D2-14_thumb_1.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-D2-14_full_1.jpg"
+    ],
+    "createdAt": "2026-09-27T15:20:57.262Z",
+    "updatedAt": "2026-09-27T15:20:57.264Z"
   }
 ];

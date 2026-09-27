@@ -15,29 +15,24 @@ builder-friendly printout.
 **Browse / Group List (second view):** the original grouped list — by Room, Trade, Severity, or
 Floor — with a status filter and search, for scanning everything at once rather than room by room.
 
-## ⚠️ Before you upload photos to R2 — 5 files need renaming
-
-Your export had 5 pairs of snags that ended up sharing the same tag (two different, real snags
-each — not duplicates). The site has been built expecting the **second** snag in each pair to use a
-"-B" suffix, so when you upload to R2, rename that one's photo files to match:
-
-| Tag on the site | Photos to rename before uploading |
-|---|---|
-| `1F-FLD-04-B` | the "Cracks in paint on ceiling" photos → `1F-FLD-04-B_full_1.jpg`, `_2.jpg` |
-| `1F-FLD-05-B` | the "Cracks in paint" photos → `1F-FLD-05-B_full_1.jpg` through `_5.jpg` |
-| `2F-BA2-14-B` | the "Top not painter" photo → `2F-BA2-14-B_full_1.jpg` |
-| `1F-FHL-03-B` | the "Marks on bottom astragal beading..." photos → `1F-FHL-03-B_full_1.jpg` through `_9.jpg` |
-| `2F-BD6-29-B` | the "Paint drips" photos → `2F-BD6-29-B_full_1.jpg`, `_2.jpg` |
-
-Do the same for each one's `_thumb_` files if you're uploading those too. Everything else keeps its
-original filename exactly as exported.
-
 ## Uploading photos to R2
 
-1. In the Cloudflare dashboard, open your `snag-photos` bucket (or whatever you named it).
-2. Create a folder called `photos` inside it (matching the site's expected path).
-3. Drag in your photo files — after applying the 5 renames above, upload everything as-is, keeping
-   the original filenames the app exported (`{tag}_full_1.jpg`, `{tag}_thumb_1.jpg`, etc.).
+Your existing bucket already has photos for every snag that was on the site before this update —
+those don't need touching. This update adds 224 new snags, so you only need to add their photos.
+
+The 5 "-B" tag pairs from the original 369-record build (the ones that once needed manual photo
+renaming) now come pre-resolved from the app's own duplicate-tag checker, and line up exactly with
+what's already on R2 — no renaming needed this time.
+
+1. In the Cloudflare dashboard, open your `snag-photos` bucket (or whatever you named it), inside
+   its `photos` folder.
+2. Upload the photo files for the newly-added snags — see the accompanying `new_photos_manifest.txt`
+   for the exact list of filenames expected (both `_thumb_` and `_full_` versions). Everything else
+   keeps its original filename exactly as exported.
+3. Easiest in practice: gather all your local photo files (from your batch exports) into one folder
+   and re-run the same `rclone copy` command you used before, pointed at that folder and the same
+   `r2:bucketname/photos` destination — rclone skips anything already uploaded and only pushes what's
+   new, so you don't need to hunt down files individually.
 4. The site is already pointed at `https://pub-52ef5d48cdfc41a29a32eb97a46c2221.r2.dev/` — no changes
    needed here as long as that's still your bucket's public URL.
 
@@ -60,16 +55,17 @@ approach we discussed for the R2 bucket.
 
 This is a snapshot, not a live-syncing site. When you've logged more snags in the app:
 
-1. Export a fresh `data.json` from the app (Restore/Export tab).
-2. Send it to Claude — it'll rebuild `snags.js` (checking for any new tag collisions along the way)
-   and hand you an updated site to re-upload.
-3. Upload any new photos to the same R2 bucket, same folder.
+1. On the Export tab, tap **"Export data JSON"** (small file, no photos — fast even with a large
+   dataset).
+2. Send that file to Claude — it'll rebuild `snags.js` (checking for any new tag collisions along
+   the way) and hand you an updated site to re-upload, plus a list of exactly which photos are new.
+3. Upload those new photos to the same R2 bucket, same folder.
 
 ## What's inside
 
 - `index.html` / `app.js` — the site itself.
 - `data.js` — room, trade, and floor-plan-pin reference data (shared convention with the snagging app).
-- `snags.js` — your actual snag data (369 records), embedded directly — no live database, so it
+- `snags.js` — your actual snag data (593 records), embedded directly — no live database, so it
   loads instantly and works entirely offline once cached.
 - `plans/` — the same redacted floor plan images used in the app, for the pin-location view.
 - `robots.txt` — asks search engines not to index the site.
