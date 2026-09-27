@@ -522,6 +522,175 @@ function printRoom(){
 }
 
 /* ============================================================
+   EXCEL EXPORT — builds a real .xlsx (via the bundled SheetJS
+   library, xlsx.full.min.js) with one row per snag, no photos.
+   ============================================================ */
+const EXPORT_COLUMNS = [
+  ['Tag', s => s.tag],
+  ['Floor', s => s.floorName],
+  ['Room', s => s.roomName],
+  ['Trade', s => s.trade],
+  ['Severity', s => s.severity],
+  ['Status', s => s.status],
+  ['Location', s => s.location || ''],
+  ['Description', s => s.description || ''],
+  ['Comments', s => s.comments || ''],
+  ['Photo count', s => (s.photoFiles && s.photoFiles.length) || (s.thumbFiles && s.thumbFiles.length) || 0],
+  ['Logged', s => s.createdAt ? new Date(s.createdAt).toLocaleDateString('en-GB') : ''],
+  ['Last updated', s => s.updatedAt ? new Date(s.updatedAt).toLocaleDateString('en-GB') : '']
+];
+
+function sortSnagsForExport(items){
+  const floorOrder = FLOORS.map(f => f.code);
+  const roomOrderByFloor = {};
+  FLOORS.forEach(f => { roomOrderByFloor[f.code] = f.rooms.map(r => r[0]); });
+  return [...items].sort((a, b) => {
+    const fa = floorOrder.indexOf(a.floorCode), fb = floorOrder.indexOf(b.floorCode);
+    if (fa !== fb) return fa - fb;
+    const ra = (roomOrderByFloor[a.floorCode] || []).indexOf(a.roomCode);
+    const rb = (roomOrderByFloor[b.floorCode] || []).indexOf(b.roomCode);
+    if (ra !== rb) return ra - rb;
+    return a.tag.localeCompare(b.tag);
+  });
+}
+
+function buildWorksheetRows(items){
+  const sorted = sortSnagsForExport(items);
+  return sorted.map(s => {
+    const row = {};
+    EXPORT_COLUMNS.forEach(([label, getter]) => { row[label] = getter(s); });
+    return row;
+  });
+}
+
+function downloadSnagsAsExcel(items, filename){
+  const rows = buildWorksheetRows(items);
+  const ws = XLSX.utils.json_to_sheet(rows, { header: EXPORT_COLUMNS.map(c => c[0]) });
+  ws['!cols'] = [
+    { wch: 14 }, { wch: 14 }, { wch: 16 }, { wch: 26 }, { wch: 10 }, { wch: 16 },
+    { wch: 28 }, { wch: 44 }, { wch: 34 }, { wch: 11 }, { wch: 12 }, { wch: 12 }
+  ];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Snags');
+  XLSX.writeFile(wb, filename);
+}
+
+function populateExportDropdowns(){
+  const roomSelect = document.getElementById('exportRoomSelect');
+  const roomOptions = [];
+  FLOORS.forEach(f => {
+    f.rooms.forEach(([code, name]) => {
+      const count = SNAGS.filter(s => s.floorCode === f.code && s.roomCode === code).length;
+      if (count > 0) roomOptions.push(`<option value="${f.code}|${code}">${escapeHtml(name)} — ${escapeHtml(f.name)} (${count})</option>`);
+    });
+  });
+  roomSelect.innerHTML = roomOptions.join('');
+
+  const tradeSelect = document.getElementById('exportTradeSelect');
+  tradeSelect.innerHTML = TRADES.map(t => {
+    const count = SNAGS.filter(s => s.trade === t).length;
+    return `<option value="${escapeHtml(t)}">${escapeHtml(t)} (${count})</option>`;
+  }).join('');
+}
+
+function currentExportScope(){
+  const el = document.querySelector('input[name="exportScope"]:checked');
+  return el ? el.value : 'all';
+}
+
+function getExportItems(){
+  const scope = currentExportScope();
+  if (scope === 'all') return SNAGS;
+  if (scope === 'filtered') return filteredSnags();
+  if (scope === 'selected') return [...selectedTags].map(tag => SNAGS.find(s => s.tag === tag)).filter(Boolean);
+  if (scope === 'room'){
+    const val = document.getElementById('exportRoomSelect').value;
+    if (!val) return [];
+    const [floorCode, roomCode] = val.split('|');
+    return SNAGS.filter(s => s.floorCode === floorCode && s.roomCode === roomCode);
+  }
+  if (scope === 'trade'){
+    const trade = document.getElementById('exportTradeSelect').value;
+    if (!trade) return [];
+    return SNAGS.filter(s => s.trade === trade);
+  }
+  return [];
+}
+
+function exportFilenameForScope(){
+  const scope = currentExportScope();
+  const stamp = new Date().toISOString().slice(0, 10);
+  if (scope === 'all') return `snags-all-${stamp}.xlsx`;
+  if (scope === 'filtered') return `snags-filtered-${stamp}.xlsx`;
+  if (scope === 'selected') return `snags-selected-${stamp}.xlsx`;
+  if (scope === 'room'){
+    const val = document.getElementById('exportRoomSelect').value;
+    const roomCode = (val || '').split('|')[1] || 'room';
+    return `snags-room-${roomCode}-${stamp}.xlsx`;
+  }
+  if (scope === 'trade'){
+    const trade = document.getElementById('exportTradeSelect').value || 'trade';
+    const safe = trade.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '');
+    return `snags-trade-${safe}-${stamp}.xlsx`;
+  }
+  return `snags-export-${stamp}.xlsx`;
+}
+
+function updateExportCountLine(){
+  const items = getExportItems();
+  const el = document.getElementById('exportCountLine');
+  el.textContent = items.length === 1 ? '1 snag will be exported' : `${items.length} snags will be exported`;
+}
+
+function onExportScopeChange(){
+  const scope = currentExportScope();
+  document.getElementById('exportRoomSelect').disabled = scope !== 'room';
+  document.getElementById('exportTradeSelect').disabled = scope !== 'trade';
+  updateExportCountLine();
+}
+function onExportSubSelectChange(){
+  updateExportCountLine();
+}
+
+function openExportModal(){
+  populateExportDropdowns();
+
+  const hasSelection = selectedTags && selectedTags.size > 0;
+  document.getElementById('exportSelectedOption').style.display = hasSelection ? 'block' : 'none';
+  document.getElementById('exportSelectedCount').textContent = selectedTags ? selectedTags.size : 0;
+
+  const filterStatus = document.getElementById('fStatus').value;
+  const filterSearch = document.getElementById('fSearch').value.trim();
+  const hint = document.getElementById('exportFilteredHint');
+  if (filterStatus || filterSearch){
+    const parts = [];
+    if (filterStatus) parts.push(`status: ${filterStatus}`);
+    if (filterSearch) parts.push(`search: "${filterSearch}"`);
+    hint.textContent = `Active filters — ${parts.join(', ')}`;
+  } else {
+    hint.textContent = 'No search/status filter currently active — same as "All snags"';
+  }
+
+  // Default to a sensible starting choice: the current selection if there
+  // is one, otherwise "all".
+  const defaultScope = hasSelection ? 'selected' : 'all';
+  document.querySelectorAll('input[name="exportScope"]').forEach(r => { r.checked = (r.value === defaultScope); });
+  onExportScopeChange();
+
+  document.getElementById('exportModal').classList.add('show');
+}
+
+function runExcelExport(){
+  const items = getExportItems();
+  if (items.length === 0){
+    alert('Nothing to export for this selection — pick a different option.');
+    return;
+  }
+  downloadSnagsAsExcel(items, exportFilenameForScope());
+  document.getElementById('exportModal').classList.remove('show');
+}
+
+/* ============================================================
    INIT
    ============================================================ */
 (function init(){
