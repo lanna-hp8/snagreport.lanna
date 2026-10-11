@@ -28259,29 +28259,6 @@ const SNAGS = [
     "updatedAt": "2026-10-11T12:19:33.691Z"
   },
   {
-    "tag": "1F-PLD-04",
-    "floorCode": "1F",
-    "floorName": "First Floor",
-    "roomCode": "PLD",
-    "roomName": "Plant & Data Room",
-    "trade": "Structural / Building",
-    "severity": "Major",
-    "status": "Open",
-    "location": "Plant room",
-    "description": "Holes in skeiling - finish skeiling to leave flush finish around pipe\nHoles in floor - smell from plant room travels up and into bedroom",
-    "comments": "",
-    "pins": [
-      {
-        "x": 27.37,
-        "y": 40.74
-      }
-    ],
-    "thumbFiles": [],
-    "photoFiles": [],
-    "createdAt": "2026-10-11T12:21:13.705Z",
-    "updatedAt": "2026-10-11T12:21:13.705Z"
-  },
-  {
     "tag": "1F-BD5-34",
     "floorCode": "1F",
     "floorName": "First Floor",
@@ -28420,5 +28397,77 @@ const SNAGS = [
     ],
     "createdAt": "2026-10-11T12:39:44.463Z",
     "updatedAt": "2026-10-11T12:39:44.464Z"
+  },
+  {
+    "tag": "1F-PLD-05",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "PLD",
+    "roomName": "Plant & Data Room",
+    "trade": "Structural / Building",
+    "severity": "Major",
+    "status": "Open",
+    "location": "",
+    "description": "Skirting not done",
+    "comments": "",
+    "pins": [
+      {
+        "x": 25.15,
+        "y": 37.94
+      },
+      {
+        "x": 27.61,
+        "y": 37.94
+      },
+      {
+        "x": 29.34,
+        "y": 37.94
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-PLD-05_thumb_1.jpg",
+      "photos/1F-PLD-05_thumb_2.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-PLD-05_full_1.jpg",
+      "photos/1F-PLD-05_full_2.jpg"
+    ],
+    "createdAt": "2026-10-11T18:38:36.719Z",
+    "updatedAt": "2026-10-11T18:38:36.720Z"
+  },
+  {
+    "tag": "1F-PLD-04-B",
+    "floorCode": "1F",
+    "floorName": "First Floor",
+    "roomCode": "PLD",
+    "roomName": "Plant & Data Room",
+    "trade": "Structural / Building",
+    "severity": "Major",
+    "status": "Open",
+    "location": "Plant room",
+    "description": "Holes in skeiling - finish skeiling to leave flush finish around pipe\nHoles in floor - smell from plant room travels up and into bedroom",
+    "comments": "",
+    "pins": [
+      {
+        "x": 27.37,
+        "y": 40.74
+      }
+    ],
+    "thumbFiles": [
+      "photos/1F-PLD-04-B_thumb_1.jpg",
+      "photos/1F-PLD-04-B_thumb_2.jpg",
+      "photos/1F-PLD-04-B_thumb_3.jpg",
+      "photos/1F-PLD-04-B_thumb_4.jpg",
+      "photos/1F-PLD-04-B_thumb_5.jpg"
+    ],
+    "photoFiles": [
+      "photos/1F-PLD-04-B_full_1.jpg",
+      "photos/1F-PLD-04-B_full_2.jpg",
+      "photos/1F-PLD-04-B_full_3.jpg",
+      "photos/1F-PLD-04-B_full_4.jpg",
+      "photos/1F-PLD-04-B_full_5.jpg"
+    ],
+    "createdAt": "2026-10-11T12:21:13.705Z",
+    "updatedAt": "2026-10-11T18:42:20.740Z"
   }
 ];
