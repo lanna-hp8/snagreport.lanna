@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Snag Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16233E; --ink-2:#233559; --paper:#EEF1F4; --card:#FFFFFF;
+    --line:#CFD7E0; --line-soft:#E3E8ED; --text:#1D2733; --text-soft:#5B6B7C;
+    --amber:#DA8B2E; --amber-bg:#FBF0DE; --red:#B23A32; --red-bg:#F7E4E1;
+    --green:#3F7A56; --green-bg:#E4EFE8; --blue:#2F5DA6; --blue-bg:#E3EAF6;
+    --grey:#8894A0; --grey-bg:#EBEEF1; --radius:10px;
+    --shadow: 0 1px 2px rgba(22,35,62,0.06), 0 4px 14px rgba(22,35,62,0.05);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: linear-gradient(var(--paper), var(--paper)),
+      repeating-linear-gradient(0deg, rgba(47,93,166,0.05) 0px, rgba(47,93,166,0.05) 1px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(90deg, rgba(47,93,166,0.05) 0px, rgba(47,93,166,0.05) 1px, transparent 1px, transparent 40px);
+    font-family:'Inter',sans-serif; color:var(--text); min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:20px 18px 80px;}
+  header.top{
+    background:var(--ink); background-image: linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 100%);
+    color:#fff; border-radius:var(--radius); padding:22px 24px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+  }
+  header.top::before{
+    content:""; position:absolute; inset:0;
+    background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 28px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 28px);
+    pointer-events:none;
+  }
+  .proj-label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B9C6DE; margin-bottom:4px; position:relative;}
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin:0 0 12px; letter-spacing:-0.01em; position:relative;}
+  .stats{display:flex; gap:10px; flex-wrap:wrap; position:relative;}
+  .stat{background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.16); border-radius:8px; padding:8px 14px; min-width:76px; text-align:center;}
+  .stat .n{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; line-height:1;}
+  .stat .l{font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:#B9C6DE; margin-top:4px;}
+  .stat.open .n{color:#F4C77E;} .stat.crit .n{color:#F0918A;} .stat.verified .n{color:#8FD1AC;}
+
+  .toolbar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0 16px;}
+  .btn{font-family:'Inter',sans-serif; font-weight:600; font-size:13px; cursor:pointer; border-radius:8px; padding:9px 16px; border:1px solid var(--line); background:var(--card); color:var(--text); transition:all .12s ease;}
+  .btn:hover{border-color:var(--ink); color:var(--ink);}
+  .btn.small{padding:6px 11px; font-size:12px; border-radius:6px;}
+  select, input[type=search]{font-family:'Inter',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--text);}
+  .search-box{flex:1; min-width:180px;} .search-box input{width:100%;}
+
+  .group-tabs{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:6px;}
+  .group-tabs label{font-size:12.5px; color:var(--text-soft); align-self:center; margin-right:4px;}
+
+  .group-section{background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); margin-bottom:10px; box-shadow:var(--shadow); overflow:hidden;}
+  .group-header{display:flex; justify-content:space-between; align-items:center; padding:13px 16px; cursor:pointer; gap:10px;}
+  .group-header:hover{background:var(--grey-bg);}
+  .group-title{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; display:flex; align-items:center; gap:8px;}
+  .group-counts{display:flex; gap:6px; align-items:center;}
+  .chip{font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; padding:2px 9px; border-radius:20px;}
+  .chip.open{background:var(--amber-bg); color:var(--amber);} .chip.clear{background:var(--green-bg); color:var(--green);}
+  .caret{font-size:12px; color:var(--text-soft); transition:transform .15s ease;}
+  .group-section.expanded .caret{transform:rotate(90deg);}
+  .group-body{display:none; padding:0 14px 14px;}
+  .group-section.expanded .group-body{display:block;}
+
+  .snag-card{border:1px solid var(--line-soft); border-left:4px solid var(--grey); border-radius:8px; padding:13px 15px; margin-top:10px;}
+  .snag-card.sev-Major{border-left-color:var(--amber);} .snag-card.sev-Critical{border-left-color:var(--red);}
+  .snag-card.sev-Minor{border-left-color:var(--blue);} .snag-card.sev-Cosmetic{border-left-color:var(--grey);}
+  .card-top{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:flex-start;}
+  .tag-code{font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px; color:var(--ink); background:var(--grey-bg); padding:2px 8px; border-radius:5px;}
+  .badge{font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; padding:3px 9px; border-radius:20px; white-space:nowrap;}
+  .badge.sev-Critical{background:var(--red-bg); color:var(--red);} .badge.sev-Major{background:var(--amber-bg); color:var(--amber);}
+  .badge.sev-Minor{background:var(--blue-bg); color:var(--blue);} .badge.sev-Cosmetic{background:var(--grey-bg); color:var(--grey);}
+  .badge.st-open{background:var(--red-bg); color:var(--red);} .badge.st-inprogress{background:var(--amber-bg); color:var(--amber);}
+  .badge.st-awaiting{background:var(--blue-bg); color:var(--blue);} .badge.st-tofix{background:var(--blue-bg); color:var(--blue);}
+  .badge.st-verified{background:var(--green-bg); color:var(--green);}
+  .card-loc{font-size:12px; color:var(--text-soft); margin-top:5px;} .card-loc b{color:var(--text);}
+  .card-desc{font-size:14px; margin:8px 0 3px; line-height:1.45;}
+  .card-comments{font-size:12.5px; color:var(--text-soft); font-style:italic; margin-bottom:6px;}
+  .card-media{display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; align-items:center;}
+  .card-media img{width:72px; height:72px; object-fit:cover; border-radius:6px; border:1px solid var(--line); cursor:pointer; background:var(--grey-bg);}
+  .pin-mini{position:relative; width:96px; height:68px; border-radius:6px; overflow:hidden; border:1px solid var(--line); background-repeat:no-repeat; cursor:pointer; flex-shrink:0;}
+  .pin-mini .marker{position:absolute; width:14px; height:14px; margin-left:-7px; margin-top:-7px; border-radius:50%; background:var(--red); border:2px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.4);}
+  .card-date{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--grey); margin-top:8px;}
+
+  .empty-state{text-align:center; padding:40px 20px; color:var(--text-soft); background:var(--card); border-radius:var(--radius); border:1px dashed var(--line);}
+
+  .overlay{position:fixed; inset:0; background:rgba(22,35,62,0.5); display:none; align-items:center; justify-content:center; padding:24px; z-index:50;}
+  .overlay.show{display:flex;}
+  .overlay img.full{max-width:92vw; max-height:88vh; border-radius:8px; box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .pin-lightbox-inner{max-width:640px; width:92vw; background:#fff; border-radius:12px; padding:12px; box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .pin-lightbox-plan{position:relative; width:100%; aspect-ratio:1500/1059; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:var(--grey-bg); background-repeat:no-repeat;}
+  .pin-lightbox-plan .marker{position:absolute; width:20px; height:20px; margin-left:-10px; margin-top:-10px; border-radius:50%; background:var(--red); border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.4);}
+  .pin-lightbox-zoom{display:flex; align-items:center; gap:8px; margin-top:10px;}
+  .pin-lightbox-zoom input{flex:1;}
+
+  .footer-note{text-align:center; font-size:11.5px; color:var(--text-soft); margin-top:24px;}
+
+  .export-btn{position:relative; margin-top:14px; background:rgba(255,255,255,0.1); color:#fff; border-color:rgba(255,255,255,0.28);}
+  .export-btn:hover{background:rgba(255,255,255,0.18); color:#fff; border-color:rgba(255,255,255,0.5);}
+  .export-modal-inner{max-width:460px; width:92vw; background:#fff; border-radius:12px; padding:20px 22px; box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .export-modal-inner h3{font-family:'Space Grotesk',sans-serif;}
+  .export-option{padding:9px 0; border-bottom:1px solid var(--line-soft);}
+  .export-option:last-of-type{border-bottom:none;}
+  .export-option label{font-size:13.5px; display:flex; align-items:center; gap:8px; cursor:pointer;}
+  .export-option input[type=radio]{flex-shrink:0;}
+  .export-sub-select{width:100%; margin:8px 0 2px 24px; width:calc(100% - 24px);}
+  .export-sub-select:disabled{opacity:0.5;}
+  .export-option-hint{font-size:11.5px; color:var(--text-soft); margin:2px 0 0 24px;}
+  .export-count-line{margin-top:14px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--text-soft); text-align:center; background:var(--grey-bg); border-radius:6px; padding:8px;}
+  .btn-primary{background:var(--ink); color:#fff; border-color:var(--ink);}
+  .btn-primary:hover{background:var(--ink-2); color:#fff;}
+
+  /* ============ FLOOR PLAN EXPLORER ============ */
+  .view-switcher{display:flex; gap:8px; margin:18px 0 16px;}
+  .view-tab{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13.5px; padding:10px 18px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--text-soft); cursor:pointer;}
+  .view-tab.active{background:var(--ink); color:#fff; border-color:var(--ink);}
+  .view-panel{display:none;} .view-panel.active{display:block;}
+
+  .explorer-step-label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-soft); margin:14px 0 8px;}
+  .pill-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:6px;}
+  .pill-btn{font-family:'Inter',sans-serif; font-weight:600; font-size:13px; padding:9px 16px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--text); cursor:pointer; display:flex; align-items:center; gap:7px;}
+  .pill-btn:hover{border-color:var(--ink);}
+  .pill-btn.active{background:var(--ink); color:#fff; border-color:var(--ink);}
+  .pill-count{font-family:'IBM Plex Mono',monospace; font-size:10.5px; background:var(--grey-bg); color:var(--text-soft); padding:1px 7px; border-radius:20px;}
+  .pill-btn.active .pill-count{background:rgba(255,255,255,0.2); color:#fff;}
+  .pill-btn.empty{opacity:0.55;}
+
+  .explorer-layout{display:flex; gap:16px; align-items:flex-start; margin-top:14px;}
+  .explorer-plan-col{flex:1.4; min-width:0;}
+  .explorer-list-col{flex:1; min-width:0; background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); padding:14px; box-shadow:var(--shadow); max-height:640px; overflow-y:auto;}
+  @media (max-width:800px){ .explorer-layout{flex-direction:column;} .explorer-list-col{max-height:340px;} }
+
+  .pin-plan-wrap{position:relative; width:100%; aspect-ratio:1500/1059; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line-soft); background:var(--grey-bg); background-repeat:no-repeat; box-shadow:var(--shadow); cursor:crosshair; touch-action:none; user-select:none;}
+  .plan-controls{display:flex; align-items:center; gap:8px; margin-top:10px;}
+  .explorer-hint{font-size:11.5px; color:var(--text-soft); margin:8px 0 0;}
+
+  .explorer-pin{position:absolute; width:20px; height:20px; margin-left:-10px; margin-top:-10px; border-radius:50%; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,0.4); cursor:pointer; z-index:2;}
+  .explorer-pin.sev-Critical{background:var(--red);} .explorer-pin.sev-Major{background:var(--amber);}
+  .explorer-pin.sev-Minor{background:var(--blue);} .explorer-pin.sev-Cosmetic{background:var(--grey);}
+  .explorer-pin.pin-selected{box-shadow:0 0 0 4px rgba(47,93,166,0.35), 0 1px 4px rgba(0,0,0,0.4);}
+  .explorer-pin.pin-active{background:#F2B705 !important; width:26px; height:26px; margin-left:-13px; margin-top:-13px; box-shadow:0 0 0 5px rgba(242,183,5,0.4), 0 2px 6px rgba(0,0,0,0.5); z-index:3;}
+  .explorer-pin.pin-muted{background:var(--grey) !important; opacity:0.45; box-shadow:none;}
+  .selection-box{position:absolute; border:1.5px dashed var(--blue); background:rgba(47,93,166,0.12); pointer-events:none; z-index:4; display:none;}
+
+  .selected-snag-item{padding:9px 10px; border-radius:8px; border:1px solid var(--line-soft); margin-bottom:7px; cursor:pointer; font-size:12.5px;}
+  .selected-snag-item:hover{border-color:var(--blue);}
+  .selected-snag-item.active{border-color:var(--amber); background:var(--amber-bg);}
+  .selected-snag-item .tag-code{display:block; margin-bottom:3px;}
+  .empty-hint{font-size:12px; color:var(--text-soft); text-align:center; padding:20px 10px;}
+
+  .active-detail-box{background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); padding:16px; margin-top:14px; box-shadow:var(--shadow);}
+  .room-full-list-section{margin-top:16px;}
+
+  /* Print — only the room snag list, formatted cleanly */
+  #printArea{display:none;}
+  @media print{
+    body > .wrap, body > .overlay{display:none !important;}
+    #printArea{display:block !important; padding:20px;}
+    .print-item{page-break-inside:avoid; border-bottom:1px solid #ccc; padding:12px 0;}
+    .print-item img{width:110px; height:110px; object-fit:cover; margin-right:6px; border-radius:4px;}
+  }
+
+  @media (max-width:640px){ h1{font-size:21px;} .stats{gap:6px;} .stat{min-width:62px; padding:6px 10px;} }
+
+  /* ============ LOGIN / SESSION ============ */
+  .login-screen{position:fixed; inset:0; background:var(--paper); display:none; align-items:center; justify-content:center; padding:20px; z-index:100;}
+  .login-screen.show{display:flex;}
+  .login-card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:32px 28px; width:100%; max-width:360px;}
+  .login-card h1{font-size:20px; margin:0 0 4px; color:var(--ink);}
+  .login-card p.sub{font-size:12.5px; color:var(--text-soft); margin:0 0 20px;}
+  .login-card label{display:block; font-size:12px; font-weight:600; color:var(--text-soft); margin-bottom:5px;}
+  .login-card input{width:100%; font-family:'Inter',sans-serif; font-size:14px; padding:10px 12px; border-radius:8px; border:1px solid var(--line); margin-bottom:14px;}
+  .login-card .btn.primary{width:100%; background:var(--ink); color:#fff; border-color:var(--ink); padding:11px; font-size:14px;}
+  .login-error{background:var(--red-bg); color:var(--red); font-size:12.5px; padding:9px 12px; border-radius:8px; margin-bottom:14px; display:none;}
+  .login-error.show{display:block;}
+  .session-bar{display:flex; justify-content:flex-end; align-items:center; gap:10px; max-width:1100px; margin:0 auto; padding:10px 18px 0; font-size:12.5px; color:var(--text-soft);}
+  .session-bar b{color:var(--text);}
+  .role-chip{font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.06em; padding:2px 8px; border-radius:20px; background:var(--blue-bg); color:var(--blue);}
+  .role-chip.role-admin{background:var(--red-bg); color:var(--red);}
+  .role-chip.role-viewer{background:var(--grey-bg); color:var(--text-soft);}
+
+  /* ============ BUILDER OVERLAY: contractor, trade/status edits, comments ============ */
+  .contractor-chip{font-size:11.5px; font-weight:600; color:var(--green); background:var(--green-bg); padding:2px 9px; border-radius:20px; white-space:nowrap;}
+  .contractor-chip.none{color:var(--text-soft); background:var(--grey-bg); font-weight:500;}
+  .overlay-note{font-size:11px; color:var(--amber); margin-top:3px;}
+  .card-original-note{font-size:12.5px; color:var(--text-soft); font-style:italic; margin-bottom:6px;}
+  .card-original-note b{font-style:normal; font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em;}
+  .builder-panel{margin-top:10px; padding:10px 12px; background:var(--blue-bg); border-radius:8px;}
+  .builder-panel .bp-title{font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--blue); margin-bottom:8px;}
+  .builder-panel .bp-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px;}
+  .builder-panel label{display:block; font-size:11px; font-weight:600; color:var(--text-soft); margin-bottom:3px;}
+  .builder-panel select, .builder-panel input{width:100%; font-size:12.5px; padding:6px 8px;}
+  .builder-panel .bp-orig{font-size:10.5px; color:var(--text-soft); margin-top:2px;}
+  .comments-section{margin-top:12px; padding-top:10px; border-top:1px dashed var(--line-soft);}
+  .comments-list{display:flex; flex-direction:column; gap:6px; margin-bottom:8px;}
+  .comment-item{font-size:12.5px; background:var(--grey-bg); border-radius:8px; padding:7px 10px; white-space:pre-wrap;}
+  .comment-item .comment-meta{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--text-soft); margin-bottom:2px; white-space:normal; display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+  .comment-item .comment-actions{margin-left:auto; display:flex; gap:6px;}
+  .comment-item .comment-actions button{font-size:10.5px; padding:1px 7px; border:1px solid var(--line); border-radius:5px; background:#fff; cursor:pointer; color:var(--text-soft);}
+  .comment-item .comment-actions button:hover{border-color:var(--ink); color:var(--ink);}
+  .comment-edit textarea, .comment-form textarea{width:100%; min-height:52px; font-family:'Inter',sans-serif; font-size:12.5px; padding:8px 10px; border-radius:8px; border:1px solid var(--line); resize:vertical; margin-bottom:6px;}
+  .no-comments-hint{font-size:11.5px; color:var(--text-soft); font-style:italic;}
+  .admin-edit{margin-top:10px; font-size:12.5px;}
+  .admin-edit summary{cursor:pointer; color:var(--red); font-weight:600; font-size:12px;}
+  .admin-edit .ae-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:8px; margin:8px 0;}
+  .admin-edit label{display:block; font-size:11px; font-weight:600; color:var(--text-soft); margin-bottom:3px;}
+  .admin-edit input, .admin-edit select, .admin-edit textarea{width:100%; font-family:'Inter',sans-serif; font-size:12.5px; padding:6px 8px; border-radius:6px; border:1px solid var(--line);}
+  .admin-edit .ae-warn{font-size:11px; color:var(--text-soft); margin-bottom:6px;}
+  .btn.danger{color:var(--red); border-color:var(--red);}
+  .btn.danger:hover{background:var(--red-bg); color:var(--red);}
+
+  /* ============ ADMIN PANEL ============ */
+  .admin-table{width:100%; border-collapse:collapse; font-size:13px; margin-top:10px;}
+  .admin-table th{text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-soft); padding:6px 10px; border-bottom:1px solid var(--line);}
+  .admin-table td{padding:8px 10px; border-bottom:1px solid var(--line-soft); vertical-align:middle;}
+  .admin-table tr.inactive{opacity:0.5;}
+  .admin-box{background:var(--card); border:1px solid var(--line-soft); border-radius:var(--radius); padding:16px; margin-top:16px; box-shadow:var(--shadow); max-width:460px;}
+  .admin-box h3{margin:0 0 10px; font-family:'Space Grotesk',sans-serif;}
+  .admin-box .field{margin-bottom:12px;}
+  .admin-box label{display:block; font-size:12px; font-weight:600; color:var(--text-soft); margin-bottom:4px;}
+  .admin-box input, .admin-box select{width:100%;}
+  .contractor-row{display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid var(--line-soft); font-size:13px;}
+  .inline-msg{font-size:12px; margin-top:8px;}
+  .inline-msg.err{color:var(--red);} .inline-msg.ok{color:var(--green);}
+</style>
+</head>
+<body>
+
+<div class="login-screen show" id="loginScreen">
+  <div class="login-card">
+    <h1>Site Snag Report</h1>
+    <p class="sub">Please sign in to continue.</p>
+    <div class="login-error" id="loginError"></div>
+    <label>Username</label>
+    <input type="text" id="loginUsername" autocomplete="username" autocapitalize="none" onkeydown="if(event.key==='Enter')document.getElementById('loginPassword').focus()">
+    <label>Password</label>
+    <input type="password" id="loginPassword" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="btn primary" onclick="doLogin()">Sign in</button>
+  </div>
+</div>
+
+<div class="session-bar" id="sessionBar" style="display:none;">
+  <span>Signed in as <b id="sessionUsername"></b></span>
+  <span class="role-chip" id="sessionRoleChip"></span>
+  <button class="btn small" onclick="doLogout()">Log out</button>
+</div>
+
+<datalist id="contractorList"></datalist>
+
+<div class="wrap" id="mainApp" style="display:none;">
+
+  <header class="top">
+    <div class="proj-label">Site Snag Report</div>
+    <h1 id="pageTitle">Loading…</h1>
+    <div class="stats">
+      <div class="stat"><div class="n" id="statTotal">0</div><div class="l">Total</div></div>
+      <div class="stat open"><div class="n" id="statOpen">0</div><div class="l">Open</div></div>
+      <div class="stat crit"><div class="n" id="statMajor">0</div><div class="l">Major+</div></div>
+      <div class="stat verified"><div class="n" id="statVerified">0</div><div class="l">Verified</div></div>
+    </div>
+    <button class="btn small export-btn" onclick="openExportModal()">📊 Export to Excel</button>
+  </header>
+
+  <div class="view-switcher">
+    <button class="view-tab active" data-view="explore" onclick="setMainView('explore')">📍 Floor Plan Explorer</button>
+    <button class="view-tab" data-view="list" onclick="setMainView('list')">☰ Browse / Group List</button>
+    <button class="view-tab" data-view="admin" id="adminTabBtn" onclick="setMainView('admin')" style="display:none;">👤 Admin</button>
+  </div>
+
+  <!-- ============ FLOOR PLAN EXPLORER VIEW ============ -->
+  <div class="view-panel active" id="view-explore">
+    <div class="explorer-step-label">1. Choose a floor</div>
+    <div class="pill-row" id="floorButtons"></div>
+
+    <div id="roomStep">
+      <div class="explorer-step-label">2. Choose a room</div>
+      <div class="pill-row" id="roomButtons"><span class="explorer-hint">Pick a floor above first.</span></div>
+    </div>
+
+    <div id="roomExplorerArea" style="display:none;">
+      <div class="explorer-layout">
+        <div class="explorer-plan-col">
+          <div class="pin-plan-wrap" id="explorerPlanWrap"></div>
+          <div class="plan-controls">
+            <label style="font-size:12px;color:var(--text-soft);white-space:nowrap;">Zoom</label>
+            <input type="range" id="explorerZoomSlider" min="1" max="4" step="0.1" value="1.5" oninput="onExplorerZoomChange()">
+            <span id="explorerZoomValue" style="font-size:12px;color:var(--text-soft);width:34px;">1.5x</span>
+          </div>
+          <p class="explorer-hint">Tap a pin to view that snag. Drag across the plan to select several at once.</p>
+        </div>
+        <div class="explorer-list-col">
+          <div class="selected-list-header">
+            <h3>Selected (<span id="selCount">0</span>)</h3>
+            <button class="btn small" onclick="clearSelection()">Clear</button>
+          </div>
+          <div id="selectedSnagsList"><div class="empty-hint">Tap or drag-select pins on the plan to list them here.</div></div>
+        </div>
+      </div>
+
+      <div id="activeSnagDetail"></div>
+
+      <div class="room-full-list-section">
+        <div class="toolbar">
+          <button class="btn small" onclick="toggleFullRoomList()"><span id="fullListCaret">▶</span> All snags in this room (<span id="fullListCount">0</span>)</button>
+          <button class="btn small" onclick="printRoom()">🖨 Print this room's snags</button>
+        </div>
+        <div id="fullRoomListBody" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BROWSE / GROUP LIST VIEW ============ -->
+  <div class="view-panel" id="view-list">
+    <div class="toolbar">
+      <div class="group-tabs">
+        <label>Group by:</label>
+        <button class="btn small" data-group="room" onclick="setGroupBy('room')">Room</button>
+        <button class="btn small" data-group="trade" onclick="setGroupBy('trade')">Trade</button>
+        <button class="btn small" data-group="severity" onclick="setGroupBy('severity')">Severity</button>
+        <button class="btn small" data-group="floor" onclick="setGroupBy('floor')">Floor</button>
+        <button class="btn small" data-group="contractor" onclick="setGroupBy('contractor')">Contractor</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <select id="fStatus" onchange="renderGroups()">
+        <option value="">All statuses</option>
+        <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
+        <option>Fixed - To Verify</option><option>Verified/Closed</option>
+      </select>
+      <div class="search-box"><input type="search" id="fSearch" placeholder="Search description, room, tag..." oninput="renderGroups()"></div>
+      <button class="btn small" onclick="expandAll()">Expand all</button>
+      <button class="btn small" onclick="collapseAll()">Collapse all</button>
+    </div>
+
+    <div id="groupsContainer"></div>
+  </div>
+
+  <!-- ============ ADMIN VIEW (admin only) ============ -->
+  <div class="view-panel" id="view-admin">
+    <div id="adminMsg"></div>
+    <div class="admin-box" style="max-width:none;">
+      <h3>Accounts</h3>
+      <table class="admin-table" id="adminUsersTable">
+        <thead><tr><th>Username</th><th>Role</th><th>Status</th><th>Created</th><th></th></tr></thead>
+        <tbody id="adminUsersBody"></tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text-soft);margin:10px 0 0;">Resetting a password or deactivating an account signs that account out everywhere straight away — use this on <b>trade</b> whenever a contractor should lose access.</p>
+    </div>
+    <div class="admin-box">
+      <h3>Create a new account</h3>
+      <div class="field"><label>Username</label><input type="text" id="newUserUsername" autocapitalize="none"></div>
+      <div class="field"><label>Password (min. 8 characters)</label><input type="text" id="newUserPassword"></div>
+      <div class="field"><label>Role</label>
+        <select id="newUserRole">
+          <option value="builder">Builder — comment, edit own comments, set trade/status/contractor</option>
+          <option value="viewer">Viewer — read only</option>
+          <option value="admin">Admin — full control</option>
+        </select>
+      </div>
+      <button class="btn primary" onclick="createUser()">Create account</button>
+      <div class="inline-msg" id="createUserMsg"></div>
+    </div>
+    <div class="admin-box">
+      <h3>Contractor suggestions</h3>
+      <p style="font-size:12px;color:var(--text-soft);margin:0 0 8px;">Names offered in the contractor dropdown. Removing a name only removes the suggestion; snags already tagged with it keep it.</p>
+      <div id="adminContractors"></div>
+    </div>
+  </div>
+
+  <div class="footer-note">Snag data exported from the site snagging app · photos hosted separately · pin locations are approximate</div>
+</div>
+
+<div class="overlay" id="photoLightbox" onclick="this.classList.remove('show')">
+  <img class="full" id="photoLightboxImg">
+</div>
+
+<div class="overlay" id="pinLightbox" onclick="this.classList.remove('show')">
+  <div class="pin-lightbox-inner" onclick="event.stopPropagation()">
+    <div class="pin-lightbox-plan" id="pinLightboxPlan"></div>
+    <div class="pin-lightbox-zoom">
+      <label style="font-size:12px;color:var(--text-soft);white-space:nowrap;">Zoom</label>
+      <input type="range" id="pinZoomSlider" min="1" max="4" step="0.1" value="1" oninput="onPinZoomChange()">
+      <span id="pinZoomValue" style="font-size:12px;color:var(--text-soft);width:34px;">1.0x</span>
+    </div>
+    <div style="text-align:right;margin-top:8px;"><button class="btn small" onclick="document.getElementById('pinLightbox').classList.remove('show')">Close</button></div>
+  </div>
+</div>
+
+<div id="printArea"></div>
+
+<div class="overlay" id="exportModal" onclick="this.classList.remove('show')">
+  <div class="export-modal-inner" onclick="event.stopPropagation()">
+    <h3 style="margin:0 0 14px;">Export to Excel</h3>
+
+    <div class="export-option">
+      <label><input type="radio" name="exportScope" value="all" checked onchange="onExportScopeChange()"> All snags</label>
+    </div>
+    <div class="export-option">
+      <label><input type="radio" name="exportScope" value="filtered" onchange="onExportScopeChange()"> Current search / status filter (List view)</label>
+      <div class="export-option-hint" id="exportFilteredHint"></div>
+    </div>
+    <div class="export-option" id="exportSelectedOption" style="display:none;">
+      <label><input type="radio" name="exportScope" value="selected" onchange="onExportScopeChange()"> Currently selected snags (<span id="exportSelectedCount">0</span>, Floor Plan Explorer)</label>
+    </div>
+    <div class="export-option">
+      <label><input type="radio" name="exportScope" value="room" onchange="onExportScopeChange()"> A specific room</label>
+      <select id="exportRoomSelect" class="export-sub-select" disabled onchange="onExportSubSelectChange()"></select>
+    </div>
+    <div class="export-option">
+      <label><input type="radio" name="exportScope" value="trade" onchange="onExportScopeChange()"> A specific trade</label>
+      <select id="exportTradeSelect" class="export-sub-select" disabled onchange="onExportSubSelectChange()"></select>
+    </div>
+
+    <div class="export-option">
+      <label><input type="radio" name="exportScope" value="contractor" onchange="onExportScopeChange()"> A specific contractor</label>
+      <select id="exportContractorSelect" class="export-sub-select" disabled onchange="onExportSubSelectChange()"></select>
+    </div>
+
+    <div class="export-count-line" id="exportCountLine">593 snags will be exported</div>
+
+    <div style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;gap:8px;">
+      <button class="btn small" onclick="document.getElementById('exportModal').classList.remove('show')">Cancel</button>
+      <button class="btn small btn-primary" onclick="runExcelExport()">⬇ Download .xlsx</button>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="config.js"></script>
+<script src="xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
