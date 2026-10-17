@@ -14,7 +14,7 @@ const PHOTO_BASE_URL = 'https://pub-52ef5d48cdfc41a29a32eb97a46c2221.r2.dev/';
    builder's changes without the original data ever being modified.
    ============================================================ */
 let RAW_SNAGS = [];
-let OVERLAY = {};          // tag -> {trade, status, contractor, updatedBy, updatedAt}
+let OVERLAY = {};          // tag -> {trade, status, contractors:[...], updatedBy, updatedAt}
 let COMMENTS_BY_TAG = {};  // tag -> [{id, userId, username, body, createdAt, editedAt}]
 let CONTRACTORS = [];
 let SNAGS = [];
@@ -27,7 +27,7 @@ function applyOverlay(){
       status: o.status || s.status,
       originalTrade: s.trade,
       originalStatus: s.status,
-      contractor: o.contractor || '',
+      contractors: Array.isArray(o.contractors) ? o.contractors.slice() : [],
       overlayBy: o.updatedBy || ''
     });
   });
@@ -80,7 +80,7 @@ async function apiFetch(path, opts){
 
 function clearRenderedData(){
   // Don't leave snag data sitting in the page behind the login screen.
-  ['groupsContainer', 'selectedSnagsList', 'activeSnagDetail', 'fullRoomListBody', 'adminUsersBody', 'adminContractors'].forEach(id => {
+  ['groupsContainer', 'selectedSnagsList', 'activeSnagDetail', 'fullRoomListBody', 'adminUsersBody', 'adminContractors', 'tradePills', 'tradeCards', 'tradeSummary', 'contractorPills', 'contractorCards', 'contractorSummary'].forEach(id => {
     const el = document.getElementById(id); if (el) el.innerHTML = '';
   });
   RAW_SNAGS = []; OVERLAY = {}; COMMENTS_BY_TAG = {}; CONTRACTORS = []; SNAGS = [];
@@ -155,6 +155,7 @@ function rerenderAll(){
   try { renderStats(); } catch (e) { console.error(e); }
   try { renderFloorButtons(); if (explorerFloor) renderRoomButtons(); } catch (e) { console.error(e); }
   if (document.getElementById('view-list').classList.contains('active')) renderGroups();
+  ['trade', 'contractor'].forEach(k => { if (document.getElementById('view-' + k).classList.contains('active')) renderFacetView(k); });
   renderSelectedList();
   renderActiveDetail();
   if (explorerFloor && explorerRoom) renderFullRoomList();
@@ -207,32 +208,37 @@ let expandedGroups = new Set();
 
 function setGroupBy(g){
   groupBy = g;
+  const hint = document.getElementById('groupHint');
+  if (hint) hint.textContent = g === 'contractor' ? 'A snag with several contractors is listed under each of them.' : '';
   expandedGroups = new Set();
   document.querySelectorAll('[data-group]').forEach(b => b.classList.toggle('btn-active', b.dataset.group === g));
   renderGroups();
 }
 
+function snagMatchesWords(s, qWords){
+  if (!qWords.length) return true;
+  const hay = [s.tag, s.floorName, s.roomName, s.trade, s.contractors.join(' '), s.severity, s.status, s.location, s.description, s.comments, (COMMENTS_BY_TAG[s.tag] || []).map(c => c.body).join(' ')]
+    .filter(Boolean).join(' ').toLowerCase();
+  return qWords.every(w => hay.includes(w));
+}
+function searchWords(inputId){
+  return document.getElementById(inputId).value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+}
 function filteredSnags(){
   const status = document.getElementById('fStatus').value;
-  const qWords = document.getElementById('fSearch').value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  return SNAGS.filter(s => {
-    if (status && s.status !== status) return false;
-    if (qWords.length){
-      const hay = [s.tag, s.floorName, s.roomName, s.trade, s.contractor, s.severity, s.status, s.location, s.description, s.comments, (COMMENTS_BY_TAG[s.tag] || []).map(c => c.body).join(' ')]
-        .filter(Boolean).join(' ').toLowerCase();
-      if (!qWords.every(w => hay.includes(w))) return false;
-    }
-    return true;
-  });
+  const qWords = searchWords('fSearch');
+  return SNAGS.filter(s => (!status || s.status === status) && snagMatchesWords(s, qWords));
 }
 
-function groupKeyAndLabel(s){
-  if (groupBy === 'room') return [s.floorCode + '|' + s.roomCode, `${s.roomName} — ${s.floorName}`];
-  if (groupBy === 'trade') return [s.trade, s.trade];
-  if (groupBy === 'severity') return [s.severity, s.severity];
-  if (groupBy === 'floor') return [s.floorCode, s.floorName];
-  if (groupBy === 'contractor') return [s.contractor || '~unassigned', s.contractor || 'No contractor assigned'];
-  return ['?', '?'];
+// A snag can belong to several groups (when grouping by contractor, a snag with
+// two contractors appears under each), so this returns a list of [key, label].
+function groupKeysAndLabels(s){
+  if (groupBy === 'room') return [[s.floorCode + '|' + s.roomCode, `${s.roomName} — ${s.floorName}`]];
+  if (groupBy === 'trade') return [[s.trade, s.trade]];
+  if (groupBy === 'severity') return [[s.severity, s.severity]];
+  if (groupBy === 'floor') return [[s.floorCode, s.floorName]];
+  if (groupBy === 'contractor') return s.contractors.length ? s.contractors.map(n => [n, n]) : [['~unassigned', 'No contractor assigned']];
+  return [['?', '?']];
 }
 
 function sortGroupKeys(keys){
@@ -266,9 +272,10 @@ function renderGroups(){
 
   const groups = {}; // key -> { label, items }
   items.forEach(s => {
-    const [key, label] = groupKeyAndLabel(s);
-    if (!groups[key]) groups[key] = { label, items: [] };
-    groups[key].items.push(s);
+    groupKeysAndLabels(s).forEach(([key, label]) => {
+      if (!groups[key]) groups[key] = { label, items: [] };
+      groups[key].items.push(s);
+    });
   });
   const keys = sortGroupKeys(Object.keys(groups));
 
@@ -297,7 +304,7 @@ function toggleGroup(key){
 }
 function expandAll(){
   const items = filteredSnags();
-  items.forEach(s => { const [key] = groupKeyAndLabel(s); expandedGroups.add(key); });
+  items.forEach(s => groupKeysAndLabels(s).forEach(([key]) => expandedGroups.add(key)));
   renderGroups();
 }
 function collapseAll(){ expandedGroups = new Set(); renderGroups(); }
@@ -316,7 +323,7 @@ function snagCardHtml(s){
   return `
     <div class="snag-card sev-${s.severity}">
       <div class="card-top">
-        <div><span class="tag-code">${s.tag}</span> <span class="badge sev-${s.severity}">${s.severity}</span>${s.contractor ? ` <span class="contractor-chip">🛠 ${escapeHtml(s.contractor)}</span>` : ''}</div>
+        <div><span class="tag-code">${s.tag}</span> <span class="badge sev-${s.severity}">${s.severity}</span>${s.contractors.map(n => ` <span class="contractor-chip">🛠 ${escapeHtml(n)}</span>`).join('')}</div>
         <span class="badge ${statusClass(s.status)}">${s.status}</span>
       </div>
       <div class="card-loc"><b>${s.roomName}</b> · ${s.floorName} · ${escapeHtml(s.trade)}${s.location ? ' · ' + escapeHtml(s.location) : ''}</div>
@@ -346,8 +353,12 @@ function builderPanelHtml(s){
     <div class="builder-panel" data-tag="${escapeAttr(s.tag)}">
       <div class="bp-title">Builder details</div>
       <div class="bp-grid">
-        <div><label>Contractor responsible</label>
-          <input type="text" list="contractorList" data-field="contractor" value="${escapeAttr(s.contractor)}" placeholder="Type a name or pick one…" maxlength="80" onchange="onOverlayFieldChange(this)"></div>
+        <div class="bp-contractors"><label>Contractors responsible</label>
+          <div class="cchip-row">${s.contractors.length ? s.contractors.map(n => `<span class="cchip">${escapeHtml(n)}<button type="button" title="Remove ${escapeAttr(n)}" data-name="${escapeAttr(n)}" onclick="removeContractorFromSnag(this)">×</button></span>`).join('') : '<span class="no-comments-hint">None yet</span>'}</div>
+          <div class="cchip-add">
+            <input type="text" list="contractorList" data-field="contractor-add" placeholder="Type a name or pick one, then press Add…" maxlength="80" onkeydown="if(event.key==='Enter'){event.preventDefault();addContractorToSnag(this);}">
+            <button type="button" class="btn small" onclick="addContractorToSnag(this.previousElementSibling)">Add</button>
+          </div></div>
         <div><label>Designated trade</label>
           <select data-field="trade" onchange="onOverlayFieldChange(this)">${tradeOpts}</select>
           ${tradeChanged ? `<div class="bp-orig">Original: ${escapeHtml(s.originalTrade)} · <a href="#" onclick="onOverlayRestore(this,'trade');return false;">restore</a></div>` : ''}</div>
@@ -376,9 +387,30 @@ async function saveOverlay(tag, patch, msgEl){
 }
 async function onOverlayFieldChange(el){
   const panel = el.closest('.builder-panel');
-  const tag = panel.dataset.tag, field = el.dataset.field;
-  const value = field === 'contractor' ? el.value.replace(/\s+/g, ' ').trim() : el.value;
-  await saveOverlay(tag, { [field]: value }, panel.querySelector('.inline-msg'));
+  await saveOverlay(panel.dataset.tag, { [el.dataset.field]: el.value }, panel.querySelector('.inline-msg'));
+}
+function contractorsOf(tag){
+  const s = SNAGS.find(x => x.tag === tag);
+  return s ? s.contractors.slice() : [];
+}
+async function addContractorToSnag(input){
+  const panel = input.closest('.builder-panel');
+  const name = input.value.replace(/\s+/g, ' ').trim();
+  if (!name || input.dataset.busy) return;
+  const msgEl = panel.querySelector('.inline-msg');
+  const list = contractorsOf(panel.dataset.tag);
+  if (list.some(n => n.toLowerCase() === name.toLowerCase())){
+    input.value = ''; showInlineMsg(msgEl, `"${name}" is already on this snag.`, false); return;
+  }
+  input.dataset.busy = '1';
+  list.push(name);
+  const ok = await saveOverlay(panel.dataset.tag, { contractors: list }, msgEl);
+  if (!ok) delete input.dataset.busy;   // on success the card is re-drawn with a fresh, empty input
+}
+async function removeContractorFromSnag(btn){
+  const panel = btn.closest('.builder-panel');
+  const list = contractorsOf(panel.dataset.tag).filter(n => n !== btn.dataset.name);
+  await saveOverlay(panel.dataset.tag, { contractors: list }, panel.querySelector('.inline-msg'));
 }
 async function onOverlayRestore(link, field){
   const panel = link.closest('.builder-panel');
@@ -539,7 +571,7 @@ async function loadAndRenderAdmin(){
 function renderAdminContractors(){
   const el = document.getElementById('adminContractors');
   el.innerHTML = CONTRACTORS.length
-    ? CONTRACTORS.map(n => `<div class="contractor-row"><span>${escapeHtml(n)}</span><button class="btn small danger" data-name="${escapeAttr(n)}" onclick="removeContractorSuggestion(this)">Remove</button></div>`).join('')
+    ? CONTRACTORS.map(n => `<div class="contractor-row"><span>${escapeHtml(n)} <span class="no-comments-hint">(${SNAGS.filter(s => s.contractors.includes(n)).length} snags)</span></span><button class="btn small danger" data-name="${escapeAttr(n)}" onclick="removeContractorSuggestion(this)">Remove</button></div>`).join('')
     : '<div class="no-comments-hint">No contractors yet — they appear here as ccbs adds them.</div>';
 }
 async function removeContractorSuggestion(btn){
@@ -591,6 +623,69 @@ async function createUser(){
     document.getElementById('newUserPassword').value = '';
     await loadAndRenderAdmin();
   } catch (e) { /* handled */ }
+}
+
+/* ============================================================
+   BY TRADE / BY CONTRACTOR TABS — pick one trade (or contractor) and
+   see just its snags, with a status filter, search, and one-click
+   Excel export of exactly what's showing.
+   ============================================================ */
+const NO_CONTRACTOR_KEY = '~none';
+let facetSel = { trade: null, contractor: null };
+
+function facetOptions(kind){
+  if (kind === 'trade'){
+    return TRADES.map(t => ({ key: t, label: t, count: SNAGS.filter(s => s.trade === t).length }));
+  }
+  const names = new Set(CONTRACTORS);
+  SNAGS.forEach(s => s.contractors.forEach(n => names.add(n)));
+  const opts = [...names].sort((x, y) => x.localeCompare(y, undefined, { sensitivity: 'base' }))
+    .map(n => ({ key: n, label: n, count: SNAGS.filter(s => s.contractors.includes(n)).length }));
+  opts.push({ key: NO_CONTRACTOR_KEY, label: 'No contractor assigned', count: SNAGS.filter(s => !s.contractors.length).length });
+  return opts;
+}
+function facetMatches(kind, key, s){
+  if (kind === 'trade') return s.trade === key;
+  return key === NO_CONTRACTOR_KEY ? !s.contractors.length : s.contractors.includes(key);
+}
+function facetItems(kind){
+  const key = facetSel[kind];
+  if (key == null) return [];
+  const status = document.getElementById(kind + 'StatusFilter').value;
+  const qWords = searchWords(kind + 'Search');
+  return sortSnagsForExport(SNAGS.filter(s => facetMatches(kind, key, s) && (!status || s.status === status) && snagMatchesWords(s, qWords)));
+}
+function renderFacetView(kind){
+  const opts = facetOptions(kind);
+  if (facetSel[kind] == null || !opts.some(o => o.key === facetSel[kind])){
+    const firstUsed = opts.find(o => o.count > 0);
+    facetSel[kind] = firstUsed ? firstUsed.key : (opts[0] ? opts[0].key : null);
+  }
+  document.getElementById(kind + 'Pills').innerHTML = opts.map(o =>
+    `<button class="pill-btn ${facetSel[kind] === o.key ? 'active' : ''} ${o.count === 0 ? 'empty' : ''}" data-key="${escapeAttr(o.key)}" onclick="selectFacet('${kind}', this)">${escapeHtml(o.label)} <span class="pill-count">${o.count}</span></button>`
+  ).join('');
+  const items = facetItems(kind);
+  const open = items.filter(s => s.status !== 'Verified/Closed').length;
+  const chosen = opts.find(o => o.key === facetSel[kind]);
+  const filtered = document.getElementById(kind + 'StatusFilter').value || document.getElementById(kind + 'Search').value.trim();
+  document.getElementById(kind + 'Summary').innerHTML = chosen
+    ? `<b>${escapeHtml(chosen.label)}</b> — ${items.length} snag${items.length === 1 ? '' : 's'} shown · ${open} open${filtered ? ` <span class="no-comments-hint">(filtered from ${chosen.count})</span>` : ''}`
+    : '';
+  document.getElementById(kind + 'Cards').innerHTML = items.length
+    ? items.map(snagCardHtml).join('')
+    : `<div class="empty-state">${chosen && chosen.count === 0 ? 'No snags here yet.' : 'No snags match the current filters.'}</div>`;
+}
+function selectFacet(kind, btn){
+  facetSel[kind] = btn.dataset.key;
+  renderFacetView(kind);
+}
+function exportFacet(kind){
+  const items = facetItems(kind);
+  if (!items.length){ alert('Nothing to export — no snags are showing.'); return; }
+  const opts = facetOptions(kind);
+  const label = (opts.find(o => o.key === facetSel[kind]) || {}).label || kind;
+  const safe = label.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '');
+  downloadSnagsAsExcel(items, `snags-${kind}-${safe}-${new Date().toISOString().slice(0, 10)}.xlsx`);
 }
 
 /* ============================================================
@@ -699,6 +794,9 @@ function setMainView(view){
   document.getElementById('view-explore').classList.toggle('active', view === 'explore');
   document.getElementById('view-list').classList.toggle('active', view === 'list');
   document.getElementById('view-admin').classList.toggle('active', view === 'admin');
+  document.getElementById('view-trade').classList.toggle('active', view === 'trade');
+  document.getElementById('view-contractor').classList.toggle('active', view === 'contractor');
+  if (view === 'trade' || view === 'contractor') renderFacetView(view);
   if (view === 'list') renderGroups();
   if (view === 'admin' && isAdmin()) loadAndRenderAdmin();
 }
@@ -945,7 +1043,7 @@ function printRoom(){
     ${items.map(s => `
       <div class="print-item">
         <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;">${s.tag} — ${s.severity} — ${s.status}</div>
-        <div style="font-weight:600;margin-top:2px;">${escapeHtml(s.trade)}${s.contractor ? ' · Contractor: ' + escapeHtml(s.contractor) : ''}${s.location ? ' · ' + escapeHtml(s.location) : ''}</div>
+        <div style="font-weight:600;margin-top:2px;">${escapeHtml(s.trade)}${s.contractors.length ? ' · Contractor' + (s.contractors.length > 1 ? 's' : '') + ': ' + escapeHtml(s.contractors.join(', ')) : ''}${s.location ? ' · ' + escapeHtml(s.location) : ''}</div>
         <div style="margin-top:4px;">${escapeHtml(s.description)}</div>
         ${s.comments ? `<div style="margin-top:2px;font-style:italic;color:#555;">${escapeHtml(s.comments)}</div>` : ''}
         ${(s.thumbFiles && s.thumbFiles.length) ? `<div style="margin-top:6px;">${s.thumbFiles.map(f => `<img src="${PHOTO_BASE_URL + f}">`).join('')}</div>` : ''}
@@ -964,7 +1062,7 @@ const EXPORT_COLUMNS = [
   ['Floor', s => s.floorName],
   ['Room', s => s.roomName],
   ['Trade', s => s.trade],
-  ['Contractor', s => s.contractor || ''],
+  ['Contractors', s => s.contractors.join(', ')],
   ['Severity', s => s.severity],
   ['Status', s => s.status],
   ['Location', s => s.location || ''],
@@ -1025,8 +1123,8 @@ function populateExportDropdowns(){
   roomSelect.innerHTML = roomOptions.join('');
 
   const contractorSelect = document.getElementById('exportContractorSelect');
-  contractorSelect.innerHTML = CONTRACTORS.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)} (${SNAGS.filter(s => s.contractor === n).length})</option>`).join('')
-    + `<option value="__none__">(no contractor assigned) (${SNAGS.filter(s => !s.contractor).length})</option>`;
+  contractorSelect.innerHTML = CONTRACTORS.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)} (${SNAGS.filter(s => s.contractors.includes(n)).length})</option>`).join('')
+    + `<option value="__none__">(no contractor assigned) (${SNAGS.filter(s => !s.contractors.length).length})</option>`;
 
   const tradeSelect = document.getElementById('exportTradeSelect');
   tradeSelect.innerHTML = TRADES.map(t => {
@@ -1059,7 +1157,7 @@ function getExportItems(){
   if (scope === 'contractor'){
     const c = document.getElementById('exportContractorSelect').value;
     if (!c) return [];
-    return c === '__none__' ? SNAGS.filter(s => !s.contractor) : SNAGS.filter(s => s.contractor === c);
+    return c === '__none__' ? SNAGS.filter(s => !s.contractors.length) : SNAGS.filter(s => s.contractors.includes(c));
   }
   return [];
 }
@@ -1154,7 +1252,7 @@ async function initRenderPipeline(){
   // are logged to the browser console rather than swallowed.
   function safe(label, fn){ try { fn(); } catch (e) { console.error('Init step failed: ' + label, e); } }
   // A second login in the same page must start from a clean slate.
-  explorerFloor = null; explorerRoom = null; selectedTags = new Set(); activeTag = null; expandedGroups = new Set();
+  explorerFloor = null; explorerRoom = null; selectedTags = new Set(); activeTag = null; expandedGroups = new Set(); facetSel = { trade: null, contractor: null };
   document.getElementById('roomExplorerArea').style.display = 'none';
   safe('render stats', renderStats);
   safe('render floor buttons', renderFloorButtons);

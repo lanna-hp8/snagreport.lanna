@@ -211,6 +211,16 @@
   .btn.danger{color:var(--red); border-color:var(--red);}
   .btn.danger:hover{background:var(--red-bg); color:var(--red);}
 
+
+  .bp-contractors{grid-column:1 / -1;}
+  .cchip-row{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:6px; min-height:24px; align-items:center;}
+  .cchip{display:inline-flex; align-items:center; gap:4px; background:var(--green-bg); color:var(--green); font-size:12px; font-weight:600; padding:3px 4px 3px 10px; border-radius:20px;}
+  .cchip button{border:none; background:rgba(0,0,0,0.08); color:inherit; width:18px; height:18px; border-radius:50%; cursor:pointer; font-size:13px; line-height:1; padding:0;}
+  .cchip button:hover{background:var(--red); color:#fff;}
+  .cchip-add{display:flex; gap:6px;}
+  .cchip-add input{flex:1;}
+  .facet-summary{font-size:13px; color:var(--text); margin:6px 0 10px;}
+
   /* ============ ADMIN PANEL ============ */
   .admin-table{width:100%; border-collapse:collapse; font-size:13px; margin-top:10px;}
   .admin-table th{text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-soft); padding:6px 10px; border-bottom:1px solid var(--line);}
@@ -266,6 +276,8 @@
   <div class="view-switcher">
     <button class="view-tab active" data-view="explore" onclick="setMainView('explore')">📍 Floor Plan Explorer</button>
     <button class="view-tab" data-view="list" onclick="setMainView('list')">☰ Browse / Group List</button>
+    <button class="view-tab" data-view="trade" onclick="setMainView('trade')">🔧 By Trade</button>
+    <button class="view-tab" data-view="contractor" onclick="setMainView('contractor')">🛠 By Contractor</button>
     <button class="view-tab" data-view="admin" id="adminTabBtn" onclick="setMainView('admin')" style="display:none;">👤 Admin</button>
   </div>
 
@@ -334,7 +346,42 @@
       <button class="btn small" onclick="collapseAll()">Collapse all</button>
     </div>
 
+    <div class="facet-summary" id="groupHint" style="margin:0 0 8px;"></div>
     <div id="groupsContainer"></div>
+  </div>
+
+  <!-- ============ BY TRADE VIEW ============ -->
+  <div class="view-panel" id="view-trade">
+    <div class="explorer-step-label">Choose a trade</div>
+    <div class="pill-row" id="tradePills"></div>
+    <div class="toolbar">
+      <select id="tradeStatusFilter" onchange="renderFacetView('trade')">
+        <option value="">All statuses</option>
+        <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
+        <option>Fixed - To Verify</option><option>Verified/Closed</option>
+      </select>
+      <div class="search-box"><input type="search" id="tradeSearch" placeholder="Search within this trade…" oninput="renderFacetView('trade')"></div>
+      <button class="btn small" onclick="exportFacet('trade')">⬇ Export these to Excel</button>
+    </div>
+    <div class="facet-summary" id="tradeSummary"></div>
+    <div id="tradeCards"></div>
+  </div>
+
+  <!-- ============ BY CONTRACTOR VIEW ============ -->
+  <div class="view-panel" id="view-contractor">
+    <div class="explorer-step-label">Choose a contractor</div>
+    <div class="pill-row" id="contractorPills"></div>
+    <div class="toolbar">
+      <select id="contractorStatusFilter" onchange="renderFacetView('contractor')">
+        <option value="">All statuses</option>
+        <option>Open</option><option>In Progress</option><option>Awaiting Parts</option>
+        <option>Fixed - To Verify</option><option>Verified/Closed</option>
+      </select>
+      <div class="search-box"><input type="search" id="contractorSearch" placeholder="Search within this contractor…" oninput="renderFacetView('contractor')"></div>
+      <button class="btn small" onclick="exportFacet('contractor')">⬇ Export these to Excel</button>
+    </div>
+    <div class="facet-summary" id="contractorSummary"></div>
+    <div id="contractorCards"></div>
   </div>
 
   <!-- ============ ADMIN VIEW (admin only) ============ -->
